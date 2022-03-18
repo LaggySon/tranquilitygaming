@@ -1,0 +1,102 @@
+//TODO move header styling here
+.header {
+  justify-self: center;
+  --height: 7rem;
+  border-radius: 0.5rem;
+  height: var(--height);
+  // background-color: #296e8ca6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  h1 {
+    color: aliceblue;
+  }
+  a {
+    text-decoration: none;
+  }
+  .Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      transform: scale(0.6);
+    }
+    h1 {
+      transform: translateX(-2rem);
+    }
+  }
+  .NavBar {
+    flex-shrink: 1;
+    .navlist {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0.3rem;
+        border: 2px solid transparent;
+        transition-duration: 500ms;
+        transition-property: all;
+        &:hover {
+          border: 2px solid aliceblue;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+    .dropdown,
+    .drop {
+      &:hover {
+        .drop {
+          opacity: 1;
+          border-radius: 0.5rem;
+          border: 1px solid aliceblue;
+          transform: translateY(0);
+          pointer-events: all;
+        }
+        a {
+          border: 2px solid aliceblue;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+    .drop {
+      transition-property: all;
+      transition-duration: 500ms;
+      padding: 0.2rem;
+      color: aliceblue;
+      margin-top: 0.4rem;
+      margin-left: 0;
+      position: absolute;
+      transform: translateY(-1rem);
+      background: linear-gradient(
+        180deg,
+        rgba(41, 110, 140, 0.6) 0%,
+        rgba(41, 110, 140, 1) 100%
+      );
+      margin-left: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      ul {
+        list-style: none;
+        list-style-position: inside;
+        padding: 0;
+        li {
+          transition-property: all;
+          transition-duration: 500ms;
+          border-top: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+          padding: 0.2rem;
+        }
+        li:hover {
+          border-top: 1px solid aliceblue;
+          border-bottom: 1px solid aliceblue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

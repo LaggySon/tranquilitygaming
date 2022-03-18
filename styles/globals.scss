@@ -1,0 +1,83 @@
+:root {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.2;
+  color: aliceblue;
+  --speed: 500ms;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../public/bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 1rem auto;
+  max-width: 60rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitch {
+  width: 60rem;
+
+  // padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.twitchpane {
+  border-radius: 0.5rem;
+}
+
+.blockel {
+  // background-color: rgba(240, 248, 255, 0.8);
+  border: 2px solid aliceblue;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  .big {
+    margin: 1rem auto;
+    max-width: 60rem;
+  }
+}
+
+.tiers {
+  margin: 1rem auto;
+  max-width: 60rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .tierblock {
+    h1 {
+      font-size: 1rem;
+    }
+    text-align: center;
+    // font-size: 300;
+    flex-grow: 1;
+  }
+}
+
+#hometop {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#homepage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#letter {
+  min-width: 20rem;
+  flex-shrink: 1;
+}
+
+#tweets {
+  // flex-grow: 1;
+  min-width: 20rem;
+  padding: 0.5rem;
+  // flex-basis: 30%;
+  // box-sizing: border-box;
+}
