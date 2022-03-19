@@ -7,6 +7,7 @@ import styles from "../styles/Header.module.scss";
 import Logo from "../public/tranqMonoToneLogo.png";
 
 import Image from "next/image";
+import Link from "next/link";
 
 function NavBar(props) {
   return (
@@ -14,9 +15,9 @@ function NavBar(props) {
       <ul className={styles.navlist}>
         <li>
           <div className={styles.dropdown}>
-            <a href="/teams" className={styles.dropbtn}>
+            <Link href="/teams" className={styles.dropbtn}>
               Rosters
-            </a>
+            </Link>
             <div className={styles.drop}>
               <ul>
                 <li>Harmony</li>
@@ -70,7 +71,7 @@ function NavBar(props) {
 
 function Title(props) {
   return (
-    <a href="/">
+    <Link href="/">
       <div className={styles.Title}>
         <div className={styles.logo}>
           <Image src={Logo} />
@@ -78,7 +79,7 @@ function Title(props) {
 
         <h1>Tranquility Gaming</h1>
       </div>
-    </a>
+    </Link>
   );
 }
 
