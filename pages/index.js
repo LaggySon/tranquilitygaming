@@ -17,7 +17,7 @@ export default function Home() {
             className="twitchpane"
           />
         </div>
-        <div className="tiers">
+        {/* <div className="tiers">
           <div className="tierblock blockel">
             <h1>Harmony</h1>
           </div>
@@ -27,7 +27,7 @@ export default function Home() {
           <div className="tierblock blockel">
             <h1>Transcendence</h1>
           </div>
-        </div>
+        </div> */}
 
         <div id="letter" className="blockel">
           <h3>Letter from the commissioner</h3>

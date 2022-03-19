@@ -4,7 +4,7 @@ import { ReactComponent as Twitter } from "../public/icons/twitter.svg";
 import { ReactComponent as Instagram } from "../public/icons/instagram.svg";
 import { ReactComponent as Facebook } from "../public/icons/facebook.svg";
 import styles from "../styles/Header.module.scss";
-import Logo from "../public/tranqMonoToneLogo.png";
+import Logo from "../public/tranqLogoWhite.png";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -15,15 +15,31 @@ function NavBar(props) {
       <ul className={styles.navlist}>
         <li>
           <div className={styles.dropdown}>
-            <Link href="/teams" className={styles.dropbtn}>
+            <a href="#" className={styles.dropbtn}>
               Rosters
-            </Link>
+            </a>
             <div className={styles.drop}>
               <ul>
-                <li>Harmony</li>
-                <li>Harmony EU</li>
-                <li>Discord</li>
-                <li>Transcendence</li>
+                <li>
+                  <Link href="/naharmonyrosters">
+                    <a>Harmony NA</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/euharmonyrosters">
+                    <a>Harmony EU</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/nadiscordrosters">
+                    <a>Discord NA</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/natrancerosters">
+                    <a>Transcendence NA</a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -35,10 +51,26 @@ function NavBar(props) {
             </a>
             <div className={styles.drop}>
               <ul>
-                <li>Harmony</li>
-                <li>Harmony EU</li>
-                <li>Discord</li>
-                <li>Transcendence</li>
+                <li>
+                  <Link href="/naharmonyschedule">
+                    <a>Harmony NA</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/euharmonyschedule">
+                    <a>Harmony EU</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/nadiscordschedule">
+                    <a>Discord NA</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/natranceschedule">
+                    <a>Transcendence NA</a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -50,19 +82,39 @@ function NavBar(props) {
             </a>
             <div className={styles.drop}>
               <ul>
-                <li>Twitter</li>
-                <li>Twitch</li>
-                <li>YouTube</li>
-                <li>Discord</li>
+                <li>
+                  <Link href="https://twitter.com/owtranquility">
+                    <a>Twitter</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://twitch.tv/owtranquility">
+                    <a>Twitch</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://youtube.com/owtranquility">
+                    <a>YouTube</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://discord.gg/owtranquility">
+                    <a>Discord</a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
         </li>
         <li>
-          <a href="#">Store</a>
+          <Link href="https://shop.spreadshirt.com/owtranquility">
+            <a className={styles.dropbtn}>Store</a>
+          </Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link href="mailto:cavalier@owtranquility.com">
+            <a className={styles.dropbtn}>Contact</a>
+          </Link>
         </li>
       </ul>
     </div>
@@ -72,13 +124,15 @@ function NavBar(props) {
 function Title(props) {
   return (
     <Link href="/">
-      <div className={styles.Title}>
-        <div className={styles.logo}>
-          <Image src={Logo} />
-        </div>
+      <a>
+        <div className={styles.Title}>
+          <div className={styles.logo}>
+            <Image src={Logo} />
+          </div>
 
-        <h1>Tranquility Gaming</h1>
-      </div>
+          <h1>Tranquility Gaming</h1>
+        </div>
+      </a>
     </Link>
   );
 }
