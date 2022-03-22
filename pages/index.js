@@ -10,7 +10,8 @@ export default function Home() {
           <TwitchPlayer
             channel="owtranquility"
             theme="dark"
-            width="100%"
+            width="550"
+            height="275"
             // height="100%"
             muted
             onVideoPause={() => console.log(":(")}
