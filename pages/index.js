@@ -69,7 +69,7 @@ export default function Home() {
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName="owtranquility"
-            options={{ height: 400, transparent: true }}
+            options={{ height: 560 }}
           />
         </div>
       </div>

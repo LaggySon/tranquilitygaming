@@ -17,13 +17,18 @@
   }
   .Title {
     display: flex;
-    align-items: center;
-    justify-content: left;
     .logo {
-      transform: scale(0.6);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      img {
+        transform: scale(0.6);
+        flex-shrink: 0;
+      }
     }
-    h1 {
-      // transform: translateX(-2rem);
+    .burger {
+      display: none;
     }
   }
   .NavBar {
@@ -99,6 +104,70 @@
           border-top: 1px solid aliceblue;
           border-bottom: 1px solid aliceblue;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+
+    .Title {
+      height: var(--height);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      h1 {
+        display: none;
+      }
+      a {
+        justify-self: start;
+        transform: translateX(-4rem);
+        flex-shrink: 0;
+      }
+      .burger {
+        cursor: pointer;
+        justify-self: end;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 2rem;
+        justify-content: space-around;
+
+        .bar {
+          background-color: aliceblue;
+          width: 2rem;
+          height: 0.2rem;
+          border-radius: 2rem 2rem 2rem 2rem;
+        }
+      }
+    }
+    .NavBar {
+      transition-property: all;
+      transition-duration: 500ms;
+      // position: absolute;
+      opacity: 0;
+      transform: translateY(-20rem);
+      height: 0;
+
+      .dropbtn {
+        font-size: 0.2rem;
+      }
+
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+        height: 10rem;
+      }
+      .navlist {
+        flex-direction: column;
+        font-size: 0.8rem;
+        li {
+          text-align: center;
         }
       }
     }
