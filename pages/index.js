@@ -28,6 +28,7 @@ export default function Home() {
             effect={"cards"}
             speed={1000}
             pagination={{ clickable: true }}
+            loop
             // scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
