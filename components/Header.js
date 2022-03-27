@@ -6,18 +6,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// function NavBar(props) {
-//   return (
-
-//   );
-// }
-
-// function Title(props) {
-//   return (
-
-//   );
-// }
-
 function Header(props) {
   const [isActive, setActive] = useState(false);
   const handleToggle = () => {
@@ -148,7 +136,7 @@ function Header(props) {
             <div className={styles.drop}></div>
           </li>
           <li>
-            <Link href="mailto:cavalier@owtranquility.com">
+            <Link href="/contact">
               <a className={styles.dropbtn}>Contact</a>
             </Link>
             <div className={styles.drop}></div>

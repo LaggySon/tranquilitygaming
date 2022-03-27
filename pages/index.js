@@ -2,6 +2,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { TwitchPlayer } from "react-twitch-embed";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import styles from "../styles/Landing.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,53 +12,47 @@ export default function Home() {
   return (
     <div>
       {/* <h1>Home Page</h1> */}
-      <div className="container" id="homepage">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          autoplay={{ delay: 10000 }}
-          navigation
-          effect={"cards"}
-          speed={1000}
-          pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>Placeholder Slide #1</SwiperSlide>
-          <SwiperSlide>Placeholder Slide #2</SwiperSlide>
-          <SwiperSlide>Placeholder Slide #3</SwiperSlide>
-          <SwiperSlide>
-            <div className="twitch">
-              <TwitchPlayer
-                channel="owtranquility"
-                theme="dark"
-                width="550"
-                height="275"
-                // height="100%"
-                muted
-                onVideoPause={() => console.log(":(")}
-                className="twitchpane"
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+      <div className="container" id={styles.homepage}>
+        <div className="container" id={styles.showcase}>
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            autoplay={{
+              delay: 10000,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: false,
+            }}
+            navigation
+            effect={"cards"}
+            speed={1000}
+            pagination={{ clickable: true }}
+            // scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>Placeholder Slide #1</SwiperSlide>
+            <SwiperSlide>Placeholder Slide #2</SwiperSlide>
+            <SwiperSlide>Placeholder Slide #3</SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.twitch}>
+                <TwitchPlayer
+                  channel="owtranquility"
+                  theme="dark"
+                  width="550"
+                  height="275"
+                  // height="100%"
+                  muted
+                  onVideoPause={() => console.log(":(")}
+                  className={styles.twitchpane}
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
 
-        {/* <div className="tiers">
-          <div className="tierblock blockel">
-            <h1>Harmony</h1>
-          </div>
-          <div className="tierblock blockel">
-            <h1>Discord</h1>
-          </div>
-          <div className="tierblock blockel">
-            <h1>Transcendence</h1>
-          </div>
-        </div> */}
-
-        <div id="letter" className="blockel">
+        <div id={styles.letter} className={styles.blockel}>
           <h3>Letter from the commissioner</h3>
           <p>
             Welcome to the Overwatch Tranquility Community. This community is
@@ -89,7 +84,7 @@ export default function Home() {
             build a community of competition and friendship.
           </p>
         </div>
-        <div id="tweets">
+        <div id={styles.tweets}>
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName="owtranquility"
