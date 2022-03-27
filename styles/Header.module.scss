@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  border-bottom: 2px solid aliceblue;
+  border-radius: 0;
   h1 {
     color: aliceblue;
   }
@@ -21,7 +23,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-
+      h1 {
+        font-weight: 600;
+      }
       img {
         transform: scale(0.6);
         flex-shrink: 0;
@@ -40,7 +44,7 @@
       .dropbtn {
         text-decoration: none;
         color: aliceblue;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 1rem;
         padding: 0.3rem;
         border: 2px solid transparent;
@@ -69,9 +73,11 @@
       }
     }
     .drop {
+      z-index: 2;
       transition-property: all;
       transition-duration: 500ms;
       padding: 0.2rem;
+      width: 10rem;
       color: aliceblue;
       margin-top: 0.4rem;
       margin-left: 0;
@@ -79,8 +85,8 @@
       transform: translateY(-1rem);
       background: linear-gradient(
         180deg,
-        rgba(41, 110, 140, 0.6) 0%,
-        rgba(41, 110, 140, 1) 100%
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.6) 100%
       );
       margin-left: 1rem;
       opacity: 0;
@@ -152,19 +158,39 @@
       // position: absolute;
       opacity: 0;
       transform: translateY(-20rem);
-      height: 0;
-
-      .dropbtn {
-        font-size: 0.2rem;
-      }
+      max-height: 0;
+      align-self: center;
 
       &.active {
         transform: translateY(0);
         opacity: 1;
-        height: 10rem;
+        max-height: 20rem;
+      }
+      .drop {
+        transition-property: all;
+        transition-duration: 500ms;
+        position: relative;
+        max-height: 0;
+        z-index: 2;
+        background: none;
+        ul li {
+          text-align: left;
+        }
+      }
+      .dropbtn,
+      .drop,
+      .dropdown {
+        &:hover {
+          .drop {
+            background: none;
+            border: none;
+            max-height: 7rem;
+          }
+        }
       }
       .navlist {
         flex-direction: column;
+        align-items: center;
         font-size: 0.8rem;
         li {
           text-align: center;

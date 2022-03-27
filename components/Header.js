@@ -51,7 +51,7 @@ function Header(props) {
           <li>
             <div className={styles.dropdown}>
               <a href="#" className={styles.dropbtn}>
-                Rosters
+                Rosters +
               </a>
               <div className={styles.drop}>
                 <ul>
@@ -82,7 +82,7 @@ function Header(props) {
           <li>
             <div className={styles.dropdown}>
               <a href="#" className={styles.dropbtn}>
-                Schedule
+                Schedule +
               </a>
               <div className={styles.drop}>
                 <ul>
@@ -113,7 +113,7 @@ function Header(props) {
           <li>
             <div className={styles.dropdown}>
               <a href="#" className={styles.dropbtn}>
-                Socials
+                Socials +
               </a>
               <div className={styles.drop}>
                 <ul>
@@ -145,11 +145,13 @@ function Header(props) {
             <Link href="https://shop.spreadshirt.com/owtranquility">
               <a className={styles.dropbtn}>Store</a>
             </Link>
+            <div className={styles.drop}></div>
           </li>
           <li>
             <Link href="mailto:cavalier@owtranquility.com">
               <a className={styles.dropbtn}>Contact</a>
             </Link>
+            <div className={styles.drop}></div>
           </li>
         </ul>
       </div>
