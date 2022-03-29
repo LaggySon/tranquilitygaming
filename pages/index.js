@@ -46,7 +46,6 @@ export default function Home() {
                   // height="100%"
                   muted
                   onVideoPause={() => console.log(":(")}
-                  className={styles.twitchpane}
                 />
               </div>
             </SwiperSlide>

@@ -22,6 +22,18 @@ body:before {
   background-size: cover;
 }
 
+.blockel {
+  background-color: var(--darkbg);
+  border: 2px solid aliceblue;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  .big {
+    margin: 1rem auto;
+    max-width: 60rem;
+  }
+}
+
 .container {
   margin: 1rem auto;
   max-width: 60rem;
