@@ -8,6 +8,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+
+import Image from "next/image";
+
+import schedgif1 from "../public/decapitaters_ratsociety.gif";
 export default function Home() {
   return (
     <div>
@@ -33,22 +37,12 @@ export default function Home() {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-            <SwiperSlide>Placeholder Slide #1</SwiperSlide>
+            <SwiperSlide>
+              <Image src={schedgif1} layout="responsive" />
+            </SwiperSlide>
             <SwiperSlide>Placeholder Slide #2</SwiperSlide>
             <SwiperSlide>Placeholder Slide #3</SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.twitch}>
-                <TwitchPlayer
-                  channel="owtranquility"
-                  theme="dark"
-                  width="550"
-                  height="275"
-                  // height="100%"
-                  muted
-                  onVideoPause={() => console.log(":(")}
-                />
-              </div>
-            </SwiperSlide>
+            <SwiperSlide>Placeholder Slide #4</SwiperSlide>
           </Swiper>
         </div>
 

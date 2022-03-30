@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import Head from "next/head";
 
 function Layout(props) {
@@ -10,6 +11,7 @@ function Layout(props) {
       <div className="layout">
         <Header />
         {props.children}
+        <Footer />
       </div>
     </>
   );

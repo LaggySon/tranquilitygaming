@@ -7,7 +7,7 @@ export default function contact() {
       <div className="container blockel">
         <Link href="mailto:cavelier@owtranquility.com">
           <a id={styles.contactinfo}>
-            <h1>Email Cavelier (cavelier@owtranquility.com)</h1>
+            <h3>Email Cavelier (cavelier@owtranquility.com)</h3>
           </a>
         </Link>
       </div>
