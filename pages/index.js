@@ -17,12 +17,12 @@ export default function Home() {
     <div>
       {/* <h1>Home Page</h1> */}
       <div className="container" id={styles.homepage}>
-        <div className="container" id={styles.showcase}>
+        <div id={styles.showcase} className="container">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
-            slidesPerView={1}
+            slidesPerView={"auto"}
             autoplay={{
               delay: 10000,
               pauseOnMouseEnter: true,
@@ -36,37 +36,36 @@ export default function Home() {
             // scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
+            variablewidth
           >
             <SwiperSlide>
+              <div className={styles.slide}>
+                <Image
+                  src="http://picsum.photos/1200/675"
+                  width="1280"
+                  height="388"
+                ></Image>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
               <Image
                 src="http://picsum.photos/1200/675"
-                width="1110"
+                width="1280"
                 height="388"
-                layout="responsive"
               ></Image>
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 src="http://picsum.photos/1200/675"
-                width="1110"
+                width="1280"
                 height="388"
-                layout="responsive"
               ></Image>
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 src="http://picsum.photos/1200/675"
-                width="1110"
+                width="1280"
                 height="388"
-                layout="responsive"
-              ></Image>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="http://picsum.photos/1200/675"
-                width="1110"
-                height="388"
-                layout="responsive"
               ></Image>
             </SwiperSlide>
           </Swiper>
