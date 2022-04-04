@@ -49,6 +49,7 @@
         border: 2px solid transparent;
         transition-duration: 500ms;
         transition-property: all;
+        white-space: nowrap;
         &:hover {
           border-bottom: 2px solid aliceblue;
           border-radius: 0;

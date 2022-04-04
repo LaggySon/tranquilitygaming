@@ -129,6 +129,7 @@ function Header(props) {
               </div>
             </div>
           </li>
+
           <li>
             <Link href="https://shop.spreadshirt.com/owtranquility">
               <a className={styles.dropbtn}>Store</a>
@@ -140,6 +141,22 @@ function Header(props) {
               <a className={styles.dropbtn}>Contact</a>
             </Link>
             <div className={styles.drop}></div>
+          </li>
+          <li>
+            <div className={styles.dropdown}>
+              <a href="#" className={styles.dropbtn}>
+                More +
+              </a>
+              <div className={styles.drop}>
+                <ul>
+                  <li>
+                    <Link href="/halloffame">
+                      <a>Hall of Fame</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

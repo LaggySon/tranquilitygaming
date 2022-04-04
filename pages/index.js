@@ -38,11 +38,37 @@ export default function Home() {
             onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
-              <Image src={schedgif1} layout="responsive" />
+              <Image
+                src="http://picsum.photos/1200/675"
+                width="1110"
+                height="388"
+                layout="responsive"
+              ></Image>
             </SwiperSlide>
-            <SwiperSlide>Placeholder Slide #2</SwiperSlide>
-            <SwiperSlide>Placeholder Slide #3</SwiperSlide>
-            <SwiperSlide>Placeholder Slide #4</SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="http://picsum.photos/1200/675"
+                width="1110"
+                height="388"
+                layout="responsive"
+              ></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="http://picsum.photos/1200/675"
+                width="1110"
+                height="388"
+                layout="responsive"
+              ></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="http://picsum.photos/1200/675"
+                width="1110"
+                height="388"
+                layout="responsive"
+              ></Image>
+            </SwiperSlide>
           </Swiper>
         </div>
 
