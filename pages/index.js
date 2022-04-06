@@ -41,38 +41,44 @@ export default function Home() {
             <SwiperSlide>
               <div className={styles.slide}>
                 <Image
-                  src="http://picsum.photos/1200/675"
+                  src="http://via.placeholder.com/1280x400"
                   width="1280"
-                  height="388"
+                  height="400"
                 ></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="http://picsum.photos/1200/675"
+                src="http://via.placeholder.com/1280x400"
                 width="1280"
-                height="388"
+                height="400"
               ></Image>
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="http://picsum.photos/1200/675"
+                src="http://via.placeholder.com/1280x400"
                 width="1280"
-                height="388"
+                height="400"
               ></Image>
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="http://picsum.photos/1200/675"
+                src="http://via.placeholder.com/1280x400"
                 width="1280"
-                height="388"
+                height="400"
               ></Image>
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <div id={styles.letter} className={styles.blockel}>
-          <h3>Letter from the commissioner</h3>
+        <div className="separator">
+          <p>
+            <span>LATEST</span> NEWS
+          </p>
+        </div>
+
+        <div id={styles.letter} className="blockel">
+          <h2>Letter From The Commissioner</h2>
           <p>
             Welcome to the Overwatch Tranquility Community. This community is
             intended to aid in the growth of players and their development in
@@ -102,13 +108,6 @@ export default function Home() {
             (4000 SR) range, and it is meant to be an inclusive space to help
             build a community of competition and friendship.
           </p>
-        </div>
-        <div id={styles.tweets}>
-          <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="owtranquility"
-            options={{ height: 560 }}
-          />
         </div>
       </div>
     </div>

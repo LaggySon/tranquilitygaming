@@ -1,5 +1,5 @@
 import styles from "../styles/Header.module.scss";
-import Logo from "../public/tranqLogoWhite.png";
+import Logo from "../public/tranquilityLogoMono.png";
 
 import React, { useState } from "react";
 
@@ -21,7 +21,6 @@ function Header(props) {
               <div>
                 <Image src={Logo} />
               </div>
-              <h1>Tranquility Gaming</h1>
             </div>
           </a>
         </Link>

@@ -1,9 +1,13 @@
 :root {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+
   line-height: 1.2;
-  color: aliceblue;
   --speed: 500ms;
-  --darkbg: rgba(0, 0, 0, 0.5);
+  --accentcolor: #c79334;
+  --bgcolor: #011724b9;
+  --textcolor: #b7bdc2;
+  --titlecolor: #9cc3d4;
+  color: var(--textcolor);
 }
 body:before {
   content: "";
@@ -14,7 +18,7 @@ body:before {
   width: 120vw;
   height: 120vh;
   z-index: -10;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url("../public/bg.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,10 +26,34 @@ body:before {
   background-size: cover;
 }
 
+.separator {
+  display: flex;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  span {
+    color: var(--titlecolor);
+  }
+  &:before {
+    transform: translateY(50%);
+    margin-right: 1rem;
+    border-top: 0.2rem solid aliceblue;
+    content: " ";
+    flex-grow: 1;
+  }
+  &:after {
+    transform: translateY(50%);
+    margin-left: 1rem;
+    border-top: 0.2rem solid aliceblue;
+    content: " ";
+    flex-grow: 10;
+  }
+}
+
 .blockel {
-  background-color: var(--darkbg);
-  border: 2px solid aliceblue;
-  border-radius: 0.5rem;
+  background-color: var(--bgcolor);
+
   padding: 1rem;
   margin: 0.5rem;
   .big {
@@ -36,7 +64,7 @@ body:before {
 
 .container {
   margin: 1rem auto;
-  max-width: 80rem;
+  max-width: 70rem;
 
   display: flex;
   flex-direction: row;
