@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-image: linear-gradient(#00000080, #00111f80, #00000080);
+  background-image: linear-gradient(#00000090, #00111f80, #00000090);
   border-radius: 0;
   h1 {
     color: aliceblue;
@@ -128,9 +128,14 @@
       align-items: center;
       justify-content: space-between;
       width: 80%;
-      img {
-        transform: scale(0.1);
+      .logo {
+        transform: translateX(-200px);
+        img {
+          object-fit: cover;
+          object-position: 250px;
+        }
       }
+
       a {
         justify-self: start;
         transform: translateX(-4rem);
