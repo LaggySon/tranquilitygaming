@@ -26,13 +26,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      h1 {
-        font-weight: 600;
-      }
+
       img {
         transform: scale(0.8);
-        flex-shrink: 0;
-        margin: 0;
       }
     }
     .burger {
@@ -132,8 +128,8 @@
       align-items: center;
       justify-content: space-between;
       width: 80%;
-      h1 {
-        display: none;
+      img {
+        transform: scale(0.1);
       }
       a {
         justify-self: start;

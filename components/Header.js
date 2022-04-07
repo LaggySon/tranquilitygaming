@@ -1,5 +1,6 @@
 import styles from "../styles/Header.module.scss";
 import Logo from "../public/tranquilityLogoMono.png";
+import SmallLogo from "../public/tranqLogoWhite.png";
 
 import React, { useState } from "react";
 
@@ -19,7 +20,7 @@ function Header(props) {
           <a>
             <div className={styles.logo}>
               <div>
-                <Image src={Logo} />
+                <Image src={Logo}></Image>
               </div>
             </div>
           </a>
