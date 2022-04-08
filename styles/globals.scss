@@ -9,6 +9,9 @@
   --titlecolor: #9cc3d4;
   color: var(--textcolor);
 }
+body {
+  margin: 0;
+}
 body:before {
   content: "";
   display: block;
