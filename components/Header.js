@@ -154,6 +154,11 @@ function Header(props) {
                       <a>Hall of Fame</a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/websitefeedback">
+                      <a>Feedback Form</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

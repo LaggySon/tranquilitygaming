@@ -17,27 +17,30 @@ function ContactFrame(props) {
 
 export default function contact() {
   return (
-    <div className={styles.ContactsContainer + " container"}>
-      <ContactFrame
-        name="Cavalier"
-        position="Commisioner"
-        email="cavalier@owtranquility.com"
-      />
-      <ContactFrame
-        name="Cavalier"
-        position="Commisioner"
-        email="cavalier@owtranquility.com"
-      />
-      <ContactFrame
-        name="Cavalier"
-        position="Commisioner"
-        email="cavalier@owtranquility.com"
-      />
-      <ContactFrame
-        name="Cavalier"
-        position="Commisioner"
-        email="cavalier@owtranquility.com"
-      />
+    <div className="container">
+      <h1 className="page-title">Contact Us</h1>
+      <div className={styles.ContactsContainer}>
+        <ContactFrame
+          name="Cavalier"
+          position="Commisioner"
+          email="cavalier@owtranquility.com"
+        />
+        <ContactFrame
+          name="Cavalier"
+          position="Commisioner"
+          email="cavalier@owtranquility.com"
+        />
+        <ContactFrame
+          name="Cavalier"
+          position="Commisioner"
+          email="cavalier@owtranquility.com"
+        />
+        <ContactFrame
+          name="Cavalier"
+          position="Commisioner"
+          email="cavalier@owtranquility.com"
+        />
+      </div>
     </div>
   );
 }

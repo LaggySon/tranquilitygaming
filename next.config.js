@@ -6,6 +6,13 @@ module.exports = {
   async redirects() {
     return [
       {
+        source: "/websitefeedback",
+        destination:
+          "https://docs.google.com/forms/d/e/1FAIpQLSdPvxHAjR391U6qK_fObwrKxWEA093t0rGo9mGwAFGiBZMY5g/viewform?usp=sf_link",
+        permanent: false,
+        basePath: false,
+      },
+      {
         source: "/twitchcaster",
         destination: "https://forms.gle/6THqyRoophKoMA4E9",
         permanent: false,
