@@ -3,17 +3,19 @@ import styles from "../../styles/Teams.module.scss";
 
 export async function getServerSideProps({ query }) {
   //GOOGLE AUTH
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n");
+
   const auth = await google.auth.getClient({
     scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
     credentials: {
-      private_key: process.env.GOOGLE_PRIVATE_KEY,
+      private_key: privateKey,
       client_email: process.env.GOOGLE_CLIENT_EMAIL,
     },
   });
   const sheets = google.sheets({
     version: "v4",
     credentials: {
-      private_key: process.env.GOOGLE_PRIVATE_KEY,
+      private_key: privateKey,
       client_email: process.env.GOOGLE_CLIENT_EMAIL,
     },
     auth,
