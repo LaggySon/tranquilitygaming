@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Contact.module.scss";
+import Separator from "../components/Separator";
 
 function ContactFrame(props) {
   return (
@@ -18,7 +19,11 @@ function ContactFrame(props) {
 export default function contact() {
   return (
     <div className="container">
-      <h1 className="page-title">Contact Us</h1>
+      <Separator>
+        <h1>
+          <span>CONTACT</span> US
+        </h1>
+      </Separator>
       <div className={styles.ContactsContainer}>
         <ContactFrame
           name="Cavalier"

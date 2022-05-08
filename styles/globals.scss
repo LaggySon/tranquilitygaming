@@ -34,7 +34,8 @@ body:before {
   width: 100%;
   font-size: 1.5rem;
   font-weight: 500;
-  color: white;
+  color: aliceblue;
+  padding-block: 1rem;
   span {
     color: var(--titlecolor);
   }
@@ -53,9 +54,7 @@ body:before {
     flex-grow: 10;
   }
 }
-.page-title {
-  color: aliceblue;
-}
+
 .blockel {
   background-color: var(--bgcolor);
 

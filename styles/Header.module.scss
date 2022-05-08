@@ -118,8 +118,13 @@
   }
 }
 
+//
+//=============MOBILE STYLING=============
+//
+
 @media screen and (max-width: 985px) {
   .header {
+    margin-top: 0;
     flex-direction: column;
     height: auto;
 

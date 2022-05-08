@@ -2,6 +2,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { TwitchPlayer } from "react-twitch-embed";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import Separator from "../components/Separator";
 import styles from "../styles/Landing.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -71,11 +72,9 @@ export default function Home() {
           </Swiper>
         </div>
 
-        <div className="separator">
-          <p>
-            <span>LATEST</span> NEWS
-          </p>
-        </div>
+        <Separator>
+          <span>LATEST</span> NEWS
+        </Separator>
 
         <div id={styles.letter} className="blockel">
           <h2>Letter From The Commissioner</h2>
