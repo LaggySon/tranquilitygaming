@@ -1,10 +1,23 @@
 import { google } from "googleapis";
+import styles from "../../styles/Teams.module.scss";
 
 export async function getServerSideProps({ query }) {
+  //GOOGLE AUTH
   const auth = await google.auth.getClient({
     scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+    credentials: {
+      private_key: process.env.GOOGLE_PRIVATE_KEY,
+      client_email: process.env.GOOGLE_CLIENT_EMAIL,
+    },
   });
-  const sheets = google.sheets({ version: "v4", auth });
+  const sheets = google.sheets({
+    version: "v4",
+    credentials: {
+      private_key: process.env.GOOGLE_PRIVATE_KEY,
+      client_email: process.env.GOOGLE_CLIENT_EMAIL,
+    },
+    auth,
+  });
 
   const spreadsheetId = process.env.TRANCE_SHEET_ID;
 
@@ -23,9 +36,9 @@ export async function getServerSideProps({ query }) {
   };
 }
 
-export default function Post({ names, poops }) {
+export default function Post({ names }) {
   return (
-    <div>
+    <div className={styles.tiercontainer + " container"}>
       {names.map((name) => (
         <div key={name}>{name}</div>
       ))}
