@@ -20,9 +20,9 @@ export default function contact() {
   return (
     <div className="container">
       <Separator>
-        <h1>
-          <span>CONTACT</span> US
-        </h1>
+        {/* <h1> */}
+        <span>CONTACT</span> US
+        {/* </h1> */}
       </Separator>
       <div className={styles.ContactsContainer}>
         <ContactFrame
@@ -35,11 +35,13 @@ export default function contact() {
           position="Commisioner"
           email="cavalier@owtranquility.com"
         />
+        <Separator>ADMIN</Separator>
         <ContactFrame
           name="Cavalier"
           position="Commisioner"
           email="cavalier@owtranquility.com"
         />
+        <Separator>MODERATORS</Separator>
         <ContactFrame
           name="Cavalier"
           position="Commisioner"

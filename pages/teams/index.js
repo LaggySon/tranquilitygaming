@@ -22,7 +22,15 @@ export async function getServerSideProps({ query }) {
   });
 
   const spreadsheetId = process.env.TRANCE_SHEET_ID;
+  const range = `OVERVIEW!A2:A25`;
 
+  // var names = await sheets.spreadsheets.values.get({
+  //   spreadsheetId,
+  //   range,
+  //   valueRenderOption: "FORMULA",
+  // });
+  // names = names.data.values;
+  // console.log(names);
   var names = (
     await sheets.spreadsheets.get({
       spreadsheetId,

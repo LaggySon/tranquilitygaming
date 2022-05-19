@@ -4,6 +4,7 @@
 .ContactsContainer {
   display: flex;
   flex-direction: row;
-  flex-basis: 15rem;
+  // flex-basis: 15rem;
   flex-wrap: wrap;
+  justify-content: center;
 }

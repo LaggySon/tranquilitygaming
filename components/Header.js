@@ -6,6 +6,7 @@ import React, { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
+import NavLink from "./NavLink";
 
 function Header(props) {
   const [isActive, setActive] = useState(false);
@@ -44,24 +45,16 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <Link href="/naharmonyrosters">
-                      <a>Harmony NA</a>
-                    </Link>
+                    <NavLink href="/naharmonyrosters">Harmony NA</NavLink>
                   </li>
                   <li>
-                    <Link href="/euharmonyrosters">
-                      <a>Harmony EU</a>
-                    </Link>
+                    <NavLink href="/euharmonyrosters">Harmony EU</NavLink>
                   </li>
                   <li>
-                    <Link href="/nadiscordrosters">
-                      <a>Discord NA</a>
-                    </Link>
+                    <NavLink href="/nadiscordrosters">Discord NA</NavLink>
                   </li>
                   <li>
-                    <Link href="/natrancerosters">
-                      <a>Transcendence NA</a>
-                    </Link>
+                    <NavLink href="/natrancerosters">Transcendence NA</NavLink>
                   </li>
                 </ul>
               </div>
@@ -75,24 +68,16 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <Link href="/naharmonyschedule">
-                      <a>Harmony NA</a>
-                    </Link>
+                    <NavLink href="/naharmonyschedule">Harmony NA</NavLink>
                   </li>
                   <li>
-                    <Link href="/euharmonyschedule">
-                      <a>Harmony EU</a>
-                    </Link>
+                    <NavLink href="/euharmonyschedule">Harmony EU</NavLink>
                   </li>
                   <li>
-                    <Link href="/nadiscordschedule">
-                      <a>Discord NA</a>
-                    </Link>
+                    <NavLink href="/nadiscordschedule">Discord NA</NavLink>
                   </li>
                   <li>
-                    <Link href="/natranceschedule">
-                      <a>Transcendence NA</a>
-                    </Link>
+                    <NavLink href="/natranceschedule">Transcendence NA</NavLink>
                   </li>
                 </ul>
               </div>
@@ -106,24 +91,24 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <Link href="https://twitter.com/owtranquility">
-                      <a>Twitter</a>
-                    </Link>
+                    <NavLink href="https://twitter.com/owtranquility">
+                      Twitter
+                    </NavLink>
                   </li>
                   <li>
-                    <Link href="https://twitch.tv/owtranquility">
-                      <a>Twitch</a>
-                    </Link>
+                    <NavLink href="https://twitch.tv/owtranquility">
+                      Twitch
+                    </NavLink>
                   </li>
                   <li>
-                    <Link href="https://youtube.com/owtranquility">
-                      <a>YouTube</a>
-                    </Link>
+                    <NavLink href="https://youtube.com/owtranquility">
+                      YouTube
+                    </NavLink>
                   </li>
                   <li>
-                    <Link href="https://discord.gg/owtranquility">
-                      <a>Discord</a>
-                    </Link>
+                    <NavLink href="https://discord.gg/owtranquility">
+                      Discord
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -150,14 +135,13 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <Link href="/halloffame">
-                      <a>Hall of Fame</a>
-                    </Link>
+                    <NavLink href="/halloffame">Hall of Fame</NavLink>
                   </li>
                   <li>
-                    <Link href="/websitefeedback">
-                      <a>Feedback Form</a>
-                    </Link>
+                    <NavLink href="/websitefeedback">Feedback Form</NavLink>
+                  </li>
+                  <li>
+                    <NavLink href="/teams">[BETA] Teams</NavLink>
                   </li>
                 </ul>
               </div>
