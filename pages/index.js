@@ -41,32 +41,21 @@ export default function Home() {
             <SwiperSlide>
               <div className={styles.slide}>
                 <Image
-                  src="http://via.placeholder.com/1280x400"
+                  src="/../public/tranq-banner-newsite.png"
                   width="1280"
                   height="400"
                 ></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Image
-                src="http://via.placeholder.com/1280x400"
-                width="1280"
-                height="400"
-              ></Image>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="http://via.placeholder.com/1280x400"
-                width="1280"
-                height="400"
-              ></Image>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="http://via.placeholder.com/1280x400"
-                width="1280"
-                height="400"
-              ></Image>
+              <div className={styles.slide}>
+                <h1>ITS PLAYOFFS TIME!</h1>
+                <h3>Broadcast Schedule:</h3>
+                <p>Tuesday 2pm EST: Harmony EU</p>
+                <p>Tuesday 8:30pm EST: Harmony</p>
+                <p>Tuesday 8:30pm EST: Trancscendence</p>
+                <p>Tuesday 2pm EST: Discord</p>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
