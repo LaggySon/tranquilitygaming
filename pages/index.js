@@ -12,7 +12,8 @@ import "swiper/css/autoplay";
 
 import Image from "next/image";
 
-import schedgif1 from "../public/decapitaters_ratsociety.gif";
+//Slide Image Imports
+import slide1 from "../public/tranq-banner-newsite.png";
 export default function Home() {
   return (
     <div>
@@ -40,11 +41,7 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className={styles.slide}>
-                <Image
-                  src="/../public/tranq-banner-newsite.png"
-                  width="1280"
-                  height="400"
-                ></Image>
+                <Image src={slide1} width="1280" height="400"></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>

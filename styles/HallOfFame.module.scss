@@ -1,0 +1,19 @@
+.hofList {
+  text-align: center;
+  font-size: 1.2rem;
+  //   color: aliceblue;
+  width: 100%;
+  background-color: var(--bgcolor);
+}
+
+.HofContainer {
+  flex-direction: column;
+}
+
+.HofClass {
+  width: 60%;
+  margin: 1rem;
+  div {
+    padding: 0.2rem;
+  }
+}
