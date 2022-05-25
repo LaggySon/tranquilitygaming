@@ -178,7 +178,7 @@
       &.active {
         transform: translateY(0);
         opacity: 1;
-        max-height: 20rem;
+        max-height: 50rem;
       }
       .drop {
         transition-property: all;
@@ -198,7 +198,7 @@
           .drop {
             background: none;
             border: none;
-            max-height: 7rem;
+            max-height: 10rem;
           }
         }
       }

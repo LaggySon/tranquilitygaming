@@ -3,16 +3,18 @@ import styles from "../styles/HallOfFame.module.scss";
 
 function HofClass(props) {
   return (
-    <div className={styles.HofClass}>
+    <>
       <Separator>
         <span>{props.when}</span> Inductees
       </Separator>
-      <div className={styles.hofList}>
+      <div className={styles.HofList}>
         {props.list.map((name) => (
-          <div key={name}>{name}</div>
+          <div className={styles.HofMember} key={name}>
+            {name}
+          </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

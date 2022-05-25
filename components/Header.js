@@ -110,16 +110,46 @@ function Header(props) {
                       Discord
                     </NavLink>
                   </li>
+                  <li>
+                    <NavLink href="https://www.instagram.com/owtranquility">
+                      Instagram
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink href="https://www.facebook.com/owtranquility">
+                      Facebook
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             </div>
           </li>
 
           <li>
-            <Link href="https://shop.spreadshirt.com/owtranquility">
-              <a className={styles.dropbtn}>Store</a>
-            </Link>
-            <div className={styles.drop}></div>
+            <div className={styles.dropdown}>
+              <a href="#" className={styles.dropbtn}>
+                Shop +
+              </a>
+              <div className={styles.drop}>
+                <ul>
+                  <li>
+                    <NavLink href="https://shop.spreadshirt.com/owtranquility/ ">
+                      Main Store
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink href="https://shop.spreadshirt.com/owtranquilityjerseys/">
+                      Jersey Store
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink href="https://shop.spreadshirt.com/owtranquilityretired/ ">
+                      Retired Jersey Store
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <Link href="/contact">

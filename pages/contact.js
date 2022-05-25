@@ -6,16 +6,16 @@ function ContactFrame(props) {
   return (
     <div className={"blockel " + styles.ContactFrame}>
       <h3 className="contactname">
-        <span>Name: </span>
+        {/* <span>Name: </span> */}
         {props.name}
       </h3>
       <h3 className="contactposition">
-        <span>Position: </span>
-        {props.position}
+        {/* <span>Position: </span> */}
+        <span>{props.position}</span>
       </h3>
 
       <h3 className="contactpoint">
-        <span>Contact: </span>
+        {/* <span>Contact: </span> */}
         {props.point}
       </h3>
     </div>
@@ -82,7 +82,11 @@ export default function contact() {
           position="Asst. Harmony Tier Director"
           point="sneakykittens#5256"
         />
-        <ContactFrame name="Triage3" position="Moderator" point="" />
+        <ContactFrame
+          name="Triage3"
+          position="Moderator"
+          point="Triage 3#8511"
+        />
         <ContactFrame name="Gheos" position="Moderator" point="Gheos#0001" />
       </div>
     </div>
