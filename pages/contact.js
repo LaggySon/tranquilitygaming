@@ -5,22 +5,25 @@ import Separator from "../components/Separator";
 function ContactFrame(props) {
   return (
     <div className={"blockel " + styles.ContactFrame}>
-      <h3 className="contactname">
+      <parent className="contactname">
         {/* <span>Name: </span> */}
         <span>{props.name}</span>
-      </h3>
-      <h3 className="contactroles">
+      </parent>
+      <p className="contactroles">
         {/* <span>Position: </span> */}
+        <strong>Role(s): </strong>
         {props.roles}
-      </h3>
-      <h3 className="contactsubroles">
+      </p>
+      <p className="contactsubroles">
         {/* <span>Position: </span> */}
+        <strong>Sub role(s): </strong>
         {props.subroles}
-      </h3>
-      <h3 className="contactdiscord">
+      </p>
+      <p className="contactdiscord">
         {/* <span>Contact: </span> */}
+        <strong>Discord: </strong>
         {props.discord}
-      </h3>
+      </p>
     </div>
   );
 }
@@ -80,7 +83,55 @@ export default function contact() {
           subroles="Moderator"
           discord="Crispy#6261"
         />
+        <ContactFrame
+          name="Thuggington"
+          roles="Admin, Harmony NA Tier Director"
+          subroles="Moderator"
+          discord="Thuggington#6087"
+        />
+        <ContactFrame
+          name="Sneakykittens"
+          roles="Asst. Harmony NA Tier Director"
+          subroles="Moderator"
+          discord="Sneakykittens#5256"
+        />
+        <ContactFrame
+          name="Arez"
+          roles="Harmony EU Tier Director"
+          subroles="Moderator"
+          discord="Arez#0955"
+        />
         <Separator>Community Leaders & Contributors</Separator>
+        <ContactFrame
+          name="Booth"
+          roles="Admin, Twitch Team Manager"
+          subroles="Moderator"
+          discord="Booth#9643"
+        />
+        <ContactFrame
+          name="Bethcon2"
+          roles="Admin, Community Officer"
+          subroles="LGBTQPIA+, Women, URM Lead, Community Liaison, Moderator"
+          discord="Bethcon2#8201"
+        />
+        <ContactFrame
+          name="NPC"
+          roles="Admin, Social Media Manager"
+          subroles="Moderator"
+          discord="NPC#8058"
+        />
+        <ContactFrame
+          name="Gheos"
+          roles="Moderator"
+          subroles="Tournament Specialist"
+          discord="Gheos#0001"
+        />
+        <ContactFrame
+          name="LaggySon"
+          roles="Web & Social Media"
+          subroles="Producer, Webmaster"
+          discord="LaggySon#1311"
+        />
       </div>
     </div>
   );
