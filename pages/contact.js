@@ -7,16 +7,19 @@ function ContactFrame(props) {
     <div className={"blockel " + styles.ContactFrame}>
       <h3 className="contactname">
         {/* <span>Name: </span> */}
-        {props.name}
+        <span>{props.name}</span>
       </h3>
-      <h3 className="contactposition">
+      <h3 className="contactroles">
         {/* <span>Position: </span> */}
-        <span>{props.position}</span>
+        {props.roles}
       </h3>
-
-      <h3 className="contactpoint">
+      <h3 className="contactsubroles">
+        {/* <span>Position: </span> */}
+        {props.subroles}
+      </h3>
+      <h3 className="contactdiscord">
         {/* <span>Contact: </span> */}
-        {props.point}
+        {props.discord}
       </h3>
     </div>
   );
@@ -30,64 +33,54 @@ export default function contact() {
         <span>CONTACT</span> US
         {/* </h1> */}
       </Separator>
-      <div className="blockel">For general inquiries, please use ModMail.</div>
+      <div className="blockel">
+        For business or any other general inquiries please contact{" "}
+        <a href="mailto:cavalier@owtranquility.com">
+          cavalier@owtranquility.com
+        </a>{" "}
+        or @ModMail inside the Tranquility Discord server.
+      </div>
 
       <div className={styles.ContactsContainer}>
-        <Separator>ADMIN</Separator>
+        <Separator>Commissioners</Separator>
         <ContactFrame
           name="Cavalier"
-          position="Commisioner"
-          point="Cavalier#1706"
-        />
-        <ContactFrame
-          name="Chimanzy"
-          position="Transcendence Tier Director"
-          point=""
-        />
-        <ContactFrame
-          name="Crispy"
-          position="Discord Tier Director"
-          point="Crispy#6261"
-        />
-        <ContactFrame
-          name="Thuggington"
-          position="Harmony Tier Director"
-          point=""
+          roles="Founder, Owner, Commissioner, Admin"
+          subroles="Art & Branding Manager, Moderator"
+          discord="Cavalier#1706"
         />
         <ContactFrame
           name="MisterYeti"
-          position="Content Creation Team Manager"
-          point="MisterYeti#9471"
+          roles="Deputy Commissioner, Admin"
+          subroles="Content Creation Team Manager, Moderator"
+          discord="MisterYeti#9471"
         />
-        <ContactFrame name="Bethcon2" position="Community Liaison" point="" />
-        <ContactFrame name="NPC" position="Admin" point="NPC#8058" />
-        <Separator>MODERATORS</Separator>
+        <Separator>Tier Directors</Separator>
         <ContactFrame
-          name="Arez"
-          position="Harmony Tier Director EU"
-          point="Arez#0955"
+          name="Chimanzy"
+          roles="Transcendence NA Tier Director"
+          subroles="Moderator"
+          discord="Chimanzy#0006"
         />
         <ContactFrame
           name="Smarties"
-          position="Asst. Transcendence Tier Director"
-          point="smarties#0013"
+          roles="Asst. Transcendence NA Tier Director"
+          subroles="Moderator"
+          discord="Smarties#0013"
+        />
+        <ContactFrame
+          name="Crispy"
+          roles="Admin, Discord NA Tier Director"
+          subroles="Moderator"
+          discord="Crispy#6261"
         />
         <ContactFrame
           name="Apathy"
-          position="Asst. Discord Tier Director"
-          point=""
+          roles="Admin, Discord NA Tier Director"
+          subroles="Moderator"
+          discord="Crispy#6261"
         />
-        <ContactFrame
-          name="Sneakykittens"
-          position="Asst. Harmony Tier Director"
-          point="sneakykittens#5256"
-        />
-        <ContactFrame
-          name="Triage3"
-          position="Moderator"
-          point="Triage 3#8511"
-        />
-        <ContactFrame name="Gheos" position="Moderator" point="Gheos#0001" />
+        <Separator>Community Leaders & Contributors</Separator>
       </div>
     </div>
   );
