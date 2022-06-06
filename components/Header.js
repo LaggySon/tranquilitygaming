@@ -26,10 +26,13 @@ function Header(props) {
             </div>
           </a>
         </Link>
-        <div className={styles.burger} onClick={handleToggle}>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
+        <div
+          className={[styles.burger, isActive ? styles.active : null].join(" ")}
+          onClick={handleToggle}
+        >
+          <span className={styles.bar} id={styles.bar1}></span>
+          <span className={styles.bar} id={styles.bar2}></span>
+          <span className={styles.bar} id={styles.bar3}></span>
         </div>
       </div>
 
@@ -153,7 +156,9 @@ function Header(props) {
           </li>
           <li>
             <Link href="/contact">
-              <a className={styles.dropbtn}>Contact</a>
+              <a className={styles.dropbtn} onClick={handleToggle}>
+                Contact
+              </a>
             </Link>
             <div className={styles.drop}></div>
           </li>
@@ -162,7 +167,7 @@ function Header(props) {
               <a href="#" className={styles.dropbtn}>
                 More +
               </a>
-              <div className={styles.drop}>
+              <div className={styles.drop} onClick={handleToggle}>
                 <ul>
                   <li>
                     <NavLink href="/halloffame">Hall of Fame</NavLink>
