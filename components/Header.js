@@ -171,7 +171,7 @@ function Header(props) {
                     <NavLink href="/feedback">Feedback Form</NavLink>
                   </li>
                   <li>
-                    <NavLink href="/teams">[BETA] Teams</NavLink>
+                    <NavLink href="/teams">[WIP] Teams</NavLink>
                   </li>
                 </ul>
               </div>

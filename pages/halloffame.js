@@ -39,7 +39,7 @@ function ChampTeam(props) {
 }
 
 export default function halloffame() {
-  const inauguralinductees = ["Dunzo", "Nerdables", "Orsted", "Vellzen"];
+  const inauguralInductees = ["Dunzo", "Nerdables", "Orsted", "Vellzen"];
   const s4inductees = [
     "Cavalier",
     "KourRage",
@@ -224,7 +224,7 @@ export default function halloffame() {
   };
   return (
     <div className={"container " + styles.HofContainer}>
-      <HofClass when="Inaugural" list={inauguralinductees} />
+      <HofClass when="Inaugural" list={inauguralInductees} />
       <HofClass when="Season 4" list={s4inductees} />
       <HofClass when="Season 6" list={s6inductees} />
       <HofClass when="Season 8" list={s8inductees} />
