@@ -1,13 +1,4 @@
 {
-  "inauguralInductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
-  "s4inductees": [
-    "Cavalier",
-    "KourRage",
-    "MisterYeti",
-    "NPC",
-    "Specs",
-    "Thuggington"
-  ],
   "s6inductees": [
     "Bethcon2",
     "Booth",
@@ -27,6 +18,7 @@
     "CrypticForce"
   ],
   "s1": {
+    "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
     "winningteam": {
       "name": "Havoc",
       "members": [
@@ -181,6 +173,14 @@
   },
 
   "s4": {
+    "inductees": [
+      "Cavalier",
+      "KourRage",
+      "MisterYeti",
+      "NPC",
+      "Specs",
+      "Thuggington"
+    ],
     "harmony": {
       "winningteam": {
         "name": "MODIFY",

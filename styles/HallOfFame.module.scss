@@ -1,23 +1,28 @@
-.HofList {
-  text-align: center;
-  font-size: 1.2rem;
-  //   color: aliceblue;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.HofMember {
-  background-color: var(--bgcolor);
-  padding: 1rem;
-  margin: 0.25rem;
-  border: 2px solid var(--accentcolor);
-}
-
 .HofContainer {
-  flex-direction: column;
-}
-
-.HofClass {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  // flex-basis: 15rem;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 1rem;
+  h3 {
+    color: var(--titlecolor);
+    font-weight: 400;
+  }
+  .season {
+    width: 100%;
+  }
+  .HofList {
+    text-align: center;
+    font-size: 1.2rem;
+    //   color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .HofMember {
+    background-color: var(--bgcolor);
+    padding: 1rem;
+    margin: 0.25rem;
+    border: 2px solid var(--accentcolor);
+  }
 }
