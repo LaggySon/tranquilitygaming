@@ -5,7 +5,7 @@ import data from "../public/hof.json";
 function Inductees(props) {
   return (
     <div className={styles.Inductees}>
-      <h2>Inductees</h2>
+      <h3>Inductees</h3>
       <div className={styles.List}>
         {props.list.map((name) => (
           <div className={styles.Member} key={name}>
@@ -23,9 +23,11 @@ function ChampTeam(props) {
       <h3>
         {props.tier && props.tier + " "} Champions - {props.list.name}
       </h3>
-      <div className={styles.ChampMembers}>
+      <div className={styles.List}>
         {props.list.members.map((name) => (
-          <div key={name}>{name}</div>
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
         ))}
       </div>
     </div>
@@ -33,6 +35,7 @@ function ChampTeam(props) {
 }
 
 function Season(props) {
+  console.log(props.list);
   return (
     <>
       <Separator>{props.when}</Separator>
@@ -49,7 +52,7 @@ function Season(props) {
 }
 
 export default function halloffame() {
-  console.log(data.s3);
+  // console.log(data.s3);
   return (
     <div className={"container " + styles.HofContainer}>
       <Season when="Inaugural Season" list={data.s1}></Season>
