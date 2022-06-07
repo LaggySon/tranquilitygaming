@@ -1,26 +1,28 @@
 .HofContainer {
-  display: flex;
-  flex-direction: row;
-  // flex-basis: 15rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1rem;
+  text-align: center;
+  h1,
+  h2,
   h3 {
     color: var(--titlecolor);
     font-weight: 400;
+    &.BotBorder {
+      border-bottom: 2px solid aliceblue;
+    }
   }
-  .season {
+  .Season {
     width: 100%;
+    background-color: var(--bgcolor);
+    margin-block: 1rem;
   }
-  .HofList {
+  .List {
     text-align: center;
     font-size: 1.2rem;
     //   color: aliceblue;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .HofMember {
-    background-color: var(--bgcolor);
+  .Member {
     padding: 1rem;
     margin: 0.25rem;
     border: 2px solid var(--accentcolor);

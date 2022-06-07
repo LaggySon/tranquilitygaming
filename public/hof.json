@@ -18,81 +18,92 @@
     "CrypticForce"
   ],
   "s1": {
-    "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
-    "winningteam": {
-      "name": "Havoc",
-      "members": [
-        "Nerdables",
-        "Dunzo",
-        "Shashzilla",
-        "Satirical",
-        "KourRage",
-        "Smithpants",
-        "Esulive",
-        "Crackerboi",
-        "CrimsonSaber",
-        "Dark Requiem"
-      ]
-    },
-    "allstars": {
-      "dps": [
-        "Orsted",
-        "Zoobi3",
-        "F8TE",
-        "Garbagio",
-        "Vellzen",
-        "KourRage",
-        "OhStories",
-        "Maxix"
-      ],
-      "tank": [
-        "CrypticForce",
-        "Dunzo",
-        "Evriin",
-        "Sabrespuck",
-        "Mimsie",
-        "Player"
-      ],
-      "support": ["Cavalier", "Rush", "Nerdables", "Arise", "IvyCat", "Timojo"]
+    "onetier": {
+      "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
+      "winningteam": {
+        "name": "Havoc",
+        "members": [
+          "Nerdables",
+          "Dunzo",
+          "Shashzilla",
+          "Satirical",
+          "KourRage",
+          "Smithpants",
+          "Esulive",
+          "Crackerboi",
+          "CrimsonSaber",
+          "Dark Requiem"
+        ]
+      },
+      "allstars": {
+        "dps": [
+          "Orsted",
+          "Zoobi3",
+          "F8TE",
+          "Garbagio",
+          "Vellzen",
+          "KourRage",
+          "OhStories",
+          "Maxix"
+        ],
+        "tank": [
+          "CrypticForce",
+          "Dunzo",
+          "Evriin",
+          "Sabrespuck",
+          "Mimsie",
+          "Player"
+        ],
+        "support": [
+          "Cavalier",
+          "Rush",
+          "Nerdables",
+          "Arise",
+          "IvyCat",
+          "Timojo"
+        ]
+      }
     }
   },
   "s2": {
-    "winningteam": {
-      "name": "Otaku",
-      "members": [
-        "YoJack87",
-        "Klopsy",
-        "Flufflepuffs",
-        "Hybrid",
-        "Smuggzz",
-        "Cyph",
-        "Panda",
-        "PixelRocket",
-        "Mr.Bubbles (Coach)",
-        "PotatoGoddess (Coach)",
-        "Gaemmmm (Coach)"
-      ]
-    },
+    "onetier": {
+      "winningteam": {
+        "name": "Otaku",
+        "members": [
+          "YoJack87",
+          "Klopsy",
+          "Flufflepuffs",
+          "Hybrid",
+          "Smuggzz",
+          "Cyph",
+          "Panda",
+          "PixelRocket",
+          "Mr.Bubbles (Coach)",
+          "PotatoGoddess (Coach)",
+          "Gaemmmm (Coach)"
+        ]
+      },
 
-    "allstars": {
-      "dps": [
-        "Smuggzz",
-        "Maxix",
-        "Vellzen",
-        "Anarchy",
-        "PetersGG",
-        "GrumpyPants",
-        "Guac"
-      ],
-      "tank": ["Kingdom", "SilentMonkey", "YoJack87", "NPC", "HQC", "Dunzo"],
-      "support": [
-        "Arise",
-        "Laze",
-        "Flufflepuffs",
-        "Shadowph33r",
-        "IvyCat",
-        "MixReddy"
-      ]
+      "allstars": {
+        "dps": [
+          "Smuggzz",
+          "Maxix",
+          "Vellzen",
+          "Anarchy",
+          "PetersGG",
+          "GrumpyPants",
+          "Guac"
+        ],
+        "tank": ["Kingdom", "SilentMonkey", "YoJack87", "NPC", "HQC", "Dunzo"],
+        "support": [
+          "Arise",
+          "Laze",
+          "Flufflepuffs",
+          "Shadowph33r",
+          "IvyCat",
+          "MixReddy"
+        ]
+      }
     }
   },
   "s3": {

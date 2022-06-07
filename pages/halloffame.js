@@ -2,13 +2,13 @@ import Separator from "../components/Separator";
 import styles from "../styles/HallOfFame.module.scss";
 import data from "../public/hof.json";
 
-function HofInductees(props) {
+function Inductees(props) {
   return (
-    <div className={styles.HofInductees}>
-      <h3>Inductees</h3>
-      <div className={styles.HofList}>
+    <div className={styles.Inductees}>
+      <h2>Inductees</h2>
+      <div className={styles.List}>
         {props.list.map((name) => (
-          <div className={styles.HofMember} key={name}>
+          <div className={styles.Member} key={name}>
             {name}
           </div>
         ))}
@@ -20,9 +20,11 @@ function HofInductees(props) {
 function ChampTeam(props) {
   return (
     <div className={styles.ChampTeam}>
-      <h3>Champions</h3>
+      <h3>
+        {props.tier && props.tier + " "} Champions - {props.list.name}
+      </h3>
       <div className={styles.ChampMembers}>
-        {props.list.map((name) => (
+        {props.list.members.map((name) => (
           <div key={name}>{name}</div>
         ))}
       </div>
@@ -32,11 +34,17 @@ function ChampTeam(props) {
 
 function Season(props) {
   return (
-    <div className={styles.season}>
+    <>
       <Separator>{props.when}</Separator>
-      {/* display inductees if they exist for the season */}
-      {props.list.inductees && <HofInductees list={props.list.inductees} />}
-    </div>
+      <div className={styles.Season}>
+        {/* display inductees if they exist for the season */}
+        {props.list.inductees && <Inductees list={props.list.inductees} />}
+        {/* display hof info for seasons without tiers */}
+        {props.list.onetier && (
+          <ChampTeam list={props.list.onetier.winningteam} />
+        )}
+      </div>
+    </>
   );
 }
 
