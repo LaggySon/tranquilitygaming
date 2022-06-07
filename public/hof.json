@@ -1,0 +1,261 @@
+{
+  "inauguralInductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
+  "s4inductees": [
+    "Cavalier",
+    "KourRage",
+    "MisterYeti",
+    "NPC",
+    "Specs",
+    "Thuggington"
+  ],
+  "s6inductees": [
+    "Bethcon2",
+    "Booth",
+    "Door",
+    "Impurse",
+    "Rokit",
+    "Vela",
+    "Zoobi3"
+  ],
+  "s8inductees": [
+    "Smuggzz",
+    "Chimanzy",
+    "Ice",
+    "SneakyKittens",
+    "Crispy",
+    "Kapitol",
+    "CrypticForce"
+  ],
+  "s1": {
+    "winningteam": {
+      "name": "Havoc",
+      "members": [
+        "Nerdables",
+        "Dunzo",
+        "Shashzilla",
+        "Satirical",
+        "KourRage",
+        "Smithpants",
+        "Esulive",
+        "Crackerboi",
+        "CrimsonSaber",
+        "Dark Requiem"
+      ]
+    },
+    "allstars": {
+      "dps": [
+        "Orsted",
+        "Zoobi3",
+        "F8TE",
+        "Garbagio",
+        "Vellzen",
+        "KourRage",
+        "OhStories",
+        "Maxix"
+      ],
+      "tank": [
+        "CrypticForce",
+        "Dunzo",
+        "Evriin",
+        "Sabrespuck",
+        "Mimsie",
+        "Player"
+      ],
+      "support": ["Cavalier", "Rush", "Nerdables", "Arise", "IvyCat", "Timojo"]
+    }
+  },
+  "s2": {
+    "winningteam": {
+      "name": "Otaku",
+      "members": [
+        "YoJack87",
+        "Klopsy",
+        "Flufflepuffs",
+        "Hybrid",
+        "Smuggzz",
+        "Cyph",
+        "Panda",
+        "PixelRocket",
+        "Mr.Bubbles (Coach)",
+        "PotatoGoddess (Coach)",
+        "Gaemmmm (Coach)"
+      ]
+    },
+
+    "allstars": {
+      "dps": [
+        "Smuggzz",
+        "Maxix",
+        "Vellzen",
+        "Anarchy",
+        "PetersGG",
+        "GrumpyPants",
+        "Guac"
+      ],
+      "tank": ["Kingdom", "SilentMonkey", "YoJack87", "NPC", "HQC", "Dunzo"],
+      "support": [
+        "Arise",
+        "Laze",
+        "Flufflepuffs",
+        "Shadowph33r",
+        "IvyCat",
+        "MixReddy"
+      ]
+    }
+  },
+  "s3": {
+    "harmony": {
+      "winningteam": {
+        "name": "HOLY JALAPEÑOS",
+        "members": [
+          "TheMallard",
+          "TorbOnly",
+          "BethCon2",
+          "JohnnyRobot",
+          "N33dul",
+          "THEBork",
+          "Meebles",
+          "Spooderman (Coach)"
+        ]
+      },
+
+      "allstars": {
+        "dps": ["Kurt", "00H", "PDKKid", "Gekk0", "Triage3", "Cremsin"],
+        "tank": [
+          "NPC",
+          "Torraction",
+          "Impurse",
+          "Crispy",
+          "Player",
+          "Bebop",
+          "Rigmedon"
+        ],
+        "support": [
+          "Sushi",
+          "Crygenix",
+          "YourTeammate",
+          "N33Dul",
+          "DrugsNotHugs",
+          "Crossfade"
+        ]
+      }
+    },
+    "discord": {
+      "winningteam": {
+        "name": "KOMMIT",
+        "members": [
+          "Ice",
+          "SirAndy",
+          "Exas",
+          "Koro",
+          "Axiom",
+          "HoneyBadger",
+          "Shiro",
+          "Raidbotti",
+          "MyBigMarf"
+        ]
+      },
+
+      "allstars": {
+        "dps": [
+          "Rokit",
+          "Shiro",
+          "Smuggzz",
+          "JVice",
+          "Pyro",
+          "Kaizen",
+          "OverNightCDR"
+        ],
+        "tank": [
+          "Kingdom",
+          "Sir Andy",
+          "CrypicForce",
+          "KourRage",
+          "Bandito",
+          "HQC",
+          "Booth"
+        ],
+        "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+      }
+    }
+  },
+
+  "s4": {
+    "harmony": {
+      "winningteam": {
+        "name": "MODIFY",
+        "members": [
+          "Bard",
+          "Wittmitin",
+          "Stanbumper",
+          "Instante",
+          "Leka",
+          "MTT",
+          "Sipapi",
+          "WetNuddle",
+          "Mythic (Coach)"
+        ]
+      },
+
+      "allstars": {
+        "dps": [
+          "MrTrippyCow",
+          "Upsetting",
+          "MTT",
+          "Waffleman",
+          "Abe",
+          "Deathnaut",
+          "Gizmocharmander"
+        ],
+        "tank": ["Euphxria", "NPC", "Bethcon2", "Takinom", "Sorked", "Vela"],
+        "support": [
+          "Malalia",
+          "Cinnamon",
+          "Trollz",
+          "Jonavyn",
+          "Leka",
+          "TheCore",
+          "Sneakykittens"
+        ]
+      }
+    },
+    "discord": {
+      "winningteam": {
+        "name": "KOMMIT",
+        "members": [
+          "Ice",
+          "SirAndy",
+          "Exas",
+          "Koro",
+          "Axiom",
+          "HoneyBadger",
+          "Shiro",
+          "Raidbotti",
+          "MyBigMarf"
+        ]
+      },
+
+      "allstars": {
+        "dps": [
+          "Rokit",
+          "Shiro",
+          "Smuggzz",
+          "JVice",
+          "Pyro",
+          "Kaizen",
+          "OverNightCDR"
+        ],
+        "tank": [
+          "Kingdom",
+          "Sir Andy",
+          "CrypicForce",
+          "KourRage",
+          "Bandito",
+          "HQC",
+          "Booth"
+        ],
+        "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+      }
+    }
+  }
+}
