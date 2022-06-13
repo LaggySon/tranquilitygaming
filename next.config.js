@@ -2,6 +2,7 @@ module.exports = {
   images: {
     domains: ["via.placeholder.com", "picsum.photos"],
   },
+
   reactStrictMode: true,
   async redirects() {
     return [

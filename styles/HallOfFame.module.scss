@@ -5,17 +5,20 @@
   h3 {
     color: var(--titlecolor);
     font-weight: 400;
-    &.BotBorder {
-      border-bottom: 2px solid aliceblue;
+    &.bg {
+      color: aliceblue;
+      font-weight: 600;
     }
   }
   .Inductees,
-  .ChampTeam {
+  .ChampTeam,
+  .AllStars {
+    background-color: var(--bgcolor);
     margin-block: 0.5rem;
     padding: 0.5rem;
-    background-color: var(--bgcolor);
   }
-  .ChampTeam .Member {
+  .ChampTeam .Member,
+  .AllStars .Member {
     border: 2px solid var(--titlecolor);
   }
   .Season {
