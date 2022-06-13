@@ -40,6 +40,9 @@ function AllStars(props) {
   );
 }
 
+/*
+Create Season Objects
+*/
 function Season(props) {
   // console.log(props.list);
   return (
@@ -94,7 +97,7 @@ export default function halloffame() {
       <Season when="Season 3" list={data.s3}></Season>
       <Season when="Season 4" list={data.s4}></Season>
       <Season when="Season 5" list={data.s5}></Season>
-      {/* <Season when="Season 6" list={data.s6}></Season> */}
+      <Season when="Season 6" list={data.s6}></Season>
     </div>
   );
 }
