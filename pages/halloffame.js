@@ -98,6 +98,7 @@ export default function halloffame() {
       <Season when="Season 4" list={data.s4}></Season>
       <Season when="Season 5" list={data.s5}></Season>
       <Season when="Season 6" list={data.s6}></Season>
+      <Season when="Season 7" list={data.s7}></Season>
     </div>
   );
 }
