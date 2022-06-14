@@ -36,6 +36,23 @@ function AllStars(props) {
   return (
     <div className={styles.AllStars}>
       <h3>All-Stars</h3>
+      <div className={styles.List}>
+        {props.list.dps.map((name) => (
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
+        ))}
+        {props.list.tank.map((name) => (
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
+        ))}
+        {props.list.support.map((name) => (
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
