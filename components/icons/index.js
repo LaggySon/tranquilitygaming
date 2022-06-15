@@ -1,0 +1,11 @@
+export { default as Svg2021TranquilityLogo } from "./2021TranquilityLogo";
+export { default as Discord } from "./Discord";
+export { default as Facebook } from "./Facebook";
+export { default as Instagram } from "./Instagram";
+export { default as Owdps } from "./Owdps";
+export { default as Owflex } from "./Owflex";
+export { default as Owsupport } from "./Owsupport";
+export { default as Owtank } from "./Owtank";
+export { default as Twitch } from "./Twitch";
+export { default as Twitter } from "./Twitter";
+export { default as Youtube } from "./Youtube";
