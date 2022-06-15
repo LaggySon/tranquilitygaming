@@ -6,6 +6,7 @@ const SvgOwflex = (props) => (
     viewBox="186.85 190 126.28 119.02"
     width="1em"
     height="1em"
+    fill="currentColor"
     {...props}
   >
     <path

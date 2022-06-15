@@ -8,6 +8,14 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 
+//import SVG components
+import SvgTwitch from "./icons/Twitch";
+import SvgTwitter from "./icons/Twitter";
+import SvgYoutube from "./icons/Youtube";
+import SvgFacebook from "./icons/Facebook";
+import SvgInstagram from "./icons/Instagram";
+import SvgDiscord from "./icons/Discord";
+
 function Header(props) {
   const [isActive, setActive] = useState(false);
   const handleToggle = () => {
@@ -95,32 +103,34 @@ function Header(props) {
                 <ul>
                   <li>
                     <NavLink href="https://twitter.com/owtranquility">
-                      Twitter
+                      <SvgTwitter /> Twitter
                     </NavLink>
                   </li>
                   <li>
                     <NavLink href="https://twitch.tv/owtranquility">
-                      Twitch
+                      <SvgTwitch /> Twitch
                     </NavLink>
                   </li>
                   <li>
                     <NavLink href="https://youtube.com/owtranquility">
+                      <SvgYoutube />
                       YouTube
                     </NavLink>
                   </li>
                   <li>
                     <NavLink href="https://discord.gg/owtranquility">
+                      <SvgDiscord />
                       Discord
                     </NavLink>
                   </li>
                   <li>
                     <NavLink href="https://www.instagram.com/owtranquility">
-                      Instagram
+                      <SvgInstagram /> Instagram
                     </NavLink>
                   </li>
                   <li>
                     <NavLink href="https://www.facebook.com/owtranquility">
-                      Facebook
+                      <SvgFacebook /> Facebook
                     </NavLink>
                   </li>
                 </ul>

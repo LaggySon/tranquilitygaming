@@ -28,6 +28,11 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      transition-property: filter;
+      transition-duration: 10000ms;
+      &:hover {
+        filter: sepia() saturate(10000%) hue-rotate(320deg);
+      }
 
       img {
         transform: scale(0.8);
@@ -88,8 +93,8 @@
       transform: translateY(-1rem);
       background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.6) 0%,
-        rgba(0, 0, 0, 0.6) 100%
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.75) 100%
       );
       margin-left: 1rem;
       opacity: 0;

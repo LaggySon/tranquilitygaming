@@ -20,6 +20,10 @@
   .ChampTeam .Member,
   .AllStars .Member {
     border: 2px solid var(--titlecolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
   }
   .Season {
     width: 100%;
