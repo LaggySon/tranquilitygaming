@@ -36,10 +36,30 @@ function AllStars(props) {
   return (
     <div className={styles.AllStars}>
       <h3>All-Stars</h3>
+      <div className={styles.List}>
+        {props.list.dps.map((name) => (
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
+        ))}
+        {props.list.tank.map((name) => (
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
+        ))}
+        {props.list.support.map((name) => (
+          <div className={styles.Member} key={name}>
+            {name}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
+/*
+Create Season Objects
+*/
 function Season(props) {
   // console.log(props.list);
   return (
@@ -94,7 +114,8 @@ export default function halloffame() {
       <Season when="Season 3" list={data.s3}></Season>
       <Season when="Season 4" list={data.s4}></Season>
       <Season when="Season 5" list={data.s5}></Season>
-      {/* <Season when="Season 6" list={data.s6}></Season> */}
+      <Season when="Season 6" list={data.s6}></Season>
+      <Season when="Season 7" list={data.s7}></Season>
     </div>
   );
 }
