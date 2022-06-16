@@ -9,7 +9,6 @@
     "CrypticForce"
   ],
   "s1": {
-    "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
     "onetier": {
       "winningteam": {
         "name": "Havoc",
@@ -98,6 +97,7 @@
     }
   },
   "s3": {
+    "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
     "harmony": {
       "winningteam": {
         "name": "HOLY JALAPEÑOS",
