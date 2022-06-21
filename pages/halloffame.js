@@ -71,14 +71,16 @@ Create Season Objects
 */
 function Season(props) {
   // console.log(props.list);
-  const [isActive, setActive] = useState(true);
+  const [isActive, setActive] = useState(false);
   const handleToggle = () => {
     setActive(!isActive);
+    console.log(isActive);
   };
   return (
     <>
-      <Separator>{props.when}</Separator>
-
+      <div onClick={handleToggle}>
+        <Separator>{props.when}</Separator>
+      </div>
       {isActive && (
         <>
           <div className={styles.Season + " " + styles.box}>
