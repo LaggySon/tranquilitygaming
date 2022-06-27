@@ -10,16 +10,20 @@ import SvgOwsupport from "../components/icons/Owsupport";
 import React, { useState } from "react";
 function Inductees(props) {
   return (
-    <div className={styles.Inductees}>
-      <h3>Inductees</h3>
-      <div className={styles.List}>
-        {props.list.map((name) => (
-          <div className={styles.Member} key={name}>
-            {name}
+    <>
+      {props.list && (
+        <div className={styles.Inductees}>
+          <h3>Inductees</h3>
+          <div className={styles.List}>
+            {props.list.map((name) => (
+              <div className={styles.Member} key={name}>
+                {name}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -81,66 +85,84 @@ function Season(props) {
       <div onClick={handleToggle}>
         <Separator>{props.when}</Separator>
       </div>
-      {isActive && (
-        <>
-          <div className={styles.Season + " " + styles.box}>
-            {/* display inductees if they exist for the season */}
-            {props.list.inductees && <Inductees list={props.list.inductees} />}
-            {/* display hof info for seasons without tiers */}
-            {props.list.onetier && (
-              <>
-                <ChampTeam list={props.list.onetier.winningteam} />
-                <AllStars list={props.list.onetier.allstars} />
-              </>
-            )}
-            {props.list.harmony && (
-              <>
-                <h2 className={styles.bg}>Harmony Tier</h2>
-                <ChampTeam
-                  list={props.list.harmony.winningteam}
-                  tier="Harmony"
-                />
-                <AllStars list={props.list.harmony.allstars} />
-              </>
-            )}
-            {props.list.discord && (
-              <>
-                <h2 className={styles.bg}>Discord Tier</h2>
-                <ChampTeam
-                  list={props.list.discord.winningteam}
-                  tier="Discord"
-                />
-                <AllStars list={props.list.discord.allstars} />
-              </>
-            )}
-            {props.list.transcendence && (
-              <>
-                <h2 className={styles.bg}>Transcendence Tier</h2>
-                <ChampTeam
-                  list={props.list.transcendence.winningteam}
-                  tier="Transcendence"
-                />
-                <AllStars list={props.list.transcendence.allstars} />
-              </>
-            )}
-          </div>
-        </>
-      )}
+
+      <>
+        <div className={styles.Season + " " + styles.box}>
+          <h1>{props.list.title}</h1>
+          {/* display inductees if they exist for the season */}
+          {props.list.inductees && <Inductees list={props.list.inductees} />}
+          {/* display hof info for seasons without tiers */}
+          {props.list.onetier && (
+            <>
+              <ChampTeam list={props.list.onetier.winningteam} />
+              <AllStars list={props.list.onetier.allstars} />
+            </>
+          )}
+          {props.list.harmony && (
+            <>
+              <Separator>
+                Harmony <span>Tier</span>
+              </Separator>
+              <ChampTeam list={props.list.harmony.winningteam} tier="Harmony" />
+              <AllStars list={props.list.harmony.allstars} />
+            </>
+          )}
+          {props.list.discord && (
+            <>
+              <Separator>
+                Discord <span>Tier</span>
+              </Separator>
+              <ChampTeam list={props.list.discord.winningteam} tier="Discord" />
+              <AllStars list={props.list.discord.allstars} />
+            </>
+          )}
+          {props.list.transcendence && (
+            <>
+              <Separator>
+                Transcendence <span>Tier</span>
+              </Separator>
+              <ChampTeam
+                list={props.list.transcendence.winningteam}
+                tier="Transcendence"
+              />
+              <AllStars list={props.list.transcendence.allstars} />
+            </>
+          )}
+        </div>
+      </>
     </>
   );
 }
 
 export default function halloffame() {
-  // console.log(data.s3);
+  const [activeSeasonTitle, setActiveSeasonTitle] = useState("Season 7");
+  const activeSeason = data.find(
+    (season) => season.title === activeSeasonTitle
+  );
+
+  function displaySeason(title) {
+    setActiveSeasonTitle(title);
+  }
+
   return (
     <div className={"container " + styles.HofContainer}>
-      <Season when="Inaugural Season" list={data.s1}></Season>
-      <Season when="Season 2" list={data.s2}></Season>
-      <Season when="Season 3" list={data.s3}></Season>
-      <Season when="Season 4" list={data.s4}></Season>
-      <Season when="Season 5" list={data.s5}></Season>
-      <Season when="Season 6" list={data.s6}></Season>
-      <Season when="Season 7" list={data.s7}></Season>
+      <div className={styles.SeasonList}>
+        <h3>Season: </h3>
+        {data.map((season) => (
+          <>
+            <h3
+              className={[
+                styles.Selector,
+                activeSeasonTitle === season.title ? styles.active : null,
+              ].join(" ")}
+              onClick={() => setActiveSeasonTitle(season.title)}
+            >
+              {season.title.charAt(season.title.length - 1)}
+            </h3>
+          </>
+        ))}
+      </div>
+      <Season list={activeSeason}></Season>
     </div>
   );
 }

@@ -47,4 +47,24 @@
   .Box {
     background-color: var(--bgcolor);
   }
+  .SeasonList {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-inline: 1rem;
+    background-color: var(--bgcolor);
+    h3 {
+      padding: 0.2rem;
+    }
+    .Selector {
+      padding: 0.2rem 0.4rem;
+      &:hover {
+        cursor: pointer;
+      }
+      &.active {
+        color: var(--accentcolor);
+        outline: 2px solid var(--textcolor);
+      }
+    }
+  }
 }

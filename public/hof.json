@@ -1,14 +1,6 @@
-{
-  "s8inductees": [
-    "Smuggzz",
-    "Chimanzy",
-    "Ice",
-    "SneakyKittens",
-    "Crispy",
-    "Kapitol",
-    "CrypticForce"
-  ],
-  "s1": {
+[
+  {
+    "title": "Season 1",
     "onetier": {
       "winningteam": {
         "name": "Havoc",
@@ -55,7 +47,8 @@
       }
     }
   },
-  "s2": {
+  {
+    "title": "Season 2",
     "onetier": {
       "winningteam": {
         "name": "Otaku",
@@ -96,7 +89,8 @@
       }
     }
   },
-  "s3": {
+  {
+    "title": "Season 3",
     "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
     "harmony": {
       "winningteam": {
@@ -173,8 +167,8 @@
       }
     }
   },
-
-  "s4": {
+  {
+    "title": "Season 4",
     "inductees": [
       "Cavalier",
       "KourRage",
@@ -260,7 +254,8 @@
       }
     }
   },
-  "s5": {
+  {
+    "title": "Season 5",
     "harmony": {
       "winningteam": {
         "name": "FLASHBACKS",
@@ -396,7 +391,8 @@
       }
     }
   },
-  "s6": {
+  {
+    "title": "Season 6",
     "inductees": [
       "Bethcon2",
       "Booth",
@@ -536,7 +532,8 @@
       }
     }
   },
-  "s7": {
+  {
+    "title": "Season 7",
     "harmony": {
       "winningteam": {
         "name": "FLASHBACKS",
@@ -664,4 +661,4 @@
       }
     }
   }
-}
+]

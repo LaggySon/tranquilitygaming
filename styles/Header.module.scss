@@ -29,9 +29,9 @@
       align-items: center;
       justify-content: flex-start;
       transition-property: filter;
-      transition-duration: 10000ms;
+      transition-duration: 500ms;
       &:hover {
-        filter: sepia() saturate(10000%) hue-rotate(320deg);
+        filter: sepia() saturate(10000%) hue-rotate(-40deg);
       }
 
       img {
