@@ -82,10 +82,6 @@ function Season(props) {
   };
   return (
     <>
-      <div onClick={handleToggle}>
-        <Separator>{props.when}</Separator>
-      </div>
-
       <>
         <div className={styles.Season + " " + styles.box}>
           <h1>{props.list.title}</h1>
