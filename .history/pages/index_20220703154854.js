@@ -47,7 +47,7 @@ export default function Home() {
             <SwiperSlide>
               <div className={styles.slide}>
                 <h1>THE IRIS PODCAST</h1>
-                <h6>twitch.tv/owtranquility</h6>
+                <h6>text</h6>
               </div>
             </SwiperSlide>
           </Swiper>

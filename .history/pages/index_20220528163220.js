@@ -46,8 +46,12 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.slide}>
-                <h1>THE IRIS PODCAST</h1>
-                <h6>twitch.tv/owtranquility</h6>
+                <h1>ITS PLAYOFFS TIME!</h1>
+                <h3>Broadcast Schedule:</h3>
+                <p>Tuesday 2pm EST: Harmony EU</p>
+                <p>Tuesday 8:30pm EST: Harmony</p>
+                <p>Tuesday 8:30pm EST: Trancscendence</p>
+                <p>Tuesday 2pm EST: Discord</p>
               </div>
             </SwiperSlide>
           </Swiper>
