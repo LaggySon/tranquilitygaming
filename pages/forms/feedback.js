@@ -1,5 +1,3 @@
-import styles from "../styles/Feedback.module.scss";
-
 export default function Feedback(props) {
   return (
     <div className="container">
