@@ -15,13 +15,13 @@ module.exports = {
       },
       {
         source: "/twitchcaster",
-        destination: "https://forms.gle/6THqyRoophKoMA4E9",
+        destination: "https://forms.gle/X7RVcRfFuVkfUU6D7",
         permanent: false,
         basePath: false,
       },
       {
         source: "/twitchproducer",
-        destination: "https://forms.gle/XBMRAVT2r46PGCQu8",
+        destination: "https://forms.gle/TCnDxezQNToWnRRq9",
         permanent: false,
         basePath: false,
       },

@@ -183,7 +183,7 @@ function Header(props) {
                     <NavLink href="/halloffame">Hall of Fame</NavLink>
                   </li>
                   <li>
-                    <NavLink href="/forms/feedback">Forms</NavLink>
+                    <NavLink href="/forms">Forms</NavLink>
                   </li>
                   <li>
                     <NavLink href="/teams">[WIP] Teams</NavLink>

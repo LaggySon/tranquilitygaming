@@ -1,7 +1,11 @@
 export default function Forms(props) {
   return (
-    <>
-      <h1>This will have links to embed versions of all Tranq forms :)</h1>
-    </>
+    <div className="container">
+      <div className="blockel">
+        <a href="/forms/feedback">
+          <h3>Feedback Form</h3>
+        </a>
+      </div>
+    </div>
   );
 }
