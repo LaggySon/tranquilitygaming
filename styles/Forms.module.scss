@@ -1,0 +1,24 @@
+.formSelector {
+  padding: 0.2rem 0.8rem;
+  &:hover {
+    cursor: pointer;
+  }
+  &.active {
+    color: var(--accentcolor);
+    outline: 2px solid var(--textcolor);
+  }
+}
+
+.formContainer {
+  display: flex;
+
+  iframe {
+    width: 100vw;
+    flex-shrink: 1;
+  }
+}
+
+.selectors {
+  display: flex;
+  flex-direction: row;
+}
