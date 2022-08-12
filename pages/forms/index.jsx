@@ -44,9 +44,9 @@ export default function Forms(props) {
           src={"/" + activeForm + "?embedded=true"}
           // width="640"
           height="2323"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
         >
           Loading…
         </iframe>
