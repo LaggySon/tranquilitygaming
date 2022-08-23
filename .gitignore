@@ -8,6 +8,8 @@ secrets.json
 /.pnp
 .pnp.js
 
+/.history/
+
 # testing
 /coverage
 
