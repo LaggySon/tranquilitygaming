@@ -15,13 +15,15 @@ module.exports = {
       },
       {
         source: "/twitchcaster",
-        destination: "https://forms.gle/6THqyRoophKoMA4E9",
+        destination:
+          "https://docs.google.com/forms/d/e/1FAIpQLScd8BI36MCnq_zeaQ61TE4YmKqNavko1fh8FqpK4VVeoYIRIA/viewform?usp=sf_link",
         permanent: false,
         basePath: false,
       },
       {
         source: "/twitchproducer",
-        destination: "https://forms.gle/XBMRAVT2r46PGCQu8",
+        destination:
+          "https://docs.google.com/forms/d/e/1FAIpQLSdgxmwrKtU4U61xR8wr2Y55-oqWNCdhpeb3RCMbpjTBSsF4MA/viewform?usp=sf_link",
         permanent: false,
         basePath: false,
       },

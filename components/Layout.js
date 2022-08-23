@@ -6,7 +6,7 @@ function Layout(props) {
   return (
     <>
       <Head>
-        <title>Tranquility Gaming</title>
+        <title>{props.title ? props.title : "Tranquility Gaming"}</title>
         <style>
           @import url(
           {
