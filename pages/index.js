@@ -13,7 +13,8 @@ import "swiper/css/autoplay";
 import Image from "next/image";
 
 //Slide Image Imports
-import slide1 from "../public/tranq-banner-newsite.png";
+import slide1 from "../public/slides/irisimage.png";
+import slide2 from "../public/slides/ow2image.png";
 export default function Home() {
   return (
     <div>
@@ -41,13 +42,22 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className={styles.slide}>
-                <Image src={slide1} width="1280" height="400"></Image>
+                <Image
+                  className={styles.slideBg}
+                  src={slide1}
+                  width="1280"
+                  height="400"
+                ></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.slide}>
-                <h1>THE IRIS PODCAST</h1>
-                <h6>twitch.tv/owtranquility</h6>
+                <Image
+                  className={styles.slideBg}
+                  src={slide2}
+                  width="1280"
+                  height="400"
+                ></Image>
               </div>
             </SwiperSlide>
           </Swiper>
