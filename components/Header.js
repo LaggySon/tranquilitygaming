@@ -185,9 +185,9 @@ function Header(props) {
                   <li>
                     <NavLink href="/forms">Forms</NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink href="/teams">[WIP] Teams</NavLink>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

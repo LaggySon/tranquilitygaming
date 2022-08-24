@@ -94,36 +94,18 @@ function Season(props) {
               <AllStars list={props.list.onetier.allstars} />
             </>
           )}
-          {props.list.harmony && (
+          {props.list.tiers.map((tier) => (
             <>
-              <Separator>
-                Harmony <span>Tier</span>
-              </Separator>
-              <ChampTeam list={props.list.harmony.winningteam} tier="Harmony" />
-              <AllStars list={props.list.harmony.allstars} />
+              {tier.title !== "onetier" && (
+                <Separator>
+                  {tier.title} <span>Tier</span>
+                </Separator>
+              )}
+
+              <ChampTeam list={tier.winningteam} />
+              <AllStars list={tier.allstars} />
             </>
-          )}
-          {props.list.discord && (
-            <>
-              <Separator>
-                Discord <span>Tier</span>
-              </Separator>
-              <ChampTeam list={props.list.discord.winningteam} tier="Discord" />
-              <AllStars list={props.list.discord.allstars} />
-            </>
-          )}
-          {props.list.transcendence && (
-            <>
-              <Separator>
-                Transcendence <span>Tier</span>
-              </Separator>
-              <ChampTeam
-                list={props.list.transcendence.winningteam}
-                tier="Transcendence"
-              />
-              <AllStars list={props.list.transcendence.allstars} />
-            </>
-          )}
+          ))}
         </div>
       </>
     </>

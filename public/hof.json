@@ -1,171 +1,188 @@
 [
   {
     "title": "Season 1",
-    "onetier": {
-      "winningteam": {
-        "name": "Havoc",
-        "members": [
-          "Nerdables",
-          "Dunzo",
-          "Shashzilla",
-          "Satirical",
-          "KourRage",
-          "Smithpants",
-          "Esulive",
-          "Crackerboi",
-          "CrimsonSaber",
-          "Dark Requiem"
-        ]
-      },
-      "allstars": {
-        "dps": [
-          "Orsted",
-          "Zoobi3",
-          "F8TE",
-          "Garbagio",
-          "Vellzen",
-          "KourRage",
-          "OhStories",
-          "Maxix"
-        ],
-        "tank": [
-          "CrypticForce",
-          "Dunzo",
-          "Evriin",
-          "Sabrespuck",
-          "Mimsie",
-          "Player"
-        ],
-        "support": [
-          "Cavalier",
-          "Rush",
-          "Nerdables",
-          "Arise",
-          "IvyCat",
-          "Timojo"
-        ]
+    "tiers": [
+      {
+        "title": "onetier",
+        "winningteam": {
+          "name": "Havoc",
+          "members": [
+            "Nerdables",
+            "Dunzo",
+            "Shashzilla",
+            "Satirical",
+            "KourRage",
+            "Smithpants",
+            "Esulive",
+            "Crackerboi",
+            "CrimsonSaber",
+            "Dark Requiem"
+          ]
+        },
+        "allstars": {
+          "dps": [
+            "Orsted",
+            "Zoobi3",
+            "F8TE",
+            "Garbagio",
+            "Vellzen",
+            "KourRage",
+            "OhStories",
+            "Maxix"
+          ],
+          "tank": [
+            "CrypticForce",
+            "Dunzo",
+            "Evriin",
+            "Sabrespuck",
+            "Mimsie",
+            "Player"
+          ],
+          "support": [
+            "Cavalier",
+            "Rush",
+            "Nerdables",
+            "Arise",
+            "IvyCat",
+            "Timojo"
+          ]
+        }
       }
-    }
+    ]
   },
   {
     "title": "Season 2",
-    "onetier": {
-      "winningteam": {
-        "name": "Otaku",
-        "members": [
-          "YoJack87",
-          "Klopsy",
-          "Flufflepuffs",
-          "Hybrid",
-          "Smuggzz",
-          "Cyph",
-          "Panda",
-          "PixelRocket",
-          "Mr.Bubbles (Coach)",
-          "PotatoGoddess (Coach)",
-          "Gaemmmm (Coach)"
-        ]
-      },
+    "tiers": [
+      {
+        "title": "onetier",
+        "winningteam": {
+          "name": "Otaku",
+          "members": [
+            "YoJack87",
+            "Klopsy",
+            "Flufflepuffs",
+            "Hybrid",
+            "Smuggzz",
+            "Cyph",
+            "Panda",
+            "PixelRocket",
+            "Mr.Bubbles (Coach)",
+            "PotatoGoddess (Coach)",
+            "Gaemmmm (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Smuggzz",
-          "Maxix",
-          "Vellzen",
-          "Anarchy",
-          "PetersGG",
-          "GrumpyPants",
-          "Guac"
-        ],
-        "tank": ["Kingdom", "SilentMonkey", "YoJack87", "NPC", "HQC", "Dunzo"],
-        "support": [
-          "Arise",
-          "Laze",
-          "Flufflepuffs",
-          "Shadowph33r",
-          "IvyCat",
-          "MixReddy"
-        ]
+        "allstars": {
+          "dps": [
+            "Smuggzz",
+            "Maxix",
+            "Vellzen",
+            "Anarchy",
+            "PetersGG",
+            "GrumpyPants",
+            "Guac"
+          ],
+          "tank": [
+            "Kingdom",
+            "SilentMonkey",
+            "YoJack87",
+            "NPC",
+            "HQC",
+            "Dunzo"
+          ],
+          "support": [
+            "Arise",
+            "Laze",
+            "Flufflepuffs",
+            "Shadowph33r",
+            "IvyCat",
+            "MixReddy"
+          ]
+        }
       }
-    }
+    ]
   },
   {
     "title": "Season 3",
     "inductees": ["Dunzo", "Nerdables", "Orsted", "Vellzen"],
-    "harmony": {
-      "winningteam": {
-        "name": "HOLY JALAPEÑOS",
-        "members": [
-          "TheMallard",
-          "TorbOnly",
-          "BethCon2",
-          "JohnnyRobot",
-          "N33dul",
-          "THEBork",
-          "Meebles",
-          "Spooderman (Coach)"
-        ]
-      },
+    "tiers": [
+      {
+        "title": "harmony",
+        "winningteam": {
+          "name": "HOLY JALAPEÑOS",
+          "members": [
+            "TheMallard",
+            "TorbOnly",
+            "BethCon2",
+            "JohnnyRobot",
+            "N33dul",
+            "THEBork",
+            "Meebles",
+            "Spooderman (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": ["Kurt", "00H", "PDKKid", "Gekk0", "Triage3", "Cremsin"],
-        "tank": [
-          "NPC",
-          "Torraction",
-          "Impurse",
-          "Crispy",
-          "Player",
-          "Bebop",
-          "Rigmedon"
-        ],
-        "support": [
-          "Sushi",
-          "Crygenix",
-          "YourTeammate",
-          "N33Dul",
-          "DrugsNotHugs",
-          "Crossfade"
-        ]
-      }
-    },
-    "discord": {
-      "winningteam": {
-        "name": "KOMMIT",
-        "members": [
-          "Ice",
-          "SirAndy",
-          "Exas",
-          "Koro",
-          "Axiom",
-          "HoneyBadger",
-          "Shiro",
-          "Raidbotti",
-          "MyBigMarf"
-        ]
+        "allstars": {
+          "dps": ["Kurt", "00H", "PDKKid", "Gekk0", "Triage3", "Cremsin"],
+          "tank": [
+            "NPC",
+            "Torraction",
+            "Impurse",
+            "Crispy",
+            "Player",
+            "Bebop",
+            "Rigmedon"
+          ],
+          "support": [
+            "Sushi",
+            "Crygenix",
+            "YourTeammate",
+            "N33Dul",
+            "DrugsNotHugs",
+            "Crossfade"
+          ]
+        }
       },
+      {
+        "title": "discord",
+        "winningteam": {
+          "name": "KOMMIT",
+          "members": [
+            "Ice",
+            "SirAndy",
+            "Exas",
+            "Koro",
+            "Axiom",
+            "HoneyBadger",
+            "Shiro",
+            "Raidbotti",
+            "MyBigMarf"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Rokit",
-          "Shiro",
-          "Smuggzz",
-          "JVice",
-          "Pyro",
-          "Kaizen",
-          "OverNightCDR"
-        ],
-        "tank": [
-          "Kingdom",
-          "Sir Andy",
-          "CrypicForce",
-          "KourRage",
-          "Bandito",
-          "HQC",
-          "Booth"
-        ],
-        "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+        "allstars": {
+          "dps": [
+            "Rokit",
+            "Shiro",
+            "Smuggzz",
+            "JVice",
+            "Pyro",
+            "Kaizen",
+            "OverNightCDR"
+          ],
+          "tank": [
+            "Kingdom",
+            "Sir Andy",
+            "CrypicForce",
+            "KourRage",
+            "Bandito",
+            "HQC",
+            "Booth"
+          ],
+          "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+        }
       }
-    }
+    ]
   },
   {
     "title": "Season 4",
@@ -177,219 +194,228 @@
       "Specs",
       "Thuggington"
     ],
-    "harmony": {
-      "winningteam": {
-        "name": "MODIFY",
-        "members": [
-          "Bard",
-          "Wittmitin",
-          "Stanbumper",
-          "Instante",
-          "Leka",
-          "MTT",
-          "Sipapi",
-          "WetNuddle",
-          "Mythic (Coach)"
-        ]
-      },
+    "tiers": [
+      {
+        "title": "harmony",
+        "winningteam": {
+          "name": "MODIFY",
+          "members": [
+            "Bard",
+            "Wittmitin",
+            "Stanbumper",
+            "Instante",
+            "Leka",
+            "MTT",
+            "Sipapi",
+            "WetNuddle",
+            "Mythic (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "MrTrippyCow",
-          "Upsetting",
-          "MTT",
-          "Waffleman",
-          "Abe",
-          "Deathnaut",
-          "Gizmocharmander"
-        ],
-        "tank": ["Euphxria", "NPC", "Bethcon2", "Takinom", "Sorked", "Vela"],
-        "support": [
-          "Malalia",
-          "Cinnamon",
-          "Trollz",
-          "Jonavyn",
-          "Leka",
-          "TheCore",
-          "Sneakykittens"
-        ]
-      }
-    },
-    "discord": {
-      "winningteam": {
-        "name": "KOMMIT",
-        "members": [
-          "Ice",
-          "SirAndy",
-          "Exas",
-          "Koro",
-          "Axiom",
-          "HoneyBadger",
-          "Shiro",
-          "Raidbotti",
-          "MyBigMarf"
-        ]
+        "allstars": {
+          "dps": [
+            "MrTrippyCow",
+            "Upsetting",
+            "MTT",
+            "Waffleman",
+            "Abe",
+            "Deathnaut",
+            "Gizmocharmander"
+          ],
+          "tank": ["Euphxria", "NPC", "Bethcon2", "Takinom", "Sorked", "Vela"],
+          "support": [
+            "Malalia",
+            "Cinnamon",
+            "Trollz",
+            "Jonavyn",
+            "Leka",
+            "TheCore",
+            "Sneakykittens"
+          ]
+        }
       },
+      {
+        "title": "discord",
+        "winningteam": {
+          "name": "KOMMIT",
+          "members": [
+            "Ice",
+            "SirAndy",
+            "Exas",
+            "Koro",
+            "Axiom",
+            "HoneyBadger",
+            "Shiro",
+            "Raidbotti",
+            "MyBigMarf"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Rokit",
-          "Shiro",
-          "Smuggzz",
-          "JVice",
-          "Pyro",
-          "Kaizen",
-          "OverNightCDR"
-        ],
-        "tank": [
-          "Kingdom",
-          "Sir Andy",
-          "CrypicForce",
-          "KourRage",
-          "Bandito",
-          "HQC",
-          "Booth"
-        ],
-        "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+        "allstars": {
+          "dps": [
+            "Rokit",
+            "Shiro",
+            "Smuggzz",
+            "JVice",
+            "Pyro",
+            "Kaizen",
+            "OverNightCDR"
+          ],
+          "tank": [
+            "Kingdom",
+            "Sir Andy",
+            "CrypicForce",
+            "KourRage",
+            "Bandito",
+            "HQC",
+            "Booth"
+          ],
+          "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+        }
       }
-    }
+    ]
   },
   {
     "title": "Season 5",
-    "harmony": {
-      "winningteam": {
-        "name": "FLASHBACKS",
-        "members": [
-          "NoVa",
-          "Concept",
-          "Apathy",
-          "Kryy",
-          "Sariff",
-          "Arez",
-          "SwyrlHawk",
-          "Nighthawk (GM)",
-          "Kapitol (Coach)",
-          "Boring (Coach)"
-        ]
-      },
+    "tiers": [
+      {
+        "title": "harmony",
+        "winningteam": {
+          "name": "FLASHBACKS",
+          "members": [
+            "NoVa",
+            "Concept",
+            "Apathy",
+            "Kryy",
+            "Sariff",
+            "Arez",
+            "SwyrlHawk",
+            "Nighthawk (GM)",
+            "Kapitol (Coach)",
+            "Boring (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Yoon",
-          "Sariff",
-          "Icarus",
-          "Bard",
-          "Sensa",
-          "Lazuli",
-          "Toxicblade"
-        ],
-        "tank": [
-          "Sipstea (MVP)",
-          "NPC",
-          "Misteryeti",
-          "Instante",
-          "Narcissist",
-          "Pogchamp"
-        ],
-        "support": [
-          "Kryy",
-          "Rainbow",
-          "Lexi",
-          "Sweatyasian",
-          "SergioSpade",
-          "Wittmitin",
-          "Cayden"
-        ]
-      }
-    },
-    "discord": {
-      "winningteam": {
-        "name": "HECKIN' HABANEROS",
-        "members": [
-          "LegoLots",
-          "Chimanzy",
-          "Waffleman",
-          "MrTrippyCow",
-          "CR3VVV",
-          "MixReddy",
-          "AwesomeSauce",
-          "N33dul (Coach)",
-          "HQC (Coach)"
-        ]
+        "allstars": {
+          "dps": [
+            "Yoon",
+            "Sariff",
+            "Icarus",
+            "Bard",
+            "Sensa",
+            "Lazuli",
+            "Toxicblade"
+          ],
+          "tank": [
+            "Sipstea (MVP)",
+            "NPC",
+            "Misteryeti",
+            "Instante",
+            "Narcissist",
+            "Pogchamp"
+          ],
+          "support": [
+            "Kryy",
+            "Rainbow",
+            "Lexi",
+            "Sweatyasian",
+            "SergioSpade",
+            "Wittmitin",
+            "Cayden"
+          ]
+        }
       },
+      {
+        "title": "discord",
+        "winningteam": {
+          "name": "HECKIN' HABANEROS",
+          "members": [
+            "LegoLots",
+            "Chimanzy",
+            "Waffleman",
+            "MrTrippyCow",
+            "CR3VVV",
+            "MixReddy",
+            "AwesomeSauce",
+            "N33dul (Coach)",
+            "HQC (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Mudkip (MVP)",
-          "StarPlatinum",
-          "Poochie",
-          "Nano",
-          "JVice",
-          "Waffleman"
-        ],
-        "tank": [
-          "Zoobi3",
-          "Mr.TrippyCow",
-          "Noremac",
-          "Greninja",
-          "Phoenix",
-          "Shadowfang",
-          "RyanRaze"
-        ],
-        "support": [
-          "Anzie",
-          "Deemel",
-          "Placebo",
-          "Nagisa",
-          "Sadfire",
-          "Kaditrix",
-          "MittsForKitts"
-        ]
-      }
-    },
-    "transcendence": {
-      "winningteam": {
-        "name": "TEMPO",
-        "members": [
-          "Wernher",
-          "Willow",
-          "Tenxr",
-          "TheBrad",
-          "Swagtacious",
-          "Lilithty",
-          "deWaffle"
-        ]
+        "allstars": {
+          "dps": [
+            "Mudkip (MVP)",
+            "StarPlatinum",
+            "Poochie",
+            "Nano",
+            "JVice",
+            "Waffleman"
+          ],
+          "tank": [
+            "Zoobi3",
+            "Mr.TrippyCow",
+            "Noremac",
+            "Greninja",
+            "Phoenix",
+            "Shadowfang",
+            "RyanRaze"
+          ],
+          "support": [
+            "Anzie",
+            "Deemel",
+            "Placebo",
+            "Nagisa",
+            "Sadfire",
+            "Kaditrix",
+            "MittsForKitts"
+          ]
+        }
       },
+      {
+        "title": "transcendence",
+        "winningteam": {
+          "name": "TEMPO",
+          "members": [
+            "Wernher",
+            "Willow",
+            "Tenxr",
+            "TheBrad",
+            "Swagtacious",
+            "Lilithty",
+            "deWaffle"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Progamer360",
-          "Snipes",
-          "TheBrad",
-          "Ucantcghost",
-          "Shinobu",
-          "Dragon",
-          "Mirage"
-        ],
-        "tank": [
-          "Yeeter (MVP)",
-          "Grafix",
-          "Blur",
-          "Sebzzz",
-          "Swagtalicious",
-          "deWaffle"
-        ],
-        "support": [
-          "P1nhead",
-          "Kumo",
-          "Balakay",
-          "Tenxr",
-          "TheMasEffect",
-          "Delphy",
-          "Randy"
-        ]
+        "allstars": {
+          "dps": [
+            "Progamer360",
+            "Snipes",
+            "TheBrad",
+            "Ucantcghost",
+            "Shinobu",
+            "Dragon",
+            "Mirage"
+          ],
+          "tank": [
+            "Yeeter (MVP)",
+            "Grafix",
+            "Blur",
+            "Sebzzz",
+            "Swagtalicious",
+            "deWaffle"
+          ],
+          "support": [
+            "P1nhead",
+            "Kumo",
+            "Balakay",
+            "Tenxr",
+            "TheMasEffect",
+            "Delphy",
+            "Randy"
+          ]
+        }
       }
-    }
+    ]
   },
   {
     "title": "Season 6",
@@ -402,263 +428,444 @@
       "Vela",
       "Zoobi3"
     ],
-    "harmony": {
-      "winningteam": {
-        "name": "KOALA KINGS",
-        "members": [
-          "Thightanic",
-          "GeekAche",
-          "Pog",
-          "SpongyCheese",
-          "Zorthcon",
-          "Nevino",
-          "NoVa",
-          "AlexIsBetterThanYou",
-          "Aplom (Coach)",
-          "Qzy (Coach)"
-        ]
-      },
+    "tiers": [
+      {
+        "title": "harmony",
+        "winningteam": {
+          "name": "KOALA KINGS",
+          "members": [
+            "Thightanic",
+            "GeekAche",
+            "Pog",
+            "SpongyCheese",
+            "Zorthcon",
+            "Nevino",
+            "NoVa",
+            "AlexIsBetterThanYou",
+            "Aplom (Coach)",
+            "Qzy (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Vix (MVP)",
-          "Thightanic",
-          "Kura",
-          "Gekko",
-          "Stonky",
-          "O0H",
-          "M1lan"
-        ],
-        "tank": [
-          "Train",
-          "Nevino",
-          "Toxicblade",
-          "MagicOtter",
-          "Videogamer",
-          "Crispy"
-        ],
-        "support": [
-          "Thoriumea",
-          "Apathy",
-          "Triage3",
-          "Pineapplebro",
-          "Narcissist",
-          "Nicc",
-          "Potato"
-        ]
-      }
-    },
-    "discord": {
-      "winningteam": {
-        "name": "JOEY ESPORTS",
-        "members": [
-          "Qzy",
-          "TrieuDonger",
-          "GeoffBot",
-          "Asdo",
-          "Fone",
-          "Remy",
-          "Kilroy",
-          "Nevino (Coach)",
-          "Qwertp (Coach)"
-        ]
+        "allstars": {
+          "dps": [
+            "Vix (MVP)",
+            "Thightanic",
+            "Kura",
+            "Gekko",
+            "Stonky",
+            "O0H",
+            "M1lan"
+          ],
+          "tank": [
+            "Train",
+            "Nevino",
+            "Toxicblade",
+            "MagicOtter",
+            "Videogamer",
+            "Crispy"
+          ],
+          "support": [
+            "Thoriumea",
+            "Apathy",
+            "Triage3",
+            "Pineapplebro",
+            "Narcissist",
+            "Nicc",
+            "Potato"
+          ]
+        }
       },
+      {
+        "title": "discord",
+        "winningteam": {
+          "name": "JOEY ESPORTS",
+          "members": [
+            "Qzy",
+            "TrieuDonger",
+            "GeoffBot",
+            "Asdo",
+            "Fone",
+            "Remy",
+            "Kilroy",
+            "Nevino (Coach)",
+            "Qwertp (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Canleses (MVP)",
-          "Sariff",
-          "Sensa",
-          "Lazuli",
-          "Asdo",
-          "Meow",
-          "Nyx",
-          "Arnonymous"
-        ],
-        "tank": ["Marce1", "Sipstea", "Drowsy", "Chef", "Ocie", "Thor"],
-        "support": [
-          "Trieudonger",
-          "Nanook",
-          "Zoner",
-          "Kryy",
-          "Dwengw50",
-          "Glitcch"
-        ]
-      }
-    },
-    "transcendence": {
-      "winningteam": {
-        "name": "GODHAND",
-        "members": [
-          "Andy",
-          "Ice",
-          "Boredom",
-          "Orsted",
-          "Mini",
-          "Cub3d",
-          "Marf",
-          "Bubbrs (Coach)",
-          "Pyro (Coach)"
-        ]
+        "allstars": {
+          "dps": [
+            "Canleses (MVP)",
+            "Sariff",
+            "Sensa",
+            "Lazuli",
+            "Asdo",
+            "Meow",
+            "Nyx",
+            "Arnonymous"
+          ],
+          "tank": ["Marce1", "Sipstea", "Drowsy", "Chef", "Ocie", "Thor"],
+          "support": [
+            "Trieudonger",
+            "Nanook",
+            "Zoner",
+            "Kryy",
+            "Dwengw50",
+            "Glitcch"
+          ]
+        }
       },
+      {
+        "title": "transcendence",
+        "winningteam": {
+          "name": "GODHAND",
+          "members": [
+            "Andy",
+            "Ice",
+            "Boredom",
+            "Orsted",
+            "Mini",
+            "Cub3d",
+            "Marf",
+            "Bubbrs (Coach)",
+            "Pyro (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Kairos (MVP)",
-          "Delphy",
-          "Frossi",
-          "Orsted",
-          "PandaGamez",
-          "Polar"
-        ],
-        "tank": [
-          "OhCanada",
-          "Demitri",
-          "StarPlattinum",
-          "Telmjcan",
-          "Andy",
-          "Greninja"
-        ],
-        "support": [
-          "Heart",
-          "Anzie",
-          "Poussey",
-          "LegoLots",
-          "Marf",
-          "Nagisa",
-          "XtraSharpe",
-          "TheMallard"
-        ]
+        "allstars": {
+          "dps": [
+            "Kairos (MVP)",
+            "Delphy",
+            "Frossi",
+            "Orsted",
+            "PandaGamez",
+            "Polar"
+          ],
+          "tank": [
+            "OhCanada",
+            "Demitri",
+            "StarPlattinum",
+            "Telmjcan",
+            "Andy",
+            "Greninja"
+          ],
+          "support": [
+            "Heart",
+            "Anzie",
+            "Poussey",
+            "LegoLots",
+            "Marf",
+            "Nagisa",
+            "XtraSharpe",
+            "TheMallard"
+          ]
+        }
       }
-    }
+    ]
   },
   {
     "title": "Season 7",
-    "harmony": {
-      "winningteam": {
-        "name": "FLASHBACKS",
-        "members": [
-          "Chooster",
-          "Anguish",
-          "Tri",
-          "Smoke",
-          "Drew",
-          "Fumehood",
-          "M1lan",
-          "Kapitol (Coach)",
-          "JJonas (Coach)"
-        ]
-      },
+    "tiers": [
+      {
+        "title": "harmony",
+        "winningteam": {
+          "name": "FLASHBACKS",
+          "members": [
+            "Chooster",
+            "Anguish",
+            "Tri",
+            "Smoke",
+            "Drew",
+            "Fumehood",
+            "M1lan",
+            "Kapitol (Coach)",
+            "JJonas (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Milo (MVP)",
-          "Retro",
-          "Tri",
-          "Qzy",
-          "Vergho",
-          "Stonky",
-          "Blinded",
-          "MisterYeti"
-        ],
-        "tank": [
-          "Chobee",
-          "Smoke",
-          "Khemi",
-          "Sipstea",
-          "BubbaWyatt",
-          "Traffic"
-        ],
-        "support": ["Potato", "Haze", "Gag", "Cucumbere", "Colorform", "Exu"]
-      }
-    },
-    "discord": {
-      "winningteam": {
-        "name": "REMINISCENCE",
-        "members": [
-          "Glitcch",
-          "LCS",
-          "BloodHungry",
-          "DNeH",
-          "Asdo",
-          "Sariff",
-          "Concept",
-          "Kapitol (GM & Coach)",
-          "Speedy (Coach)"
-        ]
+        "allstars": {
+          "dps": [
+            "Milo (MVP)",
+            "Retro",
+            "Tri",
+            "Qzy",
+            "Vergho",
+            "Stonky",
+            "Blinded",
+            "MisterYeti"
+          ],
+          "tank": [
+            "Chobee",
+            "Smoke",
+            "Khemi",
+            "Sipstea",
+            "BubbaWyatt",
+            "Traffic"
+          ],
+          "support": ["Potato", "Haze", "Gag", "Cucumbere", "Colorform", "Exu"]
+        }
       },
+      {
+        "title": "discord",
+        "winningteam": {
+          "name": "REMINISCENCE",
+          "members": [
+            "Glitcch",
+            "LCS",
+            "BloodHungry",
+            "DNeH",
+            "Asdo",
+            "Sariff",
+            "Concept",
+            "Kapitol (GM & Coach)",
+            "Speedy (Coach)"
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "Asdo (MVP)",
-          "Sariff",
-          "Chief",
-          "Matzen",
-          "PegaPants",
-          "Lars",
-          "Gap"
-        ],
-        "tank": [
-          "Tomj05",
-          "Culture",
-          "Nevino",
-          "BloodHungry",
-          "Kiddo",
-          "Bepo",
-          "Bunny"
-        ],
-        "support": [
-          "Greninja",
-          "Smarties",
-          "Rocket",
-          "YourTeammate",
-          "Glitcch",
-          "Gusty"
-        ]
-      }
-    },
-    "transcendence": {
-      "winningteam": {
-        "name": "RECKLESS ALPHA",
-        "members": [
-          "OhCanada",
-          "R7NN",
-          "Heart",
-          "PalicoMaster",
-          "C05INE",
-          "Lucksmith",
-          "Mcjr10 (Coach) "
-        ]
+        "allstars": {
+          "dps": [
+            "Asdo (MVP)",
+            "Sariff",
+            "Chief",
+            "Matzen",
+            "PegaPants",
+            "Lars",
+            "Gap"
+          ],
+          "tank": [
+            "Tomj05",
+            "Culture",
+            "Nevino",
+            "BloodHungry",
+            "Kiddo",
+            "Bepo",
+            "Bunny"
+          ],
+          "support": [
+            "Greninja",
+            "Smarties",
+            "Rocket",
+            "YourTeammate",
+            "Glitcch",
+            "Gusty"
+          ]
+        }
       },
+      {
+        "title": "transcendence",
+        "winningteam": {
+          "name": "RECKLESS ALPHA",
+          "members": [
+            "OhCanada",
+            "R7NN",
+            "Heart",
+            "PalicoMaster",
+            "C05INE",
+            "Lucksmith",
+            "Mcjr10 (Coach) "
+          ]
+        },
 
-      "allstars": {
-        "dps": [
-          "C05INE",
-          "Charybdis",
-          "Orsted",
-          "Lazuli",
-          "Nyx",
-          "Smuggzz",
-          "Progamer",
-          "Caeruleum"
-        ],
-        "tank": [
-          "OhCanada (MVP)",
-          "Train",
-          "Truth",
-          "Billygawt",
-          "Andy",
-          "Garrett"
-        ],
-        "support": [
-          "Heart",
-          "Kapitol",
-          "Cam",
-          "Deputybas",
-          "GeorgeLopez",
-          "Ice"
-        ]
+        "allstars": {
+          "dps": [
+            "C05INE",
+            "Charybdis",
+            "Orsted",
+            "Lazuli",
+            "Nyx",
+            "Smuggzz",
+            "Progamer",
+            "Caeruleum"
+          ],
+          "tank": [
+            "OhCanada (MVP)",
+            "Train",
+            "Truth",
+            "Billygawt",
+            "Andy",
+            "Garrett"
+          ],
+          "support": [
+            "Heart",
+            "Kapitol",
+            "Cam",
+            "Deputybas",
+            "GeorgeLopez",
+            "Ice"
+          ]
+        }
       }
-    }
+    ]
+  },
+  {
+    "title": "Season 8",
+    "inductees": [
+      "Smuggzz",
+      "Chimanzy",
+      "Ice",
+      "Sneakykittens",
+      "Crispy",
+      "Kapitol",
+      "CrypticForce"
+    ],
+    "tiers": [
+      {
+        "title": "harmony eu",
+        "winningteam": {
+          "name": "VENICE VIPERS",
+          "members": [
+            "Skyflower",
+            "Mate02102003",
+            "2Madre",
+            "DMJY",
+            "MissVolta",
+            "Yassimba",
+            "Jolice"
+          ]
+        },
+
+        "allstars": {
+          "dps": ["Mate02102003", "Elixir", "Draconis", "Mzumi"],
+          "tank": ["Mystic", "Frostxtute", "2Madre", "LinusTechTip"],
+          "support": ["Skyflower (MVP)", "Yoshi", "Choahnoi", "Appletree"]
+        }
+      },
+      {
+        "title": "harmony na",
+        "winningteam": {
+          "name": "DOODLES",
+          "members": [
+            "MatchaBingsu",
+            "Sarcastic",
+            "MrKittyKat",
+            "Etty",
+            "MagSoul",
+            "KimchiSlap",
+            "Tissue",
+            "Guitarded",
+            "Chaeyoung"
+          ]
+        },
+
+        "allstars": {
+          "dps": [
+            "Toxic",
+            "SleepyG",
+            "Widowmain",
+            "Ashes",
+            "PVB",
+            "Chobee",
+            "Cayden"
+          ],
+          "tank": [
+            "Bethcon2",
+            "Drug",
+            "Jonesy (MVP)",
+            "Rocko",
+            "Optibot",
+            "JewishMissil"
+          ],
+          "support": [
+            "Cubey",
+            "Ohhnyx",
+            "Wooly",
+            "Zorthcon",
+            "Fin",
+            "Mimp",
+            "Boonkoor"
+          ]
+        }
+      },
+      {
+        "title": "discord na",
+        "winningteam": {
+          "name": "COSMIC CASTAWAYS",
+          "members": [
+            "Train",
+            "Vix",
+            "Kryy",
+            "Pyro",
+            "ScrimBux",
+            "Apathy",
+            "MagPolar",
+            "MiniGDH",
+            "Rokit (Coach)",
+            "Abraxas (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": [
+            "Polar",
+            "BloodHungry",
+            "Swifters",
+            "Matzen",
+            "Sariff",
+            "Voltage"
+          ],
+          "tank": [
+            "Train",
+            "Chooster",
+            "Nevino",
+            "BBallman",
+            "LCS",
+            "Cryptic",
+            "Respite"
+          ],
+          "support": [
+            "Pyro",
+            "Brent",
+            "Basket",
+            "Glitcch",
+            "Kryy (MVP)",
+            "Qzy",
+            "Silver"
+          ]
+        }
+      },
+      {
+        "title": "transcendence na",
+        "winningteam": {
+          "name": "EPIZEUXIS",
+          "members": [
+            "Cam",
+            "Frozen",
+            "TrieuDonger",
+            "Golo",
+            "Haruhiro",
+            "Sly",
+            "Laser",
+            "Ryanos",
+            "iToastyToast",
+            "Greed",
+            "Qzy (GM)",
+            "Billygawt (Coach)",
+            "Kernmaster (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": [
+            "Fone",
+            "Smuggzz",
+            "Tesskue",
+            "UhOhStinky",
+            "Haruhiro",
+            "Gap",
+            "Storm"
+          ],
+          "tank": ["Cam (MVP)", "PDK", "Ravage", "Dizzy", "Spectre", "Garrett"],
+          "support": [
+            "Sirolyn21",
+            "Cya",
+            "Aplom",
+            "Smarties",
+            "Slymoll",
+            "Crystal",
+            "Poofa"
+          ]
+        }
+      }
+    ]
   }
 ]
