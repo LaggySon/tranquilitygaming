@@ -31,7 +31,7 @@
       transition-property: filter;
       transition-duration: 500ms;
       &:hover {
-        filter: sepia() saturate(10000%) hue-rotate(-40deg);
+        filter: sepia() saturate(1000%) hue-rotate(-40deg);
       }
 
       img {

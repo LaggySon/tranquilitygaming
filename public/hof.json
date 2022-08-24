@@ -21,7 +21,7 @@
         },
         "allstars": {
           "dps": [
-            "Orsted",
+            "Orsted (MVP)",
             "Zoobi3",
             "F8TE",
             "Garbagio",
@@ -74,7 +74,7 @@
 
         "allstars": {
           "dps": [
-            "Smuggzz",
+            "Smuggzz (MVP)",
             "Maxix",
             "Vellzen",
             "Anarchy",
@@ -123,7 +123,15 @@
         },
 
         "allstars": {
-          "dps": ["Kurt", "00H", "PDKKid", "Gekk0", "Triage3", "Cremsin"],
+          "dps": [
+            "TheMallard (MVP)",
+            "Kurt",
+            "00H",
+            "PDKKid",
+            "Gekk0",
+            "Triage3",
+            "Cremsin"
+          ],
           "tank": [
             "NPC",
             "Torraction",
@@ -179,7 +187,7 @@
             "HQC",
             "Booth"
           ],
-          "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+          "support": ["Ice (MVP)", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
         }
       }
     ]
@@ -224,7 +232,7 @@
           ],
           "tank": ["Euphxria", "NPC", "Bethcon2", "Takinom", "Sorked", "Vela"],
           "support": [
-            "Malalia",
+            "Malalia (MVP)",
             "Cinnamon",
             "Trollz",
             "Jonavyn",
@@ -237,40 +245,44 @@
       {
         "title": "discord",
         "winningteam": {
-          "name": "KOMMIT",
+          "name": "AIRSTRIKE",
           "members": [
-            "Ice",
-            "SirAndy",
-            "Exas",
-            "Koro",
-            "Axiom",
-            "HoneyBadger",
-            "Shiro",
-            "Raidbotti",
-            "MyBigMarf"
+            "Cactus",
+            "CrypticForce",
+            "Declan",
+            "Sheepy",
+            "Voidkit",
+            "Placebo",
+            "Ocre (Coach)"
           ]
         },
 
         "allstars": {
           "dps": [
-            "Rokit",
-            "Shiro",
-            "Smuggzz",
+            "Voidkit (MVP)",
+            "Shonyred",
+            "Frossi",
+            "Cognativepit",
             "JVice",
-            "Pyro",
-            "Kaizen",
-            "OverNightCDR"
+            "Souly"
           ],
           "tank": [
-            "Kingdom",
-            "Sir Andy",
-            "CrypicForce",
-            "KourRage",
-            "Bandito",
-            "HQC",
-            "Booth"
+            "Mightybear",
+            "Zetsubou",
+            "Booth",
+            "Noremac",
+            "Aurora",
+            "SwayLee",
+            "Boring"
           ],
-          "support": ["Ice", "Arise", "Koro", "Juke", "Unkempt", "Veets"]
+          "support": [
+            "IvyCat",
+            "Sushi",
+            "Trash",
+            "ElBabayaga",
+            "Truth",
+            "N33Dul"
+          ]
         }
       }
     ]
