@@ -24,7 +24,7 @@ function Header(props) {
   };
   return (
     <div className={styles.header}>
-      <div className={styles.Title}>
+      <div className={styles.Title} onClick={handleToggle}>
         <Link href="/">
           <a>
             <div className={styles.logo}>

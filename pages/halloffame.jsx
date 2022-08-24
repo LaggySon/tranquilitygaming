@@ -53,7 +53,7 @@ function AllStars(props) {
               styles.Member,
               name.includes(" (MVP)") ? styles.Mvp : null,
             ].join(" ")}
-            key={name}
+            key={name + "1"}
           >
             <SvgOwdps />
             {name}
