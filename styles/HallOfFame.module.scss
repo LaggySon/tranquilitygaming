@@ -24,6 +24,9 @@
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
+    &.Mvp {
+      border: 2px solid var(--accentcolor);
+    }
   }
   .Season {
     width: 100%;

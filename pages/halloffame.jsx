@@ -48,19 +48,37 @@ function AllStars(props) {
       <h3>All-Stars</h3>
       <div className={styles.List}>
         {props.list.dps.map((name) => (
-          <div className={styles.Member} key={name}>
+          <div
+            className={[
+              styles.Member,
+              name.includes(" (MVP)") ? styles.Mvp : null,
+            ].join(" ")}
+            key={name}
+          >
             <SvgOwdps />
             {name}
           </div>
         ))}
         {props.list.tank.map((name) => (
-          <div className={styles.Member} key={name}>
+          <div
+            className={[
+              styles.Member,
+              name.includes(" (MVP)") ? styles.Mvp : null,
+            ].join(" ")}
+            key={name}
+          >
             <SvgOwtank />
             {name}
           </div>
         ))}
         {props.list.support.map((name) => (
-          <div className={styles.Member} key={name}>
+          <div
+            className={[
+              styles.Member,
+              name.includes(" (MVP)") ? styles.Mvp : null,
+            ].join(" ")}
+            key={name}
+          >
             <SvgOwsupport />
             {name}
           </div>
