@@ -60,16 +60,10 @@ export default function contact() {
         />
         <Separator>Tier Directors</Separator>
         <ContactFrame
-          name="Chimanzy"
-          roles="Transcendence NA Tier Director"
+          name="Thuggington"
+          roles="Admin, Harmony NA Tier Director"
           subroles="Moderator"
-          discord="Chimanzy#0006"
-        />
-        <ContactFrame
-          name="Smarties"
-          roles="Asst. Transcendence NA Tier Director"
-          subroles="Moderator"
-          discord="Smarties#0013"
+          discord="Thuggington#6087"
         />
         <ContactFrame
           name="Crispy"
@@ -78,16 +72,10 @@ export default function contact() {
           discord="Crispy#6261"
         />
         <ContactFrame
-          name="Apathy"
-          roles="Admin, Discord NA Tier Director"
+          name="Chimanzy"
+          roles="Admin, Transcendence NA Tier Director"
           subroles="Moderator"
-          discord="Crispy#6261"
-        />
-        <ContactFrame
-          name="Thuggington"
-          roles="Admin, Harmony NA Tier Director"
-          subroles="Moderator"
-          discord="Thuggington#6087"
+          discord="Chimanzy#0006"
         />
         <ContactFrame
           name="Sneakykittens"
@@ -96,8 +84,26 @@ export default function contact() {
           discord="Sneakykittens#5256"
         />
         <ContactFrame
-          name="Arez"
+          name="Apathy"
+          roles="Asst. Discord NA Tier Director"
+          subroles="Moderator"
+          discord="Apathy#8987"
+        />
+        <ContactFrame
+          name="Smarties"
+          roles="Asst. Transcendence NA Tier Director"
+          subroles="Moderator"
+          discord="Smarties#0013"
+        />
+        <ContactFrame
+          name="Elixir"
           roles="Harmony EU Tier Director"
+          subroles="Moderator"
+          discord="Arez#0955"
+        />
+        <ContactFrame
+          name="Yoshi JD"
+          roles="Discord EU Tier Director"
           subroles="Moderator"
           discord="Arez#0955"
         />

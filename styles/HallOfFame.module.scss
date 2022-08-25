@@ -53,14 +53,17 @@
   .SeasonList {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    // gap: 1rem;
     padding-inline: 1rem;
     background-color: var(--bgcolor);
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     h3 {
       padding: 0.2rem;
     }
     .Selector {
-      padding: 0.2rem 0.4rem;
+      padding: 0.2rem 0.5rem;
       &:hover {
         cursor: pointer;
       }

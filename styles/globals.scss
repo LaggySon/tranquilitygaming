@@ -70,12 +70,12 @@ body:before {
 .container {
   margin: 1rem auto;
   max-width: 70rem;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden !important;
   a {
     color: aliceblue;
     text-decoration: underline;
