@@ -29,13 +29,15 @@ module.exports = {
       },
       {
         source: "/NAapplication",
-        destination: "https://forms.gle/zu6qZ1rkkDe4Z3na7",
+        destination:
+          "https://docs.google.com/forms/d/1WPqOBiofRgwyd11Pias3pCDXdlBhZHhlke11WWhsPlc/edit",
         permanent: false,
         basePath: false,
       },
       {
         source: "/EUapplication",
-        destination: "https://forms.gle/Uc7xjEY2MNM2ZE519",
+        destination:
+          "https://docs.google.com/forms/d/1hj0Z_laLptd91Z9FHeQhlrydWqpKg3P7kauoBENGDv4/edit",
         permanent: false,
         basePath: false,
       },
