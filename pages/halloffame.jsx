@@ -131,7 +131,7 @@ function Season(props) {
 }
 
 export default function HallOfFame() {
-  const [activeSeasonTitle, setActiveSeasonTitle] = useState("Season 7");
+  const [activeSeasonTitle, setActiveSeasonTitle] = useState("Season 8");
   const activeSeason = data.find(
     (season) => season.title === activeSeasonTitle
   );
