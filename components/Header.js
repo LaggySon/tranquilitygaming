@@ -65,6 +65,9 @@ function Header(props) {
                     <NavLink href="/nadiscordrosters">Discord NA</NavLink>
                   </li>
                   <li>
+                    <NavLink href="/eudiscordrosters">Discord EU</NavLink>
+                  </li>
+                  <li>
                     <NavLink href="/natrancerosters">Transcendence NA</NavLink>
                   </li>
                 </ul>
@@ -86,6 +89,9 @@ function Header(props) {
                   </li>
                   <li>
                     <NavLink href="/nadiscordschedule">Discord NA</NavLink>
+                  </li>
+                  <li>
+                    <NavLink href="/eudiscordschedule">Discord EU</NavLink>
                   </li>
                   <li>
                     <NavLink href="/natranceschedule">Transcendence NA</NavLink>
