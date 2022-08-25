@@ -48,126 +48,139 @@ module.exports = {
       {
         source: "/euwmsharmony",
         destination:
-          "https://docs.google.com/spreadsheets/d/1t03DPatqB9Xqgq1nzXW9DapiME2gXqGPfpYrta0riMU/edit#gid=1182552092",
+          "https://docs.google.com/spreadsheets/d/1o0xI6DDOiZLLcglTVkuTWaNk4B4q64VQRFF4wOoCAqk/edit#gid=1554200866",
+        permanent: false,
+        basePath: false,
+      },
+      {
+        source: "/euwmsdiscord",
+        destination:
+          "https://docs.google.com/spreadsheets/d/17lw8wUiMbDld59C-rFQNLbjcLYg-Im2clCX8vowXCN4/edit#gid=1554200866",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsharmonyaurum",
         destination:
-          "https://docs.google.com/spreadsheets/d/1wuARZxdgzUzhTOVwMa9iPOcxyWk1iKHrF1L9J0AnFgQ/edit#gid=1182552092close",
+          "https://docs.google.com/spreadsheets/d/1l7Ni5T6W7YUgOuP-wu0R9gRz0z8eqOiNZaSHqeVctq4/edit#gid=1554200866",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsharmonyindigo",
         destination:
-          "https://docs.google.com/spreadsheets/d/18HahWB_nbteRmBXQv8ZDHd6rM6yqzhX-OapdaQ8wH-U/edit#gid=1182552092",
+          "https://docs.google.com/spreadsheets/d/1ulYIJ-nOvsftzei4CFxIQmJE2kaJFSVXDC0rsSxTFco/edit#gid=1842740400",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsharmonyelimination",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1ZCMrJD9Qn472G00ssWcU-YSF9n5tE6XdbT6af0AwTc4/edit#gid=1182552092",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsharmonychampionship",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1WGYF7GdIk8D3VdOhFA73PN3___GR_SoZZLm_ZJhbDj8/edit#gid=1182552092",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsdiscordaurum",
         destination:
-          "https://docs.google.com/spreadsheets/d/17rowPUXxDlQdzucXllXCNlipnZJo2ZtUXYGo28rmuy8/edit#gid=1182552092",
+          "https://docs.google.com/spreadsheets/d/1RlGs2pWHn2IL1Xk9nUcbaeogK7IiLnEfJVNLUrH-Ycs/edit#gid=1554200866",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsdiscordindigo",
         destination:
-          "https://docs.google.com/spreadsheets/d/1sepv8rJToRbutryBlkzkxtoUKSKcgOirZNy_tNgio7U/edit#gid=1182552092",
+          "https://docs.google.com/spreadsheets/d/1HB6hXw30B1webiIYgzhOCUTRmDXKFjCU2rSvMlRMjJE/edit#gid=1842740400",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsdiscordelimination",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1aAhS80zU0HmAam1vP6Wwkseqqqef8D-SbZ-tftucgfE/edit#gid=1182552092",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmsdiscordchampionship",
+        destination: "/",
+        permanent: false,
+        basePath: false,
+      },
+      {
+        source: "/nawmstrance",
         destination:
-          "https://docs.google.com/spreadsheets/d/1frdQ5hnnn6GSVV8VDWVuLrh2R_t7p7oljnyEoqBtswY/edit#gid=1182552092",
+          "https://docs.google.com/spreadsheets/d/11JCytyE_Ng4LkbG1ymkk1UZlqMoO9r5cn06PjxgcNWY/edit#gid=672600031",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmstranceaurum",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1CWZ-Yy16wEQTURhEwWXHCIJFNKG8cfFoQTjHDYylGvk/edit#gid=1238545871",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmstranceindigo",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1Qy-P1bKd6gtys9aCtONjvyLFXTjRdSgeqStyPaZbeo4/edit#gid=1238545871",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmstranceelimination",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1idIJM_jLAgvHGnH2SgytmfCGod-YguHD-hDAL3g69H8/edit#gid=1182552092",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nawmstrancechampionship",
-        destination:
-          "https://docs.google.com/spreadsheets/d/1hi5m0n3RLHOJ09iR7bJKSpy69KQV7DI2WX64CAUuD38/edit#gid=1182552092",
+        destination: "/",
         permanent: false,
         basePath: false,
       },
       {
         source: "/legacysheets",
         destination:
-          "https://docs.google.com/spreadsheets/d/1xxNhYLstSt-QieDRq5N_epgT6pCx-RfT9dfJ9Q8K9qU/edit?usp=sharing",
+          "https://docs.google.com/spreadsheets/d/1xxNhYLstSt-QieDRq5N_epgT6pCx-RfT9dfJ9Q8K9qU/edit#gid=0",
         permanent: false,
         basePath: false,
       },
       {
         source: "/euharmonyrosters",
         destination:
-          "https://docs.google.com/spreadsheets/d/1o0lZ2IleIeNSl1WrEFhwg73cNqU-pUjwXXJQzrpP_vo/edit#gid=0",
+          "https://docs.google.com/spreadsheets/d/1YaJlfXq9iru0HjBKj5ntyuX8lUmI5FkFMVrN-C56D4k/edit#gid=0",
+        permanent: false,
+        basePath: false,
+      },
+      {
+        source: "/eudiscordrosters",
+        destination:
+          "https://docs.google.com/spreadsheets/d/1dRy6aqaPZEvG5Sd0ruETtr1yJcAFUu_5ifXPacEaixA/edit#gid=0",
         permanent: false,
         basePath: false,
       },
       {
         source: "/naharmonyrosters",
         destination:
-          "https://docs.google.com/spreadsheets/d/1AHItetHJjWzYJccZ_qTzbuk1DT_OV9q0I4AfZ6Xni4M/edit#gid=0",
+          "https://docs.google.com/spreadsheets/d/1N_tfo7cbltdXWjkJmLubCb7dNTq3vHQWqaD9pltONsY/edit#gid=0",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nadiscordrosters",
         destination:
-          "https://docs.google.com/spreadsheets/d/1EJ7xcD_6qse-nb3Zz2i16ltVnOaSXbmKho4LLVGK3EU/edit#gid=0",
+          "https://docs.google.com/spreadsheets/d/1eylt-Fi5lGYuegdugd6oAJwm6Lzleomdgka-pQ-ngew/edit#gid=0",
         permanent: false,
         basePath: false,
       },
       {
         source: "/natrancerosters",
         destination:
-          "https://docs.google.com/spreadsheets/d/1BMCa1nao2sc23VyiH7rXSgCMud35rJtCsnH4QFHnvKM/edit#gid=0close",
+          "https://docs.google.com/spreadsheets/d/1uDVMSuzlkGFcf0Yy_sAyoBJ_rvGvJy2h-3AJbTcStVE/edit#gid=0",
         permanent: false,
         basePath: false,
       },
@@ -181,35 +194,42 @@ module.exports = {
       {
         source: "/rulebook",
         destination:
-          "https://docs.google.com/document/d/15ZDpIoX9eK-SHkI9r05i19cA-I5izeZBm0KUVDsxTkQ/edit#",
+          "https://docs.google.com/document/d/1HB-r_Gy89yRZqG0fS5Hphg4xzYvtmcWixoc2qCasvCo/edit",
         permanent: false,
         basePath: false,
       },
       {
         source: "/natranceschedule",
         destination:
-          "https://play.toornament.com/en_US/tournaments/5380902013119242240/matches/scheduleclose",
+          "https://play.toornament.com/en_US/tournaments/5948364997340381184/matches/schedule",
         permanent: false,
         basePath: false,
       },
       {
         source: "/euharmonyschedule",
         destination:
-          "https://play.toornament.com/en_US/tournaments/5380989851983937536/matches/scheduleclose",
+          "https://play.toornament.com/en_US/tournaments/5948233015183769600/matches/schedule",
+        permanent: false,
+        basePath: false,
+      },
+      {
+        source: "/eudiscordschedule",
+        destination:
+          "https://play.toornament.com/en_US/tournaments/5948233885389987840/matches/schedule",
         permanent: false,
         basePath: false,
       },
       {
         source: "/nadiscordschedule",
         destination:
-          "https://play.toornament.com/en_US/tournaments/5380930326494699520/matches/schedule",
+          "https://play.toornament.com/en_US/tournaments/5948231386740236288/matches/schedule",
         permanent: false,
         basePath: false,
       },
       {
         source: "/naharmonyschedule",
         destination:
-          "https://play.toornament.com/en_US/tournaments/5380957503704178688/matches/schedule",
+          "https://play.toornament.com/en_US/tournaments/5948176605954777088/matches/schedule",
         permanent: false,
         basePath: false,
       },
