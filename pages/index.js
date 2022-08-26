@@ -1,5 +1,3 @@
-import { TwitterTimelineEmbed } from "react-twitter-embed";
-import { TwitchPlayer } from "react-twitch-embed";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import Separator from "../components/Separator";
