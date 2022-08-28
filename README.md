@@ -1,6 +1,6 @@
 # NextJS website built for Tranquility Gaming
 
-Homepage designed/developed by LaggySon
+Built by LaggySon
 
 ### Live Site: [https://tranquility.gg](https://tranquility.gg)
 
