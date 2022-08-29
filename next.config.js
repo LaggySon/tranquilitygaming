@@ -14,6 +14,13 @@ module.exports = {
         basePath: false,
       },
       {
+        source: "/twitchsignups",
+        destination:
+          "https://docs.google.com/spreadsheets/d/1XRfqbp6enH9At6mhe0W6usnJJ35_kTl5MjO0ENgxZz4/edit?usp=sharing",
+        permanent: false,
+        basePath: false,
+      },
+      {
         source: "/twitchcaster",
         destination:
           "https://docs.google.com/forms/d/e/1FAIpQLScd8BI36MCnq_zeaQ61TE4YmKqNavko1fh8FqpK4VVeoYIRIA/viewform?usp=sf_link",
