@@ -2,7 +2,7 @@ module.exports = {
   images: {
     domains: ["via.placeholder.com", "picsum.photos"],
   },
-
+  distDir: process.env.BUILD_DIR || ".next",
   reactStrictMode: true,
   async redirects() {
     return [
