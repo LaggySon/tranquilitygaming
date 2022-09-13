@@ -21,7 +21,7 @@ import slide2 from "../public/slides/ow2image.png";
 import { StructuredText } from "react-datocms";
 import { request } from "../lib/datocms";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await request({ query: `query {homepage{letter{value}}}` });
   console.log(data);
   return { props: { data } };
