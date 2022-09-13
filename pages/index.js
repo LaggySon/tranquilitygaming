@@ -1,6 +1,8 @@
+import Separator from "../components/Separator";
+
+//SWIPER STUFF
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
-import Separator from "../components/Separator";
 import styles from "../styles/Landing.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,7 +15,19 @@ import Image from "next/image";
 //Slide Image Imports
 import slide1 from "../public/slides/irisimage.png";
 import slide2 from "../public/slides/ow2image.png";
-export default function Home() {
+// import { request } from "gaxios";
+
+//datocms stuff
+import { StructuredText } from "react-datocms";
+import { request } from "../lib/datocms";
+
+export async function getStaticProps() {
+  const data = await request({ query: `query {homepage{letter{value}}}` });
+  console.log(data);
+  return { props: { data } };
+}
+
+export default function Home({ data }) {
   return (
     <div>
       {/* <h1>Home Page</h1> */}
@@ -66,7 +80,8 @@ export default function Home() {
         </Separator>
 
         <div id={styles.letter} className="blockel">
-          <h2>Letter From The Commissioner</h2>
+          <StructuredText data={data.homepage.letter} />
+          {/* <h2>Letter From The Commissioner</h2>
           <p>
             Welcome to the Tranquility Gaming Community! This community is
             intended to aid in the growth of players, coaches, managers and
@@ -109,7 +124,7 @@ export default function Home() {
             Cavalier <br />
             Founder & Commissioner <br />
             Tranquility Gaming
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
