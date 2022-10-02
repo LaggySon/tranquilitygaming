@@ -12,10 +12,10 @@ function Layout(props) {
         <title>Tranquility Gaming</title>
         <meta name="description" content="" />
 
-        <meta itemprop="name" content="Tranquility Gaming" />
-        <meta itemprop="description" content="" />
+        <meta itemProp="name" content="Tranquility Gaming" />
+        <meta itemProp="description" content="" />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="http://tranquility.gg/previewbadge.png"
         />
 
