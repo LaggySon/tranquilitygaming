@@ -1,12 +1,40 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import Logo from "";
 
 function Layout(props) {
   return (
     <>
       <Head>
         <title>{props.title ? props.title : "Tranquility Gaming"}</title>
+
+        <title>Tranquility Gaming</title>
+        <meta name="description" content="" />
+
+        <meta itemprop="name" content="Tranquility Gaming" />
+        <meta itemprop="description" content="" />
+        <meta
+          itemprop="image"
+          content="http://tranquility.gg/previewbadge.png"
+        />
+
+        <meta property="og:url" content="http://tranquility.gg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Tranquility Gaming" />
+        <meta property="og:description" content="" />
+        <meta
+          property="og:image"
+          content="http://tranquility.gg/previewbadge.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tranquility Gaming" />
+        <meta name="twitter:description" content="" />
+        <meta
+          name="twitter:image"
+          content="http://tranquility.gg/previewbadge.png"
+        />
         <style>
           @import url(
           {
