@@ -152,17 +152,17 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <NavLink href="https://shop.spreadshirt.com/owtranquility/ ">
+                    <NavLink href="https://shop.spreadshirt.com/tranquilitygg/ ">
                       Main Store
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://shop.spreadshirt.com/owtranquilityjerseys/">
+                    <NavLink href="https://shop.spreadshirt.com/tranquilityggjerseys/">
                       Jersey Store
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://shop.spreadshirt.com/owtranquilityretired/ ">
+                    <NavLink href="https://shop.spreadshirt.com/tranquilityggretired/ ">
                       Retired Jersey Store
                     </NavLink>
                   </li>
