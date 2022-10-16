@@ -14,7 +14,7 @@ const REDIRECTS_QUERY = `query {
 const getRedirects = async () => {
   try {
     const data = await client.request(REDIRECTS_QUERY, { limit: 2000 });
-    console.log(data.redirectTable.redirects.data);
+    // console.log(data.redirectTable.redirects.data);
     return data.redirectTable.redirects.data;
   } catch (e) {
     console.log(e);
