@@ -29,7 +29,7 @@ module.exports = {
   reactStrictMode: true,
   async redirects() {
     const redirs = await getRedirects();
-    console.log(redirs);
+    // console.log(redirs);
     const redirects = redirs.map((redirect) => {
       const source = redirect.OriginURL;
       const destination = redirect.DestinationURL;
