@@ -13,23 +13,130 @@ datasource db {
 }
 
 model Team {
-  id     Int    @id @default(autoincrement())
-  status Status
+  id      Int      @id @default(autoincrement())
+  status  Status
+  gm      Player   @relation("gm", fields: [gmId], references: [id])
+  captain Player   @relation("captain", fields: [captainId], references: [id])
+  players Player[] @relation("player")
+  coaches Player[] @relation("coach")
+
+  homeMatches Match[] @relation("homeTeam")
+  awayMatches Match[] @relation("awayTeam")
+
+  gmId      Int
+  captainId Int
 }
 
 model Player {
-  id Int @id @default(autoincrement())
+  id        Int           @id @default(autoincrement())
+  gmOf      Team[]        @relation("gm")
+  captainOf Team[]        @relation("captain")
+  playsFor  Team[]        @relation("player")
+  coaches   Team[]        @relation("coach")
+  matches   MatchPlayer[] @relation("matchPlayer")
+
+  battleNet String
+  Discord   String
+  Rank      Rank
+  Role      Role
+  Pronouns  String
+  Status    String?
+  Banned    Boolean @default(false)
 }
 
 model Match {
-  id Int @id @default(autoincrement())
-  // Players for each team with status
-  // Each map played with score and replay code
-  // Final score (per team?)
+  id       Int  @id @default(autoincrement())
+  homeTeam Team @relation("homeTeam", fields: [homeId], references: [id])
+  //? homePlayers MatchPlayer[] @relation("homePlayer")
+
+  awayTeam Team @relation("awayTeam", fields: [awayId], references: [id])
+  //? awayPlayers MatchPlayer[] @relation("awayPlayer")
+
+  //TODO Players for each team with status
+  //TODO Each map played with score and replay code
+  //TODO Final score (per team?)
+  //TODO Date occured
+
+  homeId Int
+  awayId Int
+}
+
+model MatchPlayer {
+  id         Int        @id @default(autoincrement())
+  player     Player     @relation("matchPlayer", fields: [PlayerId], references: [id])
+  attendance Attendance
+  //? homeMatch Match? @relation("homePlayer")
+  //? awayMatch Match? @relation("awayPlayer")
+
+  PlayerId Int
+}
+
+model Map {
+  id        Int   @id @default(autoincrement())
+  map       OwMap
+  homeScore Int
+  awayScore Int
 }
 
 enum Status {
   LOCKED
   FORFEITED
   UNLOCKED
+}
+
+enum Rank {
+  b5
+  b4
+  b3
+  b2
+  b1
+  s5
+  s4
+  s3
+  s2
+  s1
+  g5
+  g4
+  g3
+  g2
+  g1
+  p5
+  p4
+  p3
+  p2
+  p1
+  d5
+  d4
+  d3
+  d2
+  d1
+  m5
+  m4
+  m3
+  m2
+  m1
+  gm5
+  gm4
+  gm3
+  gm2
+  gm1
+}
+
+enum Role {
+  Tank
+  DPS
+  Support
+}
+
+enum Attendance {
+  Attended
+  DidNotParticipate
+  LateLimited
+  Substitute
+  Suspended
+}
+
+enum OwMap {
+  Midtown
+  //TODO add maps
 }
