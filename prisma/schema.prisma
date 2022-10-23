@@ -19,6 +19,8 @@ model Team {
   captain Player   @relation("captain", fields: [captainId], references: [id])
   players Player[] @relation("player")
   coaches Player[] @relation("coach")
+  tier    Tier
+  region  Region
 
   homeMatches Match[] @relation("homeTeam")
   awayMatches Match[] @relation("awayTeam")
@@ -139,4 +141,15 @@ enum Attendance {
 enum OwMap {
   Midtown
   //TODO add maps
+}
+
+enum Tier {
+  Harmony
+  Discord
+  Transcendence
+}
+
+enum Region {
+  NA
+  EU
 }
