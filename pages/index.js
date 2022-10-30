@@ -11,6 +11,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 //Slide Image Imports
 import slide1 from "../public/slides/irisimage.png";
@@ -21,18 +23,48 @@ import slide2 from "../public/slides/ow2image.png";
 import { StructuredText } from "react-datocms";
 import { request } from "../lib/datocms";
 
-export async function getServerSideProps() {
+import axios from "axios";
+
+export async function getStaticProps() {
+  const token = await axios.post("https://id.twitch.tv/oauth2/token", {
+    client_id: "twdjkmlz1apnmm1a5dj123w0auotb7",
+    client_secret: "cxzfufq8dbtnubbcbhda0y0mxf39tb",
+    grant_type: "client_credentials",
+  });
+
+  let twitchdata = await axios.get(
+    "https://api.twitch.tv/helix/streams?user_login=tranquilitygg",
+    {
+      headers: {
+        "Client-ID": "twdjkmlz1apnmm1a5dj123w0auotb7",
+        Authorization: `Bearer ${token.data.access_token}`,
+      },
+    }
+  );
+  twitchdata = twitchdata.data;
+
   const data = await request({
     query: `query {homepage{letter{value},schedule{value}}}`,
   });
-  console.log(data);
-  return { props: { data } };
+  return { props: { data, twitchdata } };
 }
 
-export default function Home({ data }) {
+export default function Home({ data, twitchdata }) {
+  const [isLive, setIsLive] = useState(twitchdata.data.length !== 0);
   return (
     <div>
-      {/* <h1>Home Page</h1> */}
+      {isLive && (
+        <div className={styles.LiveBanner}>
+          <span onClick={() => setIsLive(false)}>&#10006;</span>
+          <div>
+            WE{"'"}RE LIVE AT&nbsp;
+            <Link href="https://twitch.tv/tranquilitygg">
+              TWITCH.TV/TRANQUILITYGG
+            </Link>
+            &nbsp; - {twitchdata.data[0].title}
+          </div>
+        </div>
+      )}
       <div className="container" id={styles.homepage}>
         <div id={styles.showcase} className="container">
           <Swiper
