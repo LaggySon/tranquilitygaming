@@ -22,6 +22,7 @@
     justify-self: flex-start;
     align-self: left;
     margin-right: auto;
+    padding-inline-start: 1rem;
   }
 
   div {
@@ -35,7 +36,8 @@
   text-align: center;
   width: 100%;
   min-height: 2rem;
-  background-color: rgb(173, 53, 53);
+  background-color: #cc922e;
+  color: black;
 }
 
 .slide {

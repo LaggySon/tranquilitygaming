@@ -27,8 +27,8 @@ import axios from "axios";
 
 export async function getStaticProps() {
   const token = await axios.post("https://id.twitch.tv/oauth2/token", {
-    client_id: "twdjkmlz1apnmm1a5dj123w0auotb7",
-    client_secret: "cxzfufq8dbtnubbcbhda0y0mxf39tb",
+    client_id: process.env.TWITCH_CLIENT_ID,
+    client_secret: process.env.TWITCH_CLIENT_SECRET,
     grant_type: "client_credentials",
   });
 
@@ -36,7 +36,7 @@ export async function getStaticProps() {
     "https://api.twitch.tv/helix/streams?user_login=tranquilitygg",
     {
       headers: {
-        "Client-ID": "twdjkmlz1apnmm1a5dj123w0auotb7",
+        "Client-ID": process.env.TWITCH_CLIENT_ID,
         Authorization: `Bearer ${token.data.access_token}`,
       },
     }
