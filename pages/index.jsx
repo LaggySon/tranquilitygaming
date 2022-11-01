@@ -15,8 +15,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 //Slide Image Imports
-import slide1 from "../public/slides/irisimage.png";
-import slide2 from "../public/slides/ow2image.png";
+import slide1 from "../public/slides/tranq_Ideation_Playoffs_Banner.png";
+import slide2 from "../public/slides/tranq_Ideation_Podcast_Banner.png";
+import slide3 from "../public/slides/tranq_Ideation_Merch_Banner.png";
 // import { request } from "gaxios";
 
 //datocms stuff
@@ -106,13 +107,23 @@ export default function Home({ data, twitchdata }) {
                 ></Image>
               </div>
             </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>
+                <Image
+                  className={styles.slideBg}
+                  src={slide3}
+                  width="1280"
+                  height="400"
+                ></Image>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
 
         <Separator>
-          <span>UPCOMMING</span> BROADCASTS
+          <span>UPCOMING</span> BROADCASTS
         </Separator>
-        <div id={styles.letter} className="blockel">
+        <div id={styles.letter} className={"blockel"}>
           <StructuredText data={data.homepage.schedule} />
         </div>
         <Separator>
