@@ -26,7 +26,7 @@ import { request } from "../lib/datocms";
 
 import axios from "axios";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const token = await axios.post("https://id.twitch.tv/oauth2/token", {
     client_id: process.env.TWITCH_CLIENT_ID,
     client_secret: process.env.TWITCH_CLIENT_SECRET,
