@@ -24,6 +24,8 @@ import slide3 from "../public/slides/tranq_Ideation_Merch_Banner.png";
 import { StructuredText } from "react-datocms";
 import { request } from "../lib/datocms";
 
+import Match from "../components/Match";
+
 import axios from "axios";
 
 export async function getServerSideProps() {
@@ -33,6 +35,7 @@ export async function getServerSideProps() {
     grant_type: "client_credentials",
   });
 
+  //Get Stream Data
   let twitchdata = await axios.get(
     "https://api.twitch.tv/helix/streams?user_login=tranquilitygg",
     {
@@ -44,14 +47,29 @@ export async function getServerSideProps() {
   );
   twitchdata = twitchdata.data;
 
+  //Get Match Data
   const data = await request({
-    query: `query {homepage{letter{value},schedule{value}}}`,
+    query: `query {broadcastSchedule{
+      descriptiveText
+      matchList{
+        tier
+        homeName
+        homeLogo{url}
+        awayName
+        awayLogo{url}
+        matchTime
+      }
+    }
+      homepage{letter{value}}
+    }`,
   });
+  console.log(data);
   return { props: { data, twitchdata } };
 }
 
 export default function Home({ data, twitchdata }) {
   const [isLive, setIsLive] = useState(twitchdata.data.length !== 0);
+
   return (
     <div>
       {isLive && (
@@ -123,8 +141,11 @@ export default function Home({ data, twitchdata }) {
         <Separator>
           <span>UPCOMING</span> BROADCASTS
         </Separator>
-        <div id={styles.letter} className={"blockel"}>
-          <StructuredText data={data.homepage.schedule} />
+        <div id={styles.matches} className={"blockel"}>
+          {data.broadcastSchedule.descriptiveText}
+          <div id={styles.matchList}>
+            {data.broadcastSchedule.matchList.map((match) => Match(match))}
+          </div>
         </div>
         <Separator>
           <span>LATEST</span> NEWS

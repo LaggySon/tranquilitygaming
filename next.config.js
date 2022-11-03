@@ -23,7 +23,7 @@ const getRedirects = async () => {
 
 module.exports = {
   images: {
-    domains: ["via.placeholder.com", "picsum.photos"],
+    domains: ["via.placeholder.com", "picsum.photos", "www.datocms-assets.com"],
   },
   distDir: process.env.BUILD_DIR || ".next",
   reactStrictMode: true,
