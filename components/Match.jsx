@@ -7,6 +7,7 @@ import Timezone from "dayjs/plugin/timezone";
 import Image from "next/image";
 
 function convertTimestamp(string) {
+  console.log(dayjs());
   return dayjs(string).format("MMMM D [at] h:mma z");
 }
 
