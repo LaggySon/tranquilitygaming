@@ -14,7 +14,8 @@
   .ChampTeam,
   .AllStars {
     background-color: var(--bgcolor);
-    margin-block: 0.5rem;
+    box-shadow: var(--shadowsetting);
+    margin: 0.5rem;
     padding: 0.5rem;
   }
   .ChampTeam .Member,
@@ -53,6 +54,7 @@
   .SeasonList {
     display: flex;
     flex-direction: row;
+    box-shadow: var(--shadowsetting);
     // gap: 1rem;
     padding-inline: 1rem;
     background-color: var(--bgcolor);

@@ -7,6 +7,7 @@
   --bgcolor: #011724b9;
   --textcolor: #cdd1d4;
   --titlecolor: #bee2f1;
+  --shadowsetting: 0 0 0 black;
   color: var(--textcolor);
 }
 body {
@@ -58,7 +59,7 @@ body:before {
 
 .blockel {
   background-color: var(--bgcolor);
-
+  box-shadow: var(--shadowsetting);
   padding: 1rem;
   margin: 0.5rem;
   .big {

@@ -14,6 +14,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import dayjs from "dayjs";
+
 //Slide Image Imports
 import slide1 from "../public/slides/tranq_Ideation_Playoffs_Banner.png";
 import slide2 from "../public/slides/tranq_Ideation_Podcast_Banner.png";
@@ -144,7 +146,12 @@ export default function Home({ data, twitchdata }) {
         <div id={styles.matches} className={"blockel"}>
           {data.broadcastSchedule.descriptiveText}
           <div id={styles.matchList}>
-            {data.broadcastSchedule.matchList.map((match) => Match(match))}
+            {data.broadcastSchedule.matchList.map((match) => {
+              //Only show broadcasts until 4 hours after their scheduled start time
+              if (dayjs().diff(dayjs(match.matchTime)) < 14400000) {
+                return Match(match);
+              }
+            })}
           </div>
         </div>
         <Separator>
