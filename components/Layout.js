@@ -28,12 +28,12 @@ function Layout(props) {
         />*/}
 
         {/* <meta name="twitter:card" content="summary_large_image" /> */}
-        <meta name="twitter:title" content="Tranquility Gaming" />
+        {/* <meta name="twitter:title" content="Tranquility Gaming" />
         <meta name="twitter:description" content="" />
         <meta
           name="twitter:image"
           content="https://tranquility.gg/tranqLogoWhite.png"
-        />
+        /> */}
 
         <meta property="og:title" content="Tranquility Gaming" />
         <meta property="og:url" content="https://tranquility.gg" />

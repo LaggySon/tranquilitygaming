@@ -65,7 +65,6 @@ export async function getServerSideProps() {
       homepage{letter{value}}
     }`,
   });
-  console.log(data);
   return { props: { data, twitchdata } };
 }
 
