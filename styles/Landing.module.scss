@@ -1,13 +1,13 @@
 #showcase {
   border-bottom: 5px solid var(--accentcolor);
   padding: 0;
-  margin: 0;
+  margin: 0.5rem;
   min-width: 0;
   max-height: 400px;
   // min-height: 388px;
   background-color: #9b9b9b;
   overflow: auto;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: var(--shadowsetting);
   img {
     margin: 0;
   }

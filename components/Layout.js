@@ -9,7 +9,7 @@ function Layout(props) {
         <title>{props.title ? props.title : "Tranquility Gaming"}</title>
 
         <title>Tranquility Gaming</title>
-        <meta name="description" content="" />
+        {/* <meta name="description" content="" />
 
         <meta itemProp="name" content="Tranquility Gaming" />
         <meta itemProp="description" content="" />
@@ -25,15 +25,37 @@ function Layout(props) {
         <meta
           property="og:image"
           content="http://tranquility.gg/previewbadge.png"
-        />
+        />*/}
 
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
         <meta name="twitter:title" content="Tranquility Gaming" />
         <meta name="twitter:description" content="" />
         <meta
           name="twitter:image"
-          content="http://tranquility.gg/previewbadge.png"
+          content="https://tranquility.gg/tranqLogoWhite.png"
         />
+
+        <meta property="og:title" content="Tranquility Gaming" />
+        <meta property="og:url" content="https://tranquility.gg" />
+        <meta
+          property="og:description"
+          content="See information and the latest news about everything Tranquility Gaming!"
+        />
+
+        <meta
+          property="og:image"
+          content="https://tranquility.gg/tranqLogoWhite.png"
+        />
+        <meta
+          itemProp="image"
+          content="https://tranquility.gg/tranqLogoWhite.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://tranquility.gg/tranqLogoWhite.png"
+        ></link>
+
         <style>
           @import url(
           {
