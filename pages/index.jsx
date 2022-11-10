@@ -54,13 +54,20 @@ export async function getServerSideProps() {
     query: `query {broadcastSchedule{
       descriptiveText
       matchList{
-        tier
-        homeName
-        homeLogo{url}
-        awayName
-        awayLogo{url}
-        matchTime
-      }
+        
+          ... on MatchRecord {
+            tier
+            homeName
+            homeLogo{url}
+            awayName
+            awayLogo{url}
+            matchTime
+          } ... on EventRecord {
+          image{url}
+          title
+          startTime
+          }
+        }
     }
       homepage{letter{value}}
     }`,
