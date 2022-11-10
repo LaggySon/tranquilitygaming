@@ -10,9 +10,10 @@ function convertTimestamp(string) {
   return dayjs(string).format("MMMM D [at] h:mma z");
 }
 
-export default function Match(Match) {
+export default function Match(props) {
   dayjs.extend(AdvancedFormat);
   dayjs.extend(Timezone);
+  const Match = props.match;
   if (Match.tier) {
     return (
       <div className={styles.matchBox}>
@@ -32,14 +33,16 @@ export default function Match(Match) {
       </div>
     );
   } else {
-    <div className={styles.matchBox}>
-      <span id={styles.tier}>{Match.title}</span>
-      <span id={styles.time}>{convertTimestamp(Match.startTime)}</span>
-      <div className={styles.matchTeamBox}>
-        <div className={styles.matchTeam}>
-          <Image src={Match.image.url} width="200" height="200"></Image>
+    return (
+      <div className={styles.matchBox}>
+        <span id={styles.tier}>{Match.title}</span>
+        <span id={styles.time}>{convertTimestamp(Match.startTime)}</span>
+        <div className={styles.matchTeamBox}>
+          <div className={styles.matchTeam}>
+            <Image src={Match.image.url} width="200" height="200"></Image>
+          </div>
         </div>
       </div>
-    </div>;
+    );
   }
 }

@@ -152,10 +152,10 @@ export default function Home({ data, twitchdata }) {
         <div id={styles.matches} className={"blockel"}>
           {data.broadcastSchedule.descriptiveText}
           <div id={styles.matchList}>
-            {data.broadcastSchedule.matchList.map((match) => {
+            {data.broadcastSchedule.matchList.map((match, index) => {
               //Only show broadcasts until 4 hours after their scheduled start time
               if (dayjs().diff(dayjs(match.matchTime)) < 14400000) {
-                return Match(match);
+                return <Match match={match} key={index} />;
               }
             })}
           </div>

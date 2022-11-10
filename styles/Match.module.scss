@@ -6,6 +6,10 @@
   flex-direction: column;
   margin: 1rem;
   max-width: 25rem;
+  padding-block: 0.5rem;
+  #tier {
+    font-size: 1.5rem;
+  }
 }
 
 .matchTeamBox {
@@ -17,6 +21,7 @@
     font-weight: 600;
   }
   padding: 1rem;
+  padding-bottom: 0;
 }
 
 .matchTeam {
