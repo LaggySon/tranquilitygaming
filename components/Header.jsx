@@ -15,6 +15,7 @@ import SvgYoutube from "./icons/Youtube";
 import SvgFacebook from "./icons/Facebook";
 import SvgInstagram from "./icons/Instagram";
 import SvgDiscord from "./icons/Discord";
+import SvgSheets from "./icons/Sheets";
 
 function Header(props) {
   const [isActive, setActive] = useState(false);
@@ -22,12 +23,15 @@ function Header(props) {
     setActive(!isActive);
     console.log(isActive);
   };
+  const closeMenu = () => {
+    setActive(false);
+  };
   return (
     <div className={styles.header}>
-      <div className={styles.Title} onClick={handleToggle}>
+      <div className={styles.Title}>
         <Link href="/">
           <a>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={closeMenu}>
               <div>
                 <Image src={Logo}></Image>
               </div>
@@ -56,19 +60,34 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <NavLink href="/naharmonyrosters">Harmony NA</NavLink>
+                    <NavLink href="/naharmonyrosters">
+                      <SvgSheets />
+                      Harmony NA
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/euharmonyrosters">Harmony EU</NavLink>
+                    <NavLink href="/euharmonyrosters">
+                      <SvgSheets />
+                      Harmony EU
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/nadiscordrosters">Discord NA</NavLink>
+                    <NavLink href="/nadiscordrosters">
+                      <SvgSheets />
+                      Discord NA
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/eudiscordrosters">Discord EU</NavLink>
+                    <NavLink href="/eudiscordrosters">
+                      <SvgSheets />
+                      Discord EU
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/natrancerosters">Transcendence NA</NavLink>
+                    <NavLink href="/natrancerosters">
+                      <SvgSheets />
+                      Transcendence NA
+                    </NavLink>
                   </li>
                 </ul>
               </div>

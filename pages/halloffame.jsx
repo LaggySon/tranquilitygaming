@@ -65,7 +65,7 @@ function AllStars(props) {
               styles.Member,
               name.includes(" (MVP)") ? styles.Mvp : null,
             ].join(" ")}
-            key={name}
+            key={name + "2"}
           >
             <SvgOwtank />
             {name}
@@ -77,7 +77,7 @@ function AllStars(props) {
               styles.Member,
               name.includes(" (MVP)") ? styles.Mvp : null,
             ].join(" ")}
-            key={name}
+            key={name + "3"}
           >
             <SvgOwsupport />
             {name}
@@ -116,7 +116,7 @@ function Season(props) {
             <>
               {tier.title !== "onetier" && (
                 <Separator>
-                  {tier.title} <span>Tier</span>
+                  <span>{tier.title}</span> Tier
                 </Separator>
               )}
 

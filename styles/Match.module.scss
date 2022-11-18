@@ -6,7 +6,8 @@
   flex-direction: column;
   margin: 1rem;
   max-width: 25rem;
-  padding-block: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--borderradius);
   #tier {
     font-size: 1.5rem;
   }

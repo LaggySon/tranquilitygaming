@@ -1,11 +1,16 @@
 .formSelector {
+  border-radius: var(--borderradius);
+  text-align: center;
   padding: 0.2rem 0.8rem;
+  transition-property: all;
+  transition-duration: var(--transitionduration);
   &:hover {
+    transform: scale(var(--scale));
     cursor: pointer;
   }
   &.active {
-    color: var(--accentcolor);
     outline: 2px solid var(--textcolor);
+    color: var(--accentcolor);
   }
   font-weight: normal;
 }

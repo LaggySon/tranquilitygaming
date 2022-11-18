@@ -21,12 +21,12 @@ export default function Match(props) {
         <span id={styles.time}>{convertTimestamp(Match.matchTime)}</span>
         <div className={styles.matchTeamBox}>
           <div className={styles.matchTeam}>
-            <Image src={Match.homeLogo.url} width="200" height="200"></Image>
+            <Image src={Match.homeLogo.url} width="100" height="100"></Image>
             <span>{Match.homeName}</span>
           </div>
           <span id={styles.vs}>VS</span>
           <div className={styles.matchTeam}>
-            <Image src={Match.awayLogo.url} width="200" height="200"></Image>
+            <Image src={Match.awayLogo.url} width="100" height="100"></Image>
             <span>{Match.awayName}</span>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Match(props) {
         <span id={styles.time}>{convertTimestamp(Match.startTime)}</span>
         <div className={styles.matchTeamBox}>
           <div className={styles.matchTeam}>
-            <Image src={Match.image.url} width="200" height="200"></Image>
+            <Image src={Match.image.url} width="100" height="100"></Image>
           </div>
         </div>
       </div>

@@ -26,7 +26,8 @@ import slide3 from "../public/slides/tranq_Ideation_Merch_Banner.png";
 import { StructuredText } from "react-datocms";
 import { request } from "../lib/datocms";
 
-import Match from "../components/Match";
+import BracketSelector from "../components/BracketSelector";
+import MatchStrip from "../components/MatchStrip";
 
 import axios from "axios";
 
@@ -48,6 +49,10 @@ export async function getServerSideProps() {
     }
   );
   twitchdata = twitchdata.data;
+
+  const bracketData = await request({
+    query: `query {bracketList{brackets{tier lower{url}upper{url}championship{url}}}}`,
+  });
 
   //Get Match Data
   const data = await request({
@@ -72,10 +77,10 @@ export async function getServerSideProps() {
       homepage{letter{value}}
     }`,
   });
-  return { props: { data, twitchdata } };
+  return { props: { data, twitchdata, bracketData } };
 }
 
-export default function Home({ data, twitchdata }) {
+export default function Home({ data, twitchdata, bracketData }) {
   const [isLive, setIsLive] = useState(twitchdata.data.length !== 0);
 
   return (
@@ -92,19 +97,21 @@ export default function Home({ data, twitchdata }) {
           </div>
         </div>
       )}
+      <MatchStrip data={data} />
+
       <div className="container" id={styles.homepage}>
         <div id={styles.showcase} className="container">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={50}
+            spaceBetween={0}
             slidesPerView={"auto"}
             autoplay={{
               delay: 10000,
               pauseOnMouseEnter: true,
               disableOnInteraction: false,
             }}
-            navigation
+            // navigation
             effect={"cards"}
             speed={1000}
             pagination={{ clickable: true }}
@@ -118,8 +125,8 @@ export default function Home({ data, twitchdata }) {
                 <Image
                   className={styles.slideBg}
                   src={slide1}
-                  width="1280"
-                  height="400"
+                  width="1500"
+                  height="500"
                 ></Image>
               </div>
             </SwiperSlide>
@@ -128,8 +135,8 @@ export default function Home({ data, twitchdata }) {
                 <Image
                   className={styles.slideBg}
                   src={slide2}
-                  width="1280"
-                  height="400"
+                  width="1500"
+                  height="500"
                 ></Image>
               </div>
             </SwiperSlide>
@@ -138,8 +145,8 @@ export default function Home({ data, twitchdata }) {
                 <Image
                   className={styles.slideBg}
                   src={slide3}
-                  width="1280"
-                  height="400"
+                  width="1500"
+                  height="500"
                 ></Image>
               </div>
             </SwiperSlide>
@@ -147,19 +154,9 @@ export default function Home({ data, twitchdata }) {
         </div>
 
         <Separator>
-          <span>UPCOMING</span> BROADCASTS
+          <span>CURRENT</span> STANDINGS
         </Separator>
-        <div id={styles.matches} className={"blockel"}>
-          {data.broadcastSchedule.descriptiveText}
-          <div id={styles.matchList}>
-            {data.broadcastSchedule.matchList.map((match, index) => {
-              //Only show broadcasts until 4 hours after their scheduled start time
-              if (dayjs().diff(dayjs(match.matchTime)) < 14400000) {
-                return <Match match={match} key={index} />;
-              }
-            })}
-          </div>
-        </div>
+        <BracketSelector data={bracketData.bracketList.brackets} />
         <Separator>
           <span>LATEST</span> NEWS
         </Separator>

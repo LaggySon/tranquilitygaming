@@ -4,10 +4,19 @@
   line-height: 1.2;
   --speed: 500ms;
   --accentcolor: #c79334;
-  --bgcolor: #011724b9;
-  --textcolor: #cdd1d4;
-  --titlecolor: #bee2f1;
-  --shadowsetting: 0 0 0 black;
+  --bgbase: 15, 15, 15;
+  --bgopacity: 0.85;
+  --bgcolor: rgba(var(--bgbase), var(--bgopacity));
+  // --bgcolor: #01273dbe;
+  // --textcolor: #cdd1d4;
+  --textcolor: white;
+  --titlecolor: #96d7f3;
+  --shadowsetting: 3px 3px 3px black;
+  --borderradius: 0.5rem;
+  --dropshadow: drop-shadow(1px 1px 1px black);
+  --transitionduration: 200ms;
+  --scale: 1.05;
+
   color: var(--textcolor);
 }
 body {
@@ -23,11 +32,14 @@ body:before {
   height: 120vh;
   z-index: -10;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../public/bg-min.png");
+    url("../public/bgtest8.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transform: scale(1.02);
+  filter: blur(5px);
+  // filter: contrast(150%);
 }
 
 .Separator {
@@ -35,11 +47,15 @@ body:before {
   width: 100%;
   font-size: 1.5rem;
   font-weight: 500;
-  color: aliceblue;
+  color: var(--textcolor);
   padding-block: 1rem;
   text-transform: uppercase;
+  & > * {
+    filter: drop-shadow(1px 1px 1px black);
+  }
+
   span {
-    color: var(--titlecolor);
+    color: var(--accentcolor);
   }
   &:before {
     transform: translateY(50%);
@@ -62,6 +78,7 @@ body:before {
   box-shadow: var(--shadowsetting);
   padding: 1rem;
   margin: 0.5rem;
+  border-radius: var(--borderradius);
   .big {
     margin: 1rem auto;
     max-width: 60rem;
@@ -78,7 +95,7 @@ body:before {
   align-items: center;
   overflow-x: hidden !important;
   a {
-    color: aliceblue;
+    color: var(--textcolor);
     text-decoration: underline;
   }
 }
