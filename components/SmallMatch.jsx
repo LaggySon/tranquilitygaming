@@ -23,24 +23,26 @@ export default function Match(props) {
   const Match = props.match;
   if (Match.tier) {
     return (
-      <Link href="/matches" className={styles.matchBox}>
-        <div className={styles.matchBlock}>
-          <div className={styles.matchTeamBox}>
-            <div className={styles.matchTeam}>
-              <Image src={Match.homeLogo.url} width="40" height="40"></Image>
-              {/* <span>{Match.homeName}</span> */}
+      <Link href="/matches">
+        <div className={styles.matchBox}>
+          <div className={styles.matchBlock}>
+            <div className={styles.matchTeamBox}>
+              <div className={styles.matchTeam}>
+                <Image src={Match.homeLogo.url} width="40" height="40"></Image>
+                {/* <span>{Match.homeName}</span> */}
+              </div>
+              <span id={styles.vs}>VS</span>
+              <div className={styles.matchTeam}>
+                <Image src={Match.awayLogo.url} width="40" height="40"></Image>
+                {/* <span>{Match.awayName}</span> */}
+              </div>
             </div>
-            <span id={styles.vs}>VS</span>
-            <div className={styles.matchTeam}>
-              <Image src={Match.awayLogo.url} width="40" height="40"></Image>
-              {/* <span>{Match.awayName}</span> */}
-            </div>
+            <span id={styles.time}>{convertTimestamp(Match.matchTime)}</span>
           </div>
-          <span id={styles.time}>{convertTimestamp(Match.matchTime)}</span>
+          <span id={styles.tier}>
+            {Match.tier[0] + "-" + Match.tier.split(" ")[1]}
+          </span>
         </div>
-        <span id={styles.tier}>
-          {Match.tier[0] + "-" + Match.tier.split(" ")[1]}
-        </span>
       </Link>
     );
   } else {
@@ -49,14 +51,16 @@ export default function Match(props) {
         href="/matches"
         className={[styles.matchBox, styles.eventBox].join(" ")}
       >
-        <span id={styles.tier}>&#8205;</span>
-        <div className={styles.matchBlock}>
-          <div className={styles.matchTeamBox}>
-            <div className={styles.matchTeam}>
-              <Image src={Match.image.url} width="40" height="40"></Image>
+        <div>
+          <span id={styles.tier}>&#8205;</span>
+          <div className={styles.matchBlock}>
+            <div className={styles.matchTeamBox}>
+              <div className={styles.matchTeam}>
+                <Image src={Match.image.url} width="40" height="40"></Image>
+              </div>
             </div>
+            <span id={styles.time}>{convertTimestamp(Match.startTime)}</span>
           </div>
-          <span id={styles.time}>{convertTimestamp(Match.startTime)}</span>
         </div>
       </Link>
     );
