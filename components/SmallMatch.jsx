@@ -39,20 +39,14 @@ export default function Match(props) {
             </div>
             <span id={styles.time}>{convertTimestamp(Match.matchTime)}</span>
           </div>
-          <span id={styles.tier}>
-            {Match.tier[0] + "-" + Match.tier.split(" ")[1]}
-          </span>
+          <span id={styles.tier}>{Match.tier}</span>
         </div>
       </Link>
     );
   } else {
     return (
-      <Link
-        href="/matches"
-        className={[styles.matchBox, styles.eventBox].join(" ")}
-      >
-        <div>
-          <span id={styles.tier}>&#8205;</span>
+      <Link href="/matches">
+        <div className={[styles.matchBox, styles.eventBox].join(" ")}>
           <div className={styles.matchBlock}>
             <div className={styles.matchTeamBox}>
               <div className={styles.matchTeam}>
@@ -61,6 +55,7 @@ export default function Match(props) {
             </div>
             <span id={styles.time}>{convertTimestamp(Match.startTime)}</span>
           </div>
+          <span id={styles.tier}>{Match.title}</span>
         </div>
       </Link>
     );
