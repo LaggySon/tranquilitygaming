@@ -127,34 +127,34 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <NavLink href="https://twitter.com/owtranquility">
+                    <NavLink href="https://twitter.com/tranquilitygg">
                       <SvgTwitter /> Twitter
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://twitch.tv/owtranquility">
+                    <NavLink href="https://twitch.tv/tranquilitygg">
                       <SvgTwitch /> Twitch
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://youtube.com/owtranquility">
+                    <NavLink href="https://youtube.com/tranquilitygg">
                       <SvgYoutube />
                       YouTube
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://discord.gg/owtranquility">
+                    <NavLink href="https://discord.gg/tranquilitygg">
                       <SvgDiscord />
                       Discord
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://www.instagram.com/owtranquility">
+                    <NavLink href="https://www.instagram.com/tranquilitygg">
                       <SvgInstagram /> Instagram
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://www.facebook.com/owtranquility">
+                    <NavLink href="https://www.facebook.com/tranquilitygg">
                       <SvgFacebook /> Facebook
                     </NavLink>
                   </li>
