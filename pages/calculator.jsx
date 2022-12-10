@@ -74,13 +74,14 @@ export default function Calculator(props) {
   const calculateRank = () => {
     const tierMin = tiersMap.find((tier) => tier.tier === selectedTier).min;
     let calculatedRank = "";
-    const srArray = getSrArray();
+    let srArray = getSrArray();
     srArray.forEach((element, index) => {
       if (element < tierMin) {
         srArray[index] = tierMin;
       }
     });
     if (selectedTier === "Transcendence") {
+      srArray = srArray.sort((a, b) => b - a).slice(0, 5);
       calculatedRank = srArray
         .sort((a, b) => b - a)
         .slice(0, 5)
@@ -96,6 +97,8 @@ export default function Calculator(props) {
     return resultString;
   };
 
+  //Determines whether the team qualifies for the selected ranks and
+  //explains why not if needed
   const getQualified = () => {
     const calculatedSr = calculateRank().split("(")[1]?.slice(0, -1);
     const tier = tiersMap.find((tier) => tier.tier === selectedTier);
@@ -171,6 +174,14 @@ export default function Calculator(props) {
           <span className={styles.tierInfoItem}>
             <span>{getByValue(ranksMap, getTier().avgMax)}</span>
           </span>
+          {selectedTier === "Transcendence" && (
+            <>
+              <br />
+              <span className={styles.tierInfoItem}>
+                Only averages top 5 ranks
+              </span>
+            </>
+          )}
         </span>
       </div>
       <div className={[styles.playerList, "blockel"].join(" ")}>
