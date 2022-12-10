@@ -120,35 +120,44 @@ export default function Home({ data, twitchdata, bracketData }) {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-            <SwiperSlide>
-              <div className={styles.slide}>
+            <SwiperSlide style={{ cursor: "pointer" }}>
+              <Link
+                href="https://twitch.tv/tranquility"
+                className={styles.slide}
+              >
                 <Image
                   className={styles.slideBg}
                   src={slide1}
                   width="1500"
                   height="500"
                 ></Image>
-              </div>
+              </Link>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>
+            <SwiperSlide style={{ cursor: "pointer" }}>
+              <Link
+                href="https://twitch.tv/tranquilitygg"
+                className={styles.slide}
+              >
                 <Image
                   className={styles.slideBg}
                   src={slide2}
                   width="1500"
                   height="500"
                 ></Image>
-              </div>
+              </Link>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>
+            <SwiperSlide style={{ cursor: "pointer" }}>
+              <Link
+                href="https://shop.spreadshirt.com/tranquilitygg"
+                className={styles.slide}
+              >
                 <Image
                   className={styles.slideBg}
                   src={slide3}
                   width="1500"
                   height="500"
                 ></Image>
-              </div>
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>

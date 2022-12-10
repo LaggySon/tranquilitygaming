@@ -51,7 +51,7 @@ export default function BracketSelector(props) {
                 selectedTier === bracket.tier && styles.active,
               ].join(" ")}
               onClick={() => setSelectedTier(bracket.tier)}
-              key={bracket.tier}
+              key={bracket.tier + index}
             >
               {bracket.tier}
             </div>
