@@ -6,7 +6,7 @@ export default function Admin(props) {
       <div className="blockel">
         {!session && (
           <div>
-            <button onClick={() => signIn()}>Sign In</button>
+            <button onClick={() => signIn("discord")}>Sign In</button>
           </div>
         )}
         {session && (
