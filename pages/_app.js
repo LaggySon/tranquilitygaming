@@ -7,7 +7,9 @@ import { useEffect } from "react";
 
 import NProgress from "nprogress";
 
-function MyApp({ Component, pageProps }) {
+import { SessionProvider } from "next-auth/react";
+
+function MyApp({ session, Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
@@ -17,9 +19,11 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <SessionProvider session={session}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </SessionProvider>
   );
 }
 
