@@ -91,7 +91,7 @@ export default function Calculator(props) {
     }
     var resultString = `${getByValue(
       ranksMap,
-      Math.floor(calculatedRank / srArray.length)
+      Math.ceil(calculatedRank / srArray.length)
     )} (${Math.round((calculatedRank / srArray.length) * 100) / 100})`;
     if (resultString.includes("undefined")) return "0";
     return resultString;
