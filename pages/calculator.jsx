@@ -91,7 +91,7 @@ export default function Calculator(props) {
     }
     var resultString = `${getByValue(
       ranksMap,
-      Math.ceil(calculatedRank / srArray.length)
+      Math.round(calculatedRank / srArray.length)
     )} (${Math.round((calculatedRank / srArray.length) * 100) / 100})`;
     if (resultString.includes("undefined")) return "0";
     return resultString;
@@ -106,7 +106,7 @@ export default function Calculator(props) {
     let messages = [];
     const srArray = getSrArray();
 
-    if (calculatedSr > tier.avgMax) {
+    if (Math.round(calculatedSr) > tier.avgMax) {
       qualified = false;
       messages.push("Team average SR is too high.");
     }

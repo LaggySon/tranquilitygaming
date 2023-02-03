@@ -33,13 +33,13 @@ body:before {
   height: 120vh;
   z-index: -10;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../public/bgtest8.png");
+    url("../public/bg.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   transform: scale(1.02);
-  filter: blur(5px);
+  // filter: blur(5px);
   // filter: contrast(150%);
 }
 
