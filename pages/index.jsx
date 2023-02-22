@@ -162,10 +162,10 @@ export default function Home({ data, twitchdata, bracketData }) {
           </Swiper>
         </div>
 
-        <Separator>
+        {/* <Separator>
           <span>CURRENT</span> STANDINGS
         </Separator>
-        <BracketSelector data={bracketData.bracketList.brackets} />
+        <BracketSelector data={bracketData.bracketList.brackets} /> */}
         <Separator>
           <span>LATEST</span> NEWS
         </Separator>
