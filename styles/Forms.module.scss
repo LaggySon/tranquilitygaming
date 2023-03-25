@@ -4,13 +4,17 @@
   padding: 0.2rem 0.8rem;
   transition-property: all;
   transition-duration: var(--transitionduration);
+  border: 0.2rem solid transparent;
+
   &:hover {
     transform: scale(var(--scale));
     cursor: pointer;
+    border-bottom: 0.2rem solid var(--accentcolor);
   }
   &.active {
-    outline: 2px solid var(--textcolor);
+    // outline: 2px solid var(--textcolor);
     color: var(--accentcolor);
+    border-bottom: 0.2rem solid var(--accentcolor);
   }
   font-weight: normal;
 }
@@ -27,4 +31,6 @@
 .selectors {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
 }

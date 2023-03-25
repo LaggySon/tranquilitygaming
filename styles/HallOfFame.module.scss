@@ -86,10 +86,12 @@
       &:hover {
         transform: scale(var(--scale));
         cursor: pointer;
+        border-bottom: 0.2rem solid var(--accentcolor);
       }
       &.active {
-        outline: 2px solid var(--textcolor);
+        // outline: 2px solid var(--textcolor);
         color: var(--accentcolor);
+        border-bottom: 0.2rem solid var(--accentcolor);
       }
     }
   }
