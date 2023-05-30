@@ -17,7 +17,7 @@ import { useState } from "react";
 import dayjs from "dayjs";
 
 //Slide Image Imports
-import slide1 from "../public/slides/eventweekfinal.png";
+import slide1 from "../public/slides/tranq_Ideation_Playoffs_Banner.png";
 import slide2 from "../public/slides/tranq_Ideation_Podcast_Banner.png";
 import slide3 from "../public/slides/tranq_Ideation_Merch_Banner.png";
 // import { request } from "gaxios";
