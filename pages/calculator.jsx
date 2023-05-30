@@ -41,9 +41,10 @@ export default function Calculator(props) {
 
   //Generate mapping of tier Tranq SR limits
   const tiersMap = [
-    { tier: "Harmony", min: 11, avgMax: 18, max: 20 },
-    { tier: "Discord", min: 19, avgMax: 23, max: 25 },
-    { tier: "Transcendence", min: 24, avgMax: 28, max: 30 },
+    { tier: "Harmony", min: 16, avgMax: 20, max: 22 },
+    { tier: "Discord", min: 21, avgMax: 25, max: 27 },
+    { tier: "Transcendence", min: 26, avgMax: 29, max: 31 },
+    { tier: "Ascendant", min: 35, avgMax: 35, max: 35 },
   ];
 
   //Update an existing player in state
@@ -160,25 +161,39 @@ export default function Calculator(props) {
           <option value="Harmony">Harmony</option>
           <option value="Discord">Discord</option>
           <option value="Transcendence">Transcendence</option>
+          <option value="Ascendant">Ascendant</option>
         </select>
         <span className={styles.tierInfo}>
-          Min individual:{" "}
-          <span className={styles.tierInfoItem}>
-            <span>{getByValue(ranksMap, getTier().min)}</span>
-          </span>
-          <br /> Max individual:{" "}
-          <span className={styles.tierInfoItem}>
-            <span>{getByValue(ranksMap, getTier().max)}</span>
-          </span>
-          <br /> Max average:{" "}
-          <span className={styles.tierInfoItem}>
-            <span>{getByValue(ranksMap, getTier().avgMax)}</span>
-          </span>
+          {selectedTier !== "Ascendant" && (
+            <>
+              Min individual:{" "}
+              <span className={styles.tierInfoItem}>
+                <span>{getByValue(ranksMap, getTier().min)}</span>
+              </span>
+              <br /> Max individual:{" "}
+              <span className={styles.tierInfoItem}>
+                <span>{getByValue(ranksMap, getTier().max)}</span>
+              </span>
+              <br /> Max average:{" "}
+              <span className={styles.tierInfoItem}>
+                <span>{getByValue(ranksMap, getTier().avgMax)}</span>
+              </span>
+            </>
+          )}
           {selectedTier === "Transcendence" && (
             <>
               <br />
               <span className={styles.tierInfoItem}>
                 Only averages top 5 ranks
+              </span>
+            </>
+          )}
+          {selectedTier === "Ascendant" && (
+            <>
+              <br />
+              <span className={styles.tierInfoItem}>
+                No top 8 OD finishes in OW2, or participation in Trials,
+                Contenders, or OWL in OW1 or OW2
               </span>
             </>
           )}
