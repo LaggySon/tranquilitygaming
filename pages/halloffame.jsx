@@ -83,6 +83,18 @@ function AllStars(props) {
             {name}
           </div>
         ))}
+        {props.list.flex &&
+          props.list.flex.map((name) => (
+            <div
+              className={[
+                styles.Member,
+                name.includes(" (MVP)") ? styles.Mvp : null,
+              ].join(" ")}
+              key={name + "4"}
+            >
+              {name}
+            </div>
+          ))}
       </div>
     </div>
   );
@@ -131,7 +143,7 @@ function Season(props) {
 }
 
 export default function HallOfFame() {
-  const [activeSeasonTitle, setActiveSeasonTitle] = useState("Season 8");
+  const [activeSeasonTitle, setActiveSeasonTitle] = useState("Season 10");
   const activeSeason = data.find(
     (season) => season.title === activeSeasonTitle
   );
@@ -153,7 +165,7 @@ export default function HallOfFame() {
               ].join(" ")}
               onClick={() => setActiveSeasonTitle(season.title)}
             >
-              {season.title.charAt(season.title.length - 1)}
+              {season.title.split(" ")[1]}
             </h3>
           </>
         ))}

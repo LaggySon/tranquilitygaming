@@ -879,5 +879,269 @@
         }
       }
     ]
+  },
+  {
+    "title": "Season 9",
+    "tiers": [
+      {
+        "title": "harmony eu",
+        "winningteam": {
+          "name": "DINO NUGGIES",
+          "members": [
+            "Yoshi JD",
+            "Maxzsu",
+            "Kurama",
+            "Frostxtute",
+            "Mate02102003",
+            "Skyflower",
+            "Axl",
+            "2Madre (Coach)",
+            "Null (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": ["Mate02102003", "Dragonprince (MVP)"],
+          "tank": ["Narrow"],
+          "support": ["Silas", "Frostxtute"],
+          "flex": ["Jammy"]
+        }
+      },
+      {
+        "title": "harmony na",
+        "winningteam": {
+          "name": "KOALA KINGS",
+          "members": [
+            "Preach",
+            "Kumpoo",
+            "Iggledeebop",
+            "Tomasbs",
+            "Kilroy",
+            "Melo",
+            "Tfast",
+            "Synop",
+            "Nevino (GM)",
+            "Hayden (Coach)",
+            "Mudae (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": [
+            "Fhantum",
+            "Vexx",
+            "Bwhel",
+            "Azxeno (MVP)",
+            "Hazdio",
+            "Tiltedwaffle"
+          ],
+          "tank": ["Owa", "Pasty", "Nova", "Chobee"],
+          "support": [
+            "Hipno",
+            "Ohhnyx",
+            "Bubbles",
+            "Kokonut",
+            "Dacgameboy",
+            "Drowsy"
+          ]
+        }
+      },
+      {
+        "title": "discord eu",
+        "winningteam": {
+          "name": "MYTHICAL KITSUNE",
+          "members": [
+            "Uomii",
+            "Bojack",
+            "Benched",
+            "Calva",
+            "Deep",
+            "Artist (GM)",
+            "Herman (Coach)",
+            "Fargonit (Coach)"
+          ]
+        },
+        "allstars": {
+          "dps": ["Overmars (MVP)", "Itachier"],
+          "tank": ["Termi120"],
+          "support": ["Iceberg", "Sando"],
+          "flex": ["Bojack"]
+        }
+      },
+      {
+        "title": "discord na",
+        "winningteam": {
+          "name": "REMINISCENCE",
+          "members": [
+            "Glitcch",
+            "Bloodhungry",
+            "Choisoohwan",
+            "Reborn",
+            "Sariff",
+            "Zura",
+            "Tri",
+            "Speedy (Coach)",
+            "Kapitol (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": ["Tanicbee", "Lorer", "Reborn", "Sempra", "Ashes", "Toxic"],
+          "tank": ["Sam", "Choisoohwan", "Bballman69", "Bloodhungry"],
+          "support": [
+            "Antonio",
+            "Rocket",
+            "Tri (MVP)",
+            "Luca",
+            "Zorthcon",
+            "Funjin"
+          ]
+        }
+      },
+      {
+        "title": "transcendence na",
+        "winningteam": {
+          "name": "DECAPITATERS",
+          "members": [
+            "Andy",
+            "Pyro",
+            "MagPolar",
+            "Kryy",
+            "Aura",
+            "Smarties",
+            "PDK",
+            "Smuggzz",
+            "Brie (GM)",
+            "Marf (Coach)",
+            "Ice (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": ["GLD", "Akuua", "Frozen", "Haruhiro", "Orsted", "Chief"],
+          "tank": ["PDK", "Greninja", "Tyler", "Andy"],
+          "support": [
+            "Smuggzz",
+            "LCS",
+            "Kapitol (MVP)",
+            "Trieudonger",
+            "Chromedzephr",
+            "Delphy"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "title": "Season 10",
+    "inductees": [
+      "Smuggzz",
+      "Chimanzy",
+      "Ice",
+      "Sneakykittens",
+      "Crispy",
+      "Kapitol",
+      "CrypticForce"
+    ],
+    "tiers": [
+      {
+        "title": "harmony na",
+        "winningteam": {
+          "name": "GALACTIC PENGUINS",
+          "members": [
+            "GIZMO",
+            "Doha",
+            "Sky",
+            "Ch0bee",
+            "Elixir",
+            "Bernie (Coach)",
+            "ChoiSooHwan (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": ["Vexx", "CVSPharmercy", "Bwhel", "M1lan", "Husky", "Sariff"],
+          "tank": ["Pomkoo", "Chooster", "Stopu", "SSSForever (MVP)"],
+          "support": [
+            "Drug",
+            "Blueroses",
+            "Colorform",
+            "Pasty",
+            "Yojimbo",
+            "Drowsy"
+          ]
+        }
+      },
+      {
+        "title": "discord na",
+        "winningteam": {
+          "name": "REMINISCENCE",
+          "members": [
+            "Sw1fters",
+            "Neptune",
+            "MusikAdd1ctZ",
+            "Train",
+            "KokoNut",
+            "Bballman69",
+            "ChoiSooHwan (GM)",
+            "Tri (Coach)",
+            "Speedy666 (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": ["Lorer", "Afex", "Tanicbee", "Sw1fters", "Hawk", "Yuki"],
+          "tank": ["Genjimain", "MagicOtter", "Gliscor", "Nevino"],
+          "support": [
+            "Neptune",
+            "PhevieWonder",
+            "Tw7stz",
+            "Bunnie",
+            "Hypnitoss",
+            "Cubey"
+          ]
+        }
+      },
+      {
+        "title": "transcendence na",
+        "winningteam": {
+          "name": "GUANGZHOU GANSTERS",
+          "members": [
+            "Slymoll",
+            "Tyler",
+            "Aplom",
+            "Haruhiro",
+            "NǾȐŦĦ",
+            "Qzy",
+            "Frozen",
+            "TrieuDonger",
+            "Ravioli",
+            "Cam",
+            "Recurve (Coach)",
+            "Reborn (Coach)"
+          ]
+        },
+
+        "allstars": {
+          "dps": [
+            "Dragon",
+            "NǾȐŦĦ",
+            "Orsted",
+            "Jakaruu",
+            "Haruhiro",
+            "Charybdis"
+          ],
+          "tank": ["Cam", "StarPlatinum", "Telmjcan", "iToastyToast (MVP)"],
+          "support": [
+            "Aplom",
+            "Poofa",
+            "Silvertals",
+            "Funjin",
+            "Cadenza",
+            "Saga"
+          ]
+        }
+      }
+    ]
   }
 ]
