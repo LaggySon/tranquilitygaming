@@ -28,12 +28,22 @@ export default function Match(props) {
           <div className={styles.matchBlock}>
             <div className={styles.matchTeamBox}>
               <div className={styles.matchTeam}>
-                <Image src={Match.homeLogo.url} width="40" height="40"></Image>
+                <Image
+                  title={Match.homeName}
+                  src={Match.homeLogo.url}
+                  width="40"
+                  height="40"
+                ></Image>
                 {/* <span>{Match.homeName}</span> */}
               </div>
               <span id={styles.vs}>VS</span>
               <div className={styles.matchTeam}>
-                <Image src={Match.awayLogo.url} width="40" height="40"></Image>
+                <Image
+                  title={Match.awayName}
+                  src={Match.awayLogo.url}
+                  width="40"
+                  height="40"
+                ></Image>
                 {/* <span>{Match.awayName}</span> */}
               </div>
             </div>

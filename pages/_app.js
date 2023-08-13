@@ -19,11 +19,9 @@ function MyApp({ session, Component, pageProps }) {
   }, []);
 
   return (
-    <SessionProvider session={session}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </SessionProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

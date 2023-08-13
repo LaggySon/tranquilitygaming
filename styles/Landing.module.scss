@@ -85,6 +85,16 @@
   // box-sizing: border-box;
 }
 
+.articles {
+  h1 {
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px black);
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
 //MOBILE STYLING
 @media screen and (max-width: 1024px) {
   #showcase {

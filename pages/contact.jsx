@@ -26,11 +26,13 @@ function ContactFrame(props) {
         <strong>Role(s): </strong>
         {props.roles}
       </p>
-      <p className="contactsubroles">
-        {/* <span>Position: </span> */}
-        <strong>Sub role(s): </strong>
-        {props.subroles}
-      </p>
+      {props.subroles && (
+        <p className="contactsubroles">
+          {/* <span>Position: </span> */}
+          <strong>Sub role(s): </strong>
+          {props.subroles}
+        </p>
+      )}
       <p className="contactdiscord">
         {/* <span>Contact: </span> */}
         <strong>Discord: </strong>
@@ -48,11 +50,9 @@ export default function contact({ data }) {
       </Separator>
 
       <div className="blockel">
-        For business or any other general inquiries please contact{" "}
-        <a href="mailto:cavalier@owtranquility.com">
-          cavalier@owtranquility.com
-        </a>{" "}
-        or @ModMail inside the Tranquility Discord server.
+        For business or any other general inquiries please message{" "}
+        <strong>@MisterYeti</strong>, <strong>@Cavalier</strong> or{" "}
+        <strong>@ModMail</strong> inside the Tranquility Discord server.
       </div>
 
       <div className={styles.ContactsContainer}>

@@ -60,33 +60,27 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <NavLink href="/naharmonyrosters">
+                    <NavLink href="/harmonyrosters">
                       <SvgSheets />
-                      Harmony NA
+                      Harmony
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/euharmonyrosters">
+                    <NavLink href="/discordrosters">
                       <SvgSheets />
-                      Harmony EU
+                      Discord
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/nadiscordrosters">
+                    <NavLink href="/trancerosters">
                       <SvgSheets />
-                      Discord NA
+                      Transcendence
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/eudiscordrosters">
+                    <NavLink href="/ascendantrosters">
                       <SvgSheets />
-                      Discord EU
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink href="/natrancerosters">
-                      <SvgSheets />
-                      Transcendence NA
+                      Ascendant
                     </NavLink>
                   </li>
                 </ul>
@@ -101,19 +95,28 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <NavLink href="/naharmonyschedule">Harmony NA</NavLink>
+                    <NavLink href="/harmonyschedule">
+                      <SvgSheets />
+                      Harmony
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/euharmonyschedule">Harmony EU</NavLink>
+                    <NavLink href="/discordschedule">
+                      <SvgSheets />
+                      Discord
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/nadiscordschedule">Discord NA</NavLink>
+                    <NavLink href="/tranceschedule">
+                      <SvgSheets />
+                      Transcendence
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/eudiscordschedule">Discord EU</NavLink>
-                  </li>
-                  <li>
-                    <NavLink href="/natranceschedule">Transcendence NA</NavLink>
+                    <NavLink href="/ascendantschedule">
+                      <SvgSheets />
+                      Ascendant
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -149,7 +152,7 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="https://www.instagram.com/tranquilitygg">
+                    <NavLink href="https://www.instagram.com/ggtranquility">
                       <SvgInstagram /> Instagram
                     </NavLink>
                   </li>

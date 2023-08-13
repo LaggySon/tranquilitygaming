@@ -77,10 +77,17 @@ export async function getServerSideProps() {
       homepage{letter{value}}
     }`,
   });
-  return { props: { data, twitchdata, bracketData } };
+
+  let articles = await request({
+    query: `query {allArticles{title,content{value},slug}}`,
+  });
+
+  articles = articles.allArticles;
+
+  return { props: { data, twitchdata, bracketData, articles } };
 }
 
-export default function Home({ data, twitchdata, bracketData }) {
+export default function Home({ data, twitchdata, bracketData, articles }) {
   const [isLive, setIsLive] = useState(twitchdata.data.length !== 0);
 
   return (
@@ -170,8 +177,18 @@ export default function Home({ data, twitchdata, bracketData }) {
           <span>LATEST</span> NEWS
         </Separator>
 
-        <div id={styles.letter} className="blockel">
-          <StructuredText data={data.homepage.letter} />
+        <div className={styles.articles}>
+          {articles &&
+            articles.map((article) => (
+              <div className={styles.article}>
+                <h1>{article.title}</h1>
+                <div className="blockel">
+                  <a href={`/articles/${article.slug}`}>
+                    <StructuredText data={article.content} />
+                  </a>
+                </div>
+              </div>
+            ))}
         </div>
       </div>
     </div>
