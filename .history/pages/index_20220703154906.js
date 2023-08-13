@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 //Slide Image Imports
 import slide1 from "../public/tranq-banner-newsite.png";

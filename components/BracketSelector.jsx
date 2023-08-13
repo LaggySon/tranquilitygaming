@@ -1,7 +1,7 @@
 import styles from "../styles/BracketSelector.module.scss";
 import React, { useState } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function BracketSelector(props) {
   function findBracket() {

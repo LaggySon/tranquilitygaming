@@ -4,7 +4,7 @@ import SmallLogo from "../public/tranqLogoWhite.png";
 
 import React, { useState } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 
@@ -30,13 +30,13 @@ function Header(props) {
     <div className={styles.header}>
       <div className={styles.Title}>
         <Link href="/">
-          <a>
-            <div className={styles.logo} onClick={closeMenu}>
-              <div>
-                <Image src={Logo}></Image>
-              </div>
+
+          <div className={styles.logo} onClick={closeMenu}>
+            <div>
+              <Image src={Logo}></Image>
             </div>
-          </a>
+          </div>
+
         </Link>
         <div
           className={[styles.burger, isActive ? styles.active : null].join(" ")}
@@ -193,10 +193,10 @@ function Header(props) {
             </div>
           </li>
           <li>
-            <Link href="/contact">
-              <a className={styles.dropbtn} onClick={handleToggle}>
+            <Link href="/contact" className={styles.dropbtn} onClick={handleToggle}>
+              
                 Contact
-              </a>
+              
             </Link>
             <div className={styles.drop}></div>
           </li>

@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import AdvancedFormat from "dayjs/plugin/advancedFormat";
 import Timezone from "dayjs/plugin/timezone";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 function convertTimestamp(string) {
@@ -23,7 +23,7 @@ export default function Match(props) {
   const Match = props.match;
   if (Match.tier) {
     return (
-      <Link href="/matches">
+      <Link href="/matches" legacyBehavior>
         <div className={styles.matchBox}>
           <div className={styles.matchBlock}>
             <div className={styles.matchTeamBox}>
@@ -55,7 +55,7 @@ export default function Match(props) {
     );
   } else {
     return (
-      <Link href="/matches">
+      <Link href="/matches" legacyBehavior>
         <div className={[styles.matchBox, styles.eventBox].join(" ")}>
           <div className={styles.matchBlock}>
             <div className={styles.matchTeamBox}>

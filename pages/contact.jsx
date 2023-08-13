@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "../styles/Contact.module.scss";
 import Separator from "../components/Separator";
 import { request } from "../lib/datocms";
+import { redirect } from "next/navigation";
 
 export async function getServerSideProps() {
   let data = await request({

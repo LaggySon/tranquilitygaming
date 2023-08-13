@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -90,6 +90,15 @@ export async function getServerSideProps() {
 export default function Home({ data, twitchdata, bracketData, articles }) {
   const [isLive, setIsLive] = useState(twitchdata.data.length !== 0);
 
+  function getSeparatorStuff(title) {
+    const stuff = title.split(" ");
+    return (
+      <>
+        <span>{stuff[0]}</span> {stuff.length > 1 && stuff.slice(1).join(" ")}
+      </>
+    );
+  }
+
   return (
     <div>
       {isLive && (
@@ -131,6 +140,7 @@ export default function Home({ data, twitchdata, bracketData, articles }) {
               <Link
                 href="https://twitch.tv/tranquility"
                 className={styles.slide}
+                legacyBehavior
               >
                 <Image
                   className={styles.slideBg}
@@ -144,6 +154,7 @@ export default function Home({ data, twitchdata, bracketData, articles }) {
               <Link
                 href="https://twitch.tv/tranquilitygg"
                 className={styles.slide}
+                legacyBehavior
               >
                 <Image
                   className={styles.slideBg}
@@ -157,6 +168,7 @@ export default function Home({ data, twitchdata, bracketData, articles }) {
               <Link
                 href="https://shop.spreadshirt.com/tranquilitygg"
                 className={styles.slide}
+                legacyBehavior
               >
                 <Image
                   className={styles.slideBg}
@@ -173,15 +185,12 @@ export default function Home({ data, twitchdata, bracketData, articles }) {
           <span>CURRENT</span> STANDINGS
         </Separator>
         <BracketSelector data={bracketData.bracketList.brackets} /> */}
-        <Separator>
-          <span>LATEST</span> NEWS
-        </Separator>
 
         <div className={styles.articles}>
           {articles &&
             articles.map((article) => (
-              <div className={styles.article}>
-                <h1>{article.title}</h1>
+              <div key={article.slug} className={styles.article}>
+                <Separator>{getSeparatorStuff(article.title)}</Separator>
                 <div className="blockel">
                   <a href={`/articles/${article.slug}`}>
                     <StructuredText data={article.content} />
