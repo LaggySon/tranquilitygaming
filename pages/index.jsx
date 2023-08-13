@@ -128,29 +128,29 @@ export default function Home({
 
       <div className="container" id={styles.homepage}>
         <div id={styles.showcase} className="container">
-          <Swiper
-            // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={0}
-            slidesPerView={"auto"}
-            autoplay={{
-              delay: 10000,
-              pauseOnMouseEnter: true,
-              disableOnInteraction: false,
-            }}
-            // navigation
-            effect={"cards"}
-            speed={1000}
-            pagination={{ clickable: true }}
-            loop
-            // scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-          >
-            {slides &&
-              slides.map((slide, i) => (
-                <SwiperSlide key={i} style={{ cursor: "pointer" }}>
-                  {process.browser && (
+          {process.browser && (
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+              spaceBetween={0}
+              slidesPerView={"auto"}
+              autoplay={{
+                delay: 10000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+              }}
+              navigation
+              effect={"cards"}
+              speed={1000}
+              pagination={{ clickable: true }}
+              loop
+              // scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+            >
+              {slides &&
+                slides.map((slide, i) => (
+                  <SwiperSlide key={i} style={{ cursor: "pointer" }}>
                     <Link
                       href={slide.linksTo}
                       className={styles.slide}
@@ -163,10 +163,10 @@ export default function Home({
                         height="500"
                       ></Image>
                     </Link>
-                  )}
-                </SwiperSlide>
-              ))}
-          </Swiper>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          )}
         </div>
 
         <div className={styles.articles}>

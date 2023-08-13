@@ -12,15 +12,19 @@ export async function getServerSideProps({ params }) {
 
   article = article.article;
   console.log(article);
+  if (!article) {
+    return {
+      redirect: {
+        destination: "/", // Replace with your desired destination
+        permanent: false, // Set this to true if the redirection is permanent
+      },
+    };
+  }
   return { props: { article } };
 }
 
 export default function Page({ article }) {
   const router = useRouter();
-
-  if (!article) {
-    redirect("/");
-  }
 
   function getSeparatorStuff(title) {
     const stuff = title.split(" ");
