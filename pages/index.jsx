@@ -82,12 +82,23 @@ export async function getServerSideProps() {
     query: `query {allArticles{title,content{value},slug}}`,
   });
 
-  articles = articles.allArticles;
+  let slides = await request({
+    query: `query {allSlides{image{url},linksTo}}`,
+  });
 
-  return { props: { data, twitchdata, bracketData, articles } };
+  articles = articles.allArticles;
+  slides = slides.allSlides;
+
+  return { props: { data, twitchdata, bracketData, articles, slides } };
 }
 
-export default function Home({ data, twitchdata, bracketData, articles }) {
+export default function Home({
+  data,
+  twitchdata,
+  bracketData,
+  articles,
+  slides,
+}) {
   const [isLive, setIsLive] = useState(twitchdata.data.length !== 0);
 
   function getSeparatorStuff(title) {
@@ -136,55 +147,27 @@ export default function Home({ data, twitchdata, bracketData, articles }) {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-            <SwiperSlide style={{ cursor: "pointer" }}>
-              <Link
-                href="https://twitch.tv/tranquility"
-                className={styles.slide}
-                legacyBehavior
-              >
-                <Image
-                  className={styles.slideBg}
-                  src={slide1}
-                  width="1500"
-                  height="500"
-                ></Image>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide style={{ cursor: "pointer" }}>
-              <Link
-                href="https://twitch.tv/tranquilitygg"
-                className={styles.slide}
-                legacyBehavior
-              >
-                <Image
-                  className={styles.slideBg}
-                  src={slide2}
-                  width="1500"
-                  height="500"
-                ></Image>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide style={{ cursor: "pointer" }}>
-              <Link
-                href="https://shop.spreadshirt.com/tranquilitygg"
-                className={styles.slide}
-                legacyBehavior
-              >
-                <Image
-                  className={styles.slideBg}
-                  src={slide3}
-                  width="1500"
-                  height="500"
-                ></Image>
-              </Link>
-            </SwiperSlide>
+            {slides &&
+              slides.map((slide, i) => (
+                <SwiperSlide key={i} style={{ cursor: "pointer" }}>
+                  {process.browser && (
+                    <Link
+                      href={slide.linksTo}
+                      className={styles.slide}
+                      legacyBehavior
+                    >
+                      <Image
+                        className={styles.slideBg}
+                        src={slide.image.url}
+                        width="1500"
+                        height="500"
+                      ></Image>
+                    </Link>
+                  )}
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
-
-        {/* <Separator>
-          <span>CURRENT</span> STANDINGS
-        </Separator>
-        <BracketSelector data={bracketData.bracketList.brackets} /> */}
 
         <div className={styles.articles}>
           {articles &&
