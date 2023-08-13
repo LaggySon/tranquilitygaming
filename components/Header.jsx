@@ -30,13 +30,11 @@ function Header(props) {
     <div className={styles.header}>
       <div className={styles.Title}>
         <Link href="/">
-
           <div className={styles.logo} onClick={closeMenu}>
             <div>
               <Image src={Logo}></Image>
             </div>
           </div>
-
         </Link>
         <div
           className={[styles.burger, isActive ? styles.active : null].join(" ")}
@@ -95,25 +93,25 @@ function Header(props) {
               <div className={styles.drop}>
                 <ul>
                   <li>
-                    <NavLink href="/harmonyschedule">
+                    <NavLink href="/wmsharmony">
                       <SvgSheets />
                       Harmony
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/discordschedule">
+                    <NavLink href="/wmsdiscord">
                       <SvgSheets />
                       Discord
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/tranceschedule">
+                    <NavLink href="/wmstrance">
                       <SvgSheets />
                       Transcendence
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink href="/ascendantschedule">
+                    <NavLink href="/wmsascendant">
                       <SvgSheets />
                       Ascendant
                     </NavLink>
@@ -193,10 +191,12 @@ function Header(props) {
             </div>
           </li>
           <li>
-            <Link href="/contact" className={styles.dropbtn} onClick={handleToggle}>
-              
-                Contact
-              
+            <Link
+              href="/contact"
+              className={styles.dropbtn}
+              onClick={handleToggle}
+            >
+              Contact
             </Link>
             <div className={styles.drop}></div>
           </li>
