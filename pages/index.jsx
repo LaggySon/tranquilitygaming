@@ -128,59 +128,57 @@ export default function Home({
 
       <div className="container" id={styles.homepage}>
         <div id={styles.showcase} className="container">
-          {process.browser && (
-            <Swiper
-              // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-              spaceBetween={0}
-              slidesPerView={"auto"}
-              autoplay={{
-                delay: 10000,
-                pauseOnMouseEnter: true,
-                disableOnInteraction: false,
-              }}
-              navigation
-              effect={"cards"}
-              speed={1000}
-              pagination={{ clickable: true }}
-              loop
-              // scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-            >
-              {slides &&
-                slides.map((slide, i) => (
-                  <SwiperSlide key={i} style={{ cursor: "pointer" }}>
-                    <Link
-                      href={slide.linksTo}
-                      className={styles.slide}
-                      legacyBehavior
-                    >
-                      <Image
-                        className={styles.slideBg}
-                        src={slide.image.url}
-                        width="1500"
-                        height="500"
-                      ></Image>
-                    </Link>
-                  </SwiperSlide>
-                ))}
-            </Swiper>
-          )}
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={0}
+            slidesPerView={"auto"}
+            autoplay={{
+              delay: 10000,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: false,
+            }}
+            navigation
+            effect={"cards"}
+            speed={1000}
+            pagination={{ clickable: true }}
+            loop
+            // scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            {slides &&
+              slides.map((slide, i) => (
+                <SwiperSlide key={i} style={{ cursor: "pointer" }}>
+                  <Link
+                    href={slide.linksTo}
+                    className={styles.slide}
+                    legacyBehavior
+                  >
+                    <Image
+                      className={styles.slideBg}
+                      src={slide.image.url}
+                      width="1500"
+                      height="500"
+                    ></Image>
+                  </Link>
+                </SwiperSlide>
+              ))}
+          </Swiper>
         </div>
 
         <div className={styles.articles}>
-          {articles &&
-            articles.map((article) => (
-              <div key={article.slug} className={styles.article}>
-                <Separator>{getSeparatorStuff(article.title)}</Separator>
-                <div className="blockel">
-                  <a href={`/articles/${article.slug}`}>
-                    <StructuredText data={article.content} />
-                  </a>
-                </div>
+          {articles.map((article) => (
+            <div key={article.slug} className={styles.article}>
+              <Separator>{getSeparatorStuff(article.title)}</Separator>
+              <div className="blockel">
+                <StructuredText data={article.content} />
+                <Link href={`/articles/${article.slug}`}>
+                  <u>Visit article...</u>
+                </Link>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
       </div>
     </div>
