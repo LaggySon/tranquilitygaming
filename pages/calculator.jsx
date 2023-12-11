@@ -43,7 +43,7 @@ export default function Calculator(props) {
   const tiersMap = [
     { tier: "Harmony", min: 16, avgMax: 20, max: 22 },
     { tier: "Discord", min: 21, avgMax: 25, max: 27 },
-    { tier: "Transcendence", min: 26, avgMax: 29, max: 31 },
+    { tier: "Transcendence", min: 26, avgMax: 29, max: 32 },
     { tier: "Ascendant", min: 35, avgMax: 35, max: 35 },
   ];
 
@@ -81,15 +81,13 @@ export default function Calculator(props) {
         srArray[index] = tierMin;
       }
     });
-    if (selectedTier === "Transcendence") {
-      srArray = srArray.sort((a, b) => b - a).slice(0, 5);
-      calculatedRank = srArray
-        .sort((a, b) => b - a)
-        .slice(0, 5)
-        .reduce((partialSum, a) => partialSum + a, 0);
-    } else {
-      calculatedRank = srArray.reduce((partialSum, a) => partialSum + a, 0);
-    }
+
+    srArray = srArray.sort((a, b) => b - a).slice(0, 5);
+    calculatedRank = srArray
+      .sort((a, b) => b - a)
+      .slice(0, 5)
+      .reduce((partialSum, a) => partialSum + a, 0);
+
     var resultString = `${getByValue(
       ranksMap,
       Math.round(calculatedRank / srArray.length)
@@ -180,14 +178,14 @@ export default function Calculator(props) {
               </span>
             </>
           )}
-          {selectedTier === "Transcendence" && (
-            <>
-              <br />
-              <span className={styles.tierInfoItem}>
-                Only averages top 5 ranks
-              </span>
-            </>
-          )}
+
+          <>
+            <br />
+            <span className={styles.tierInfoItem}>
+              Only averages top 5 ranks
+            </span>
+          </>
+
           {selectedTier === "Ascendant" && (
             <>
               <br />
