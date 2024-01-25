@@ -43,7 +43,7 @@ export default function Calculator(props) {
   const tiersMap = [
     { tier: "Harmony", min: 16, avgMax: 20, max: 22 },
     { tier: "Discord", min: 21, avgMax: 25, max: 27 },
-    { tier: "Transcendence", min: 26, avgMax: 29, max: 32 },
+    { tier: "Transcendence", min: 26, avgMax: 30, max: 32 },
     { tier: "Ascendant", min: 35, avgMax: 35, max: 35 },
   ];
 
